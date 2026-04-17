@@ -8,23 +8,12 @@
 [![Coverage](https://img.shields.io/badge/Years-2022--2026-6f42c1.svg?style=flat-square&logo=bookstack&logoColor=white)](./data/optimizers.csv)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/JiwenJ/Awesome-Optimzers/pulls)
 
-Here is a curated list of modern optimizers and their corresponding papers, codebases, and practical advantages.
+Optimizers and optimizer variants from `2022+`, ordered by date in reverse chronological order.
 
-Current scope:
-
-- Start from `2022`
-- Order by time in reverse chronological order
-- Focus on deep learning and LLM-related optimizers
-- `GitHub` is optional; entries without a public implementation are still included
-
-> Full catalog: [data/all_entries.csv](./data/all_entries.csv)
->
-> Curated subset: [data/optimizers.csv](./data/optimizers.csv)
->
-> Imported reference subset: [data/reference_catalog.csv](./data/reference_catalog.csv)
-> The README table below includes all `217` current `2022+` entries directly, even when no public code link is available.
->
-> `Advantage` is a short synthesis based on `APRIL-AIGC/Awesome-Optimizer`, `boshallen/Awesome-Optimizers`, `AidinHamedi/Optimizer-Benchmark`, `Benchmarking Optimizers for Large Language Model Pretraining`, and paper titles/abstracts when the lists are sparse.
+- Full catalog: [data/all_entries.csv](./data/all_entries.csv)
+- Curated subset: [data/optimizers.csv](./data/optimizers.csv)
+- Imported reference subset: [data/reference_catalog.csv](./data/reference_catalog.csv)
+- `Advantage` is a short summary based on the reference lists and paper metadata.
 
 | Date | Optimizer Name | Advantage |
 | --- | --- | --- |
@@ -248,10 +237,6 @@ Current scope:
 
 ## Notes
 
-- This list is paper-first; public implementations are linked when available.
-- Each optimizer name links to its paper through the `Paper Link` icon; a GitHub icon is added when a public repository is available.
-- `Advantage` is kept concise and descriptive instead of copying source labels into the table.
-- Broad survey repos such as `APRIL-AIGC/Awesome-Optimizer` also include optimizer-adjacent methods; this table keeps the current import aligned to the `2022+` reference scope you asked for.
-- `Muon` and `D-Muon` are listed separately: the original `Muon` entry uses the canonical 2024 write-up, while `D-Muon` refers to the 2025 scalable LLM-training paper.
-- Cross-check for missing modern entries was done against `APRIL-AIGC/Awesome-Optimizer`, `boshallen/Awesome-Optimizers`, `AidinHamedi/Optimizer-Benchmark`, and `Benchmarking Optimizers for Large Language Model Pretraining`.
-- New entries should be added in reverse chronological order.
+- The paper icon links to the paper; the GitHub icon links to public code when available.
+- `Muon` and `D-Muon` are listed separately.
+- Coverage checks used `APRIL-AIGC/Awesome-Optimizer`, `boshallen/Awesome-Optimizers`, `AidinHamedi/Optimizer-Benchmark`, and `Benchmarking Optimizers for Large Language Model Pretraining`.
