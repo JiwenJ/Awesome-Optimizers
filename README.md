@@ -65,8 +65,3 @@ Curated optimizer-design papers from `2022+`, ordered by date in reverse chronol
 | 2022-10 | AdaNorm <a href="https://arxiv.org/abs/2210.06364"><img alt="Paper Link" src="https://img.shields.io/badge/-Paper%20Link-b31b1b?style=flat-square&logo=arxiv&logoColor=white" height="16"></a> <a href="https://github.com/shivram1987/AdaNorm"><img alt="GitHub" src="https://img.shields.io/badge/-181717?style=flat-square&logo=github&logoColor=white" height="16"></a> | Corrects gradient-norm scaling to stabilize adaptive optimization for CNNs. |
 | 2022-08 | Adan <a href="https://arxiv.org/abs/2208.06677"><img alt="Paper Link" src="https://img.shields.io/badge/-Paper%20Link-b31b1b?style=flat-square&logo=arxiv&logoColor=white" height="16"></a> <a href="https://github.com/sail-sg/Adan"><img alt="GitHub" src="https://img.shields.io/badge/-181717?style=flat-square&logo=github&logoColor=white" height="16"></a> | Adaptive Nesterov momentum optimizer for faster and more stable deep-model training. |
 | 2022-06 | GradaGrad <a href="https://arxiv.org/abs/2206.06900"><img alt="Paper Link" src="https://img.shields.io/badge/-Paper%20Link-b31b1b?style=flat-square&logo=arxiv&logoColor=white" height="16"></a> | Non-monotone adaptive stochastic gradient method aimed at improving practical convergence over monotone variants. |
-
-## Notes
-
-- The paper icon links to the paper; the GitHub icon links to public code when available.
-- `Muon` and `D-Muon` are listed separately.
