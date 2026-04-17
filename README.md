@@ -3,21 +3,18 @@
 
   <p>
     <a href="https://awesome.re"><img src="https://awesome.re/badge-flat2.svg" alt="Awesome"></a>
-    <a href="https://github.com/JiwenJ/Awesome-Optimzers/stargazers"><img src="https://img.shields.io/github/stars/JiwenJ/Awesome-Optimzers?style=flat-square&logo=github" alt="GitHub stars"></a>
+    <a href="https://github.com/JiwenJ/Awesome-Optimizers/stargazers"><img src="https://img.shields.io/github/stars/JiwenJ/Awesome-Optimizers?style=flat-square&logo=github" alt="GitHub stars"></a>
     <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="License: MIT"></a>
     <a href="./data/optimizers.csv"><img src="https://img.shields.io/badge/Papers-47-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white" alt="Papers"></a>
     <a href="./data/optimizers.csv"><img src="https://img.shields.io/badge/Code%20Links-35-2ea44f.svg?style=flat-square&logo=github" alt="Code Links"></a>
     <a href="./data/optimizers.csv"><img src="https://img.shields.io/badge/Years-2022--2026-6f42c1.svg?style=flat-square&logo=bookstack&logoColor=white" alt="Coverage"></a>
-    <a href="https://github.com/JiwenJ/Awesome-Optimzers/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"></a>
+    <a href="https://github.com/JiwenJ/Awesome-Optimizers/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"></a>
   </p>
 </div>
 
-Curated optimizer papers from `2022+`, ordered by date in reverse chronological order.
+Curated optimizer-design papers from `2022+`, ordered by date in reverse chronological order.
 
-- README list: [data/optimizers.csv](./data/optimizers.csv)
-- Full catalog: [data/all_entries.csv](./data/all_entries.csv)
-- Imported reference subset: [data/reference_catalog.csv](./data/reference_catalog.csv)
-- Full catalog includes broader optimizer variants and related papers.
+- CSV: [data/optimizers.csv](./data/optimizers.csv)
 
 | Date | Optimizer Name | Advantage |
 | --- | --- | --- |
