@@ -1,4 +1,5 @@
 date,year,optimizer,paper_url,code_url,summary
+2026-01,2026,Spectral Sphere Optimizer (SSO),https://arxiv.org/abs/2601.08393,https://github.com/Unakar/Spectral-Sphere-Optimizer,"Constrains both weights and updates on a spectral sphere to improve LLM training stability and outperform AdamW and Muon in reported experiments."
 2025-04,2025,Dion,https://arxiv.org/abs/2504.05295,https://github.com/microsoft/dion,"Distributed orthonormalized updates that reduce large-scale training overhead while preserving Muon-style gains."
 2025-02,2025,Muon,https://arxiv.org/abs/2502.16982,https://github.com/MoonshotAI/Moonlight,"Scales orthogonalized updates to LLM training and improves compute efficiency over strong AdamW baselines."
 2024-11,2024,Cautious Optimizers,https://arxiv.org/abs/2411.16085,https://github.com/kyleliang919/C-Optim,"Adds a one-line cautious mask to momentum optimizers such as AdamW and Lion."
