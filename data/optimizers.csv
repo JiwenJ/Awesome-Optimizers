@@ -2,17 +2,29 @@ date,year,optimizer,paper_url,code_url,summary
 2604,2026,Newton-Muon,https://arxiv.org/abs/2604.01472,,Adds input-side Newton preconditioning to Muon and reduces training steps and wall-clock time in reported GPT-2 pretraining runs.
 2604,2026,CLion,https://arxiv.org/abs/2604.14587,,Applies cautious updates to Lion to improve generalization while preserving lightweight optimizer state and efficiency.
 2604,2026,Adam-HNAG,https://arxiv.org/abs/2604.08742,,Reformulates Adam with a curvature-aware correction and provides accelerated convergence guarantees in the reported setting.
+2603,2026,MuonRec,https://arxiv.org/abs/2603.00416,https://anonymous.4open.science/r/MuonRec-E447,Adapts Muon-style orthogonalized updates to recommender models and reduces training steps while improving final ranking quality over AdamW baselines.
 2602,2026,TSR-Adam,https://arxiv.org/abs/2602.08007,,Uses two-sided low-rank synchronization to reduce Adam-family communication cost in distributed training.
 2602,2026,NAMO,https://arxiv.org/abs/2602.17080,,Combines Muon-style orthogonalized momentum with Adam-type noise adaptation to improve stability at negligible extra cost.
+2602,2026,FlashOptim,https://arxiv.org/abs/2602.23349,https://github.com/databricks/flashoptim,Reduces optimizer-state memory by more than 50% with quantized states and master-weight splitting while preserving model quality.
 2601,2026,Spectral Sphere Optimizer (SSO),https://arxiv.org/abs/2601.08393,https://github.com/Unakar/Spectral-Sphere-Optimizer,Constrains both weights and updates on a spectral sphere to improve LLM training stability and outperform AdamW and Muon in reported experiments.
 2510,2025,NorMuon,https://arxiv.org/abs/2510.05491,https://github.com/zichongli5/NorMuon,Combines Muon with neuron-wise normalization and second-order statistics to improve scalability and efficiency.
 2510,2025,Hill-ADAM,https://arxiv.org/abs/2510.03613,,Alternates minimization and maximization phases to help Adam escape local minima in non-convex loss landscapes.
 2510,2025,DP-Adam-AC,https://arxiv.org/abs/2510.05288,,Adds adaptive clipping to Adam-based private fine-tuning to improve the privacy-utility trade-off for localizable language models.
+2510,2025,PROFIT,https://arxiv.org/abs/2412.01930,,A specialized optimizer for deep fine-tuning that uses temporal gradient orthogonalization to improve post-convergence adaptation.
 2509,2025,Conda,https://arxiv.org/abs/2509.24218,,Blends Adam-style adaptivity with column-normalized updates to improve optimization efficiency in LLM training.
+2509,2025,ZO Fine-Tuner,https://openreview.net/forum?id=2Dn4yHYLQJ,,Learns a zeroth-order optimizer for LLM fine-tuning and outperforms prior zeroth-order baselines across most tested model-task pairs.
+2509,2025,AdaGrad++,https://openreview.net/forum?id=dHxM51W120,,A simple parameter-free AdaGrad variant with convergence guarantees that removes manual learning-rate tuning.
+2509,2025,Adam++,https://openreview.net/forum?id=dHxM51W120,,A simple parameter-free Adam variant with convergence guarantees that removes manual learning-rate tuning.
+2507,2025,AdaMuon,https://arxiv.org/abs/2507.11005,,Adds elementwise second-moment scaling and RMS-aligned rescaling to Muon to improve large-scale training efficiency.
+2506,2025,SCALE,https://arxiv.org/abs/2506.16659,https://github.com/OptimAI-Lab/Minimalist_LLM_Pretraining,A minimalist optimizer using column normalization and last-layer momentum that matches Adam with much lower memory in LLM pretraining.
 2506,2025,SPlus,https://arxiv.org/abs/2506.07254,https://github.com/kvfrans/splus,Uses stable whitening-style preconditioning to cut gradient steps and wall-clock time in reported neural network training runs.
+2505,2025,Subset-Norm + Subspace-Momentum,https://arxiv.org/abs/2411.07120,https://github.com/timmytonga/sn-sm,Combines subset-norm adaptivity with subspace momentum to sharply reduce optimizer-state memory while retaining strong LLM training performance.
 2505,2025,PolarGrad,https://arxiv.org/abs/2505.21799,,Unifies matrix-gradient preconditioning and introduces polar-decomposition updates that outperform Adam and Muon in reported studies.
 2505,2025,Gluon,https://arxiv.org/abs/2505.13416,,Generalizes Muon and Scion within an LMO framework and improves layer-wise large-model optimization in the reported setting.
 2504,2025,Dion,https://arxiv.org/abs/2504.05295,https://github.com/microsoft/dion,Distributed orthonormalized updates that reduce large-scale training overhead while preserving Muon-style gains.
+2503,2025,LDAdam,https://arxiv.org/abs/2410.16103,https://github.com/IST-DASLab/LDAdam,Performs Adam-style adaptive updates in low-dimensional subspaces to reduce memory footprint while exploring the full parameter space.
+2502,2025,COSMOS,https://arxiv.org/abs/2502.17410,https://github.com/lliu606/COSMOS,A hybrid optimizer that applies SOAP to leading eigensubspaces and Muon to the remainder for memory-efficient LLM training.
+2502,2025,COAT,https://arxiv.org/abs/2410.19313,https://github.com/NVlabs/COAT,Compresses optimizer states and activations for memory-efficient FP8 training with near-lossless performance on large models.
 2502,2025,Scion,https://arxiv.org/abs/2502.07529,https://github.com/LIONS-EPFL/scion,"Uses norm-constrained LMO updates that improve stability, memory efficiency, and hyperparameter transfer."
 2502,2025,D-Muon,https://arxiv.org/abs/2502.16982,https://github.com/MoonshotAI/Moonlight,Scales Muon-style orthogonalized updates to distributed LLM training and improves compute efficiency over strong AdamW baselines.
 2412,2024,Muon,https://kellerjordan.github.io/posts/muon/,https://github.com/KellerJordan/Muon,Uses orthogonalized matrix updates for hidden-layer weights and is typically paired with AdamW for non-matrix parameters.
