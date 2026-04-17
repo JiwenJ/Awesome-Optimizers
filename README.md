@@ -1,12 +1,16 @@
-# Awesome Optimizers List
+<div align="center">
+  <h1>Awesome Optimizers List</h1>
 
-[![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
-[![GitHub stars](https://img.shields.io/github/stars/JiwenJ/Awesome-Optimzers?style=flat-square&logo=github)](https://github.com/JiwenJ/Awesome-Optimzers/stargazers)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](./LICENSE)
-[![Papers](https://img.shields.io/badge/Papers-226-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](./data/all_entries.csv)
-[![Code Links](https://img.shields.io/badge/Code%20Links-36-2ea44f.svg?style=flat-square&logo=github)](./data/all_entries.csv)
-[![Coverage](https://img.shields.io/badge/Years-2022--2026-6f42c1.svg?style=flat-square&logo=bookstack&logoColor=white)](./data/optimizers.csv)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/JiwenJ/Awesome-Optimzers/pulls)
+  <p>
+    <a href="https://awesome.re"><img src="https://awesome.re/badge-flat2.svg" alt="Awesome"></a>
+    <a href="https://github.com/JiwenJ/Awesome-Optimzers/stargazers"><img src="https://img.shields.io/github/stars/JiwenJ/Awesome-Optimzers?style=flat-square&logo=github" alt="GitHub stars"></a>
+    <a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square" alt="License: MIT"></a>
+    <a href="./data/all_entries.csv"><img src="https://img.shields.io/badge/Papers-226-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white" alt="Papers"></a>
+    <a href="./data/all_entries.csv"><img src="https://img.shields.io/badge/Code%20Links-36-2ea44f.svg?style=flat-square&logo=github" alt="Code Links"></a>
+    <a href="./data/optimizers.csv"><img src="https://img.shields.io/badge/Years-2022--2026-6f42c1.svg?style=flat-square&logo=bookstack&logoColor=white" alt="Coverage"></a>
+    <a href="https://github.com/JiwenJ/Awesome-Optimzers/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"></a>
+  </p>
+</div>
 
 Optimizers and optimizer variants from `2022+`, ordered by date in reverse chronological order.
 
