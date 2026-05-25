@@ -1,15 +1,23 @@
 date,year,optimizer,paper_url,code_url,summary
+2605,2026,MUON+,https://arxiv.org/abs/2602.21545,https://github.com/K1seki221/MuonPlus,Adds one post-polar normalization step to Muon and acts as a small Muon vNext-style improvement in reported LLM pretraining runs.
+2605,2026,Pion,,,Uses non-additive left and right orthogonal transforms to preserve singular values while modifying Muon-style matrix updates.
+2605,2026,MuonQ,https://arxiv.org/abs/2605.11396,https://github.com/YupengSu/MuonQ,Quantizes Muon optimizer states to 4-bit precision using directional fidelity optimization to reduce memory while preserving training quality.
+2605,2026,Muown,https://arxiv.org/abs/2605.10797,,Controls row norms to reduce spectral-norm drift and weight-decay sensitivity in Muon optimization.
+2605,2026,SODA,https://arxiv.org/abs/2605.11172,,Wraps base optimizers including Muon with optimistic dual averaging and a theoretically grounded decay schedule to reduce weight-decay tuning.
+2605,2026,OrScale-LM,https://arxiv.org/abs/2605.07815,,Adds layer-wise trust-ratio scaling to Muon for language-model training using the norm of the actual parameter-space update direction.
 2605,2026,Aurora,https://blog.tilderesearch.com/blog/aurora,https://github.com/tilde-research/aurora-release,Adds diagonal equilibration to Muon-style polar updates to enforce more uniform row leverage for rectangular matrices while reducing to standard Muon on square matrices.
 2605,2026,Nora,https://arxiv.org/abs/2605.03769,,Projects row-wise momentum onto the orthogonal complement of weights to stabilize norms and angular velocities with O(mn) matrix-optimizer complexity.
 2604,2026,Newton-Muon,https://arxiv.org/abs/2604.01472,,Adds input-side Newton preconditioning to Muon and reduces training steps and wall-clock time in reported GPT-2 pretraining runs.
 2604,2026,CLion,https://arxiv.org/abs/2604.14587,,Applies cautious updates to Lion to improve generalization while preserving lightweight optimizer state and efficiency.
 2604,2026,Adam-HNAG,https://arxiv.org/abs/2604.08742,,Reformulates Adam with a curvature-aware correction and provides accelerated convergence guarantees in the reported setting.
+2603,2026,NuMuon,https://arxiv.org/abs/2603.03597,,Adds a nuclear-norm constraint to Muon updates to improve weight compressibility while retaining favorable convergence behavior.
 2603,2026,RMNP,https://arxiv.org/abs/2603.20527,https://anonymous.4open.science/r/RMNP-E8E1/,Replaces Muon Newton-Schulz iteration with row-wise momentum normalization for O(mn) matrix preconditioning and lower preconditioning wall-clock overhead.
 2603,2026,MOGA,https://arxiv.org/abs/2603.09952,,Uses mean-normalized matrix operator norms to derive width-aware row/column-normalized updates and improve cross-width hyperparameter transfer.
 2603,2026,MuonRec,https://arxiv.org/abs/2603.00416,https://anonymous.4open.science/r/MuonRec-E447,Adapts Muon-style orthogonalized updates to recommender models and reduces training steps while improving final ranking quality over AdamW baselines.
 2602,2026,TSR-Adam,https://arxiv.org/abs/2602.08007,,Uses two-sided low-rank synchronization to reduce Adam-family communication cost in distributed training.
 2602,2026,NAMO,https://arxiv.org/abs/2602.17080,,Combines Muon-style orthogonalized momentum with Adam-type noise adaptation to improve stability at negligible extra cost.
 2602,2026,FlashOptim,https://arxiv.org/abs/2602.23349,https://github.com/databricks/flashoptim,Reduces optimizer-state memory by more than 50% with quantized states and master-weight splitting while preserving model quality.
+2601,2026,Variance-Adaptive Muon,https://arxiv.org/abs/2601.14603,,Applies NSR-modulated and variance-scaled momentum before Muon orthogonalization to accelerate LLM pretraining.
 2601,2026,Mano,https://arxiv.org/abs/2601.23000,,Projects momentum onto the tangent space and constrains updates on a rotational Oblique manifold to reduce memory and compute in reported LLM training.
 2601,2026,Spectral Sphere Optimizer (SSO),https://arxiv.org/abs/2601.08393,https://github.com/Unakar/Spectral-Sphere-Optimizer,Constrains both weights and updates on a spectral sphere to improve LLM training stability and outperform AdamW and Muon in reported experiments.
 2510,2025,NorMuon,https://arxiv.org/abs/2510.05491,https://github.com/zichongli5/NorMuon,Combines Muon with neuron-wise normalization and second-order statistics to improve scalability and efficiency.
