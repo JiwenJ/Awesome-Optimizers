@@ -1,0 +1,5 @@
+date,year,paper,paper_url,relation,summary
+2606,2026,Exploiting Weight-Space Symmetries for Approximating Curvature,https://arxiv.org/abs/2606.00442,weak,Uses weight-space symmetry choices to approximate curvature and recover Shampoo/Muon-like estimates in a broader optimizer geometry framework.
+2605,2026,On the Optimizer Dependence of Neural Scaling Laws,https://arxiv.org/abs/2605.29387,weak,Studies how scaling-law behavior changes across optimizers and uses Matrix-Sign as a Muon-style proxy rather than proposing a Muon variant.
+2605,2026,Parallax,https://arxiv.org/abs/2605.29157,weak,Uses Muon to unlock parameterized local linear attention capacity but the main contribution is an attention architecture rather than an optimizer.
+2605,2026,How the Optimizer Shapes Learned Solutions in Equivariant Neural Networks,https://arxiv.org/abs/2605.27662,weak,Compares Muon and Adam in equivariant neural networks and analyzes learned solution structure rather than introducing a Muon optimizer.

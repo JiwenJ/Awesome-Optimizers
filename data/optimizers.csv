@@ -1,10 +1,15 @@
 date,year,optimizer,paper_url,code_url,summary
+2606,2026,"Denoise First, Orthogonalize Later",https://arxiv.org/abs/2606.03899,,Explains Muon momentum as pre-orthogonalization spectral denoising and argues gradients should be filtered before Newton-Schulz or polar updates.
+2606,2026,A Note on Stability for Orthogonalized Matrix Momentum,https://arxiv.org/abs/2606.01720,,Studies stability of Muon-style orthogonalized matrix momentum under client sampling and finite-step Newton-Schulz updates.
+2606,2026,How Much Orthogonalization Does Muon Need?,https://arxiv.org/abs/2606.00371,,Shows low-precision or partial orthogonalization can preserve Muon-style training behavior while reducing Newton-Schulz matrix-multiply cost.
+2605,2026,Softsign / SoftMuon,https://arxiv.org/abs/2605.31371,,Smooths sign-style optimizer directions and extends the idea to SoftMuon for matrix updates under heterogeneous parameter scales.
 2605,2026,Entry-Wise Clipping for Muon,https://arxiv.org/abs/2605.27733,,Applies entry-wise clipping before spectral normalization to control heavy-tailed gradient noise and further improve Muon training efficiency.
 2605,2026,Spectral Descent (SD/TSD),https://arxiv.org/abs/2605.26977,,Studies Muon-type spectral descent and truncated variants for non-smooth optimization with convergence and recovery guarantees.
 2605,2026,Muon Adversarial Training,https://arxiv.org/abs/2605.26929,,Analyzes Muon's spectral-norm stability ceiling and empirical behavior under adversarial training across architectures and threat models.
 2605,2026,MONA,https://arxiv.org/abs/2605.26842,,Adds an EMA of gradient differences into Muon's gradient pipeline for curvature-aware acceleration in scalable LLM training.
 2605,2026,MuCon,https://arxiv.org/abs/2605.26459,,Clips singular values of Muon-style update matrices as a spectral-norm-ball projection alternative to the polar direction.
 2605,2026,EMA-Nesterov,https://arxiv.org/abs/2605.25395,,Stabilizes Nesterov-style lookahead using EMA-smoothed trajectory signals and can wrap deep-learning optimizers.
+2605,2026,Muon in Vision Transformers,https://arxiv.org/abs/2605.24770,,Evaluates Muon for Vision Transformer training and analyzes how spectral orthogonalized updates interact with ViT optimization recipes.
 2605,2026,Regularized Muon Flow,https://arxiv.org/abs/2605.23871,,Interprets regularized Muon as a mirror/prox update and derives Hamiltonian probability-gradient-flow dynamics for Muon-type training.
 2605,2026,AMUSE,https://arxiv.org/abs/2605.22432,,Combines schedule-free style iterate averaging with Muon to improve stable gradient evaluation and anytime training behavior.
 2605,2026,LionMuon,https://arxiv.org/abs/2605.19811,,Alternates cheaper sign-based Lion steps with stronger Muon spectral steps to reduce average iteration cost.

@@ -3,7 +3,7 @@
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
 ![GitHub stars](https://img.shields.io/github/stars/JiwenJ/Awesome-Optimizers?style=flat-square&logo=github)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](./LICENSE)
-[![Papers](https://img.shields.io/badge/Papers-106-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](./data/optimizers.csv)
+[![Papers](https://img.shields.io/badge/Papers-111-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](./data/optimizers.csv)
 [![Code Links](https://img.shields.io/badge/Code%20Links-47-2ea44f.svg?style=flat-square&logo=github)](./data/optimizers.csv)
 [![Coverage](https://img.shields.io/badge/Years-2022--2026-6f42c1.svg?style=flat-square&logo=bookstack&logoColor=white)](./data/optimizers.csv)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/JiwenJ/Awesome-Optimizers/pulls)
@@ -11,15 +11,21 @@
 Curated optimizer-design papers from `2022+`, ordered by date in reverse chronological order.
 
 - CSV: [data/optimizers.csv](./data/optimizers.csv)
+- Weakly related Muon papers: [data/muon_weakly_related.csv](./data/muon_weakly_related.csv)
 
 | Date | Optimizer Name | Advantage |
 | --- | --- | --- |
+| 2606 | [Denoise First, Orthogonalize Later](https://arxiv.org/abs/2606.03899) | Explains Muon momentum as pre-orthogonalization spectral denoising and argues gradients should be filtered before Newton-Schulz or polar updates. |
+| 2606 | [A Note on Stability for Orthogonalized Matrix Momentum](https://arxiv.org/abs/2606.01720) | Studies stability of Muon-style orthogonalized matrix momentum under client sampling and finite-step Newton-Schulz updates. |
+| 2606 | [How Much Orthogonalization Does Muon Need?](https://arxiv.org/abs/2606.00371) | Shows low-precision or partial orthogonalization can preserve Muon-style training behavior while reducing Newton-Schulz matrix-multiply cost. |
+| 2605 | [Softsign / SoftMuon](https://arxiv.org/abs/2605.31371) | Smooths sign-style optimizer directions and extends the idea to SoftMuon for matrix updates under heterogeneous parameter scales. |
 | 2605 | [Entry-Wise Clipping for Muon](https://arxiv.org/abs/2605.27733) | Applies entry-wise clipping before spectral normalization to control heavy-tailed gradient noise and further improve Muon training efficiency. |
 | 2605 | [Spectral Descent (SD/TSD)](https://arxiv.org/abs/2605.26977) | Studies Muon-type spectral descent and truncated variants for non-smooth optimization with convergence and recovery guarantees. |
 | 2605 | [Muon Adversarial Training](https://arxiv.org/abs/2605.26929) | Analyzes Muon's spectral-norm stability ceiling and empirical behavior under adversarial training across architectures and threat models. |
 | 2605 | [MONA](https://arxiv.org/abs/2605.26842) | Adds an EMA of gradient differences into Muon's gradient pipeline for curvature-aware acceleration in scalable LLM training. |
 | 2605 | [MuCon](https://arxiv.org/abs/2605.26459) | Clips singular values of Muon-style update matrices as a spectral-norm-ball projection alternative to the polar direction. |
 | 2605 | [EMA-Nesterov](https://arxiv.org/abs/2605.25395) | Stabilizes Nesterov-style lookahead using EMA-smoothed trajectory signals and can wrap deep-learning optimizers. |
+| 2605 | [Muon in Vision Transformers](https://arxiv.org/abs/2605.24770) | Evaluates Muon for Vision Transformer training and analyzes how spectral orthogonalized updates interact with ViT optimization recipes. |
 | 2605 | [Regularized Muon Flow](https://arxiv.org/abs/2605.23871) | Interprets regularized Muon as a mirror/prox update and derives Hamiltonian probability-gradient-flow dynamics for Muon-type training. |
 | 2605 | [AMUSE](https://arxiv.org/abs/2605.22432) | Combines schedule-free style iterate averaging with Muon to improve stable gradient evaluation and anytime training behavior. |
 | 2605 | [LionMuon](https://arxiv.org/abs/2605.19811) | Alternates cheaper sign-based Lion steps with stronger Muon spectral steps to reduce average iteration cost. |
@@ -120,3 +126,16 @@ Curated optimizer-design papers from `2022+`, ordered by date in reverse chronol
 | 2210 | [AdaNorm](https://arxiv.org/abs/2210.06364) [Code](https://github.com/shivram1987/AdaNorm) | Corrects gradient-norm scaling to stabilize adaptive optimization for CNNs. |
 | 2208 | [Adan](https://arxiv.org/abs/2208.06677) [Code](https://github.com/sail-sg/Adan) | Adaptive Nesterov momentum optimizer for faster and more stable deep-model training. |
 | 2206 | [GradaGrad](https://arxiv.org/abs/2206.06900) | Non-monotone adaptive stochastic gradient method aimed at improving practical convergence over monotone variants. |
+
+## Weakly Related / Adjacent Muon Papers
+
+These papers mention, compare, or rely on Muon-style optimization, but their main contribution is broader than a standalone Muon-family optimizer.
+
+- CSV: [data/muon_weakly_related.csv](./data/muon_weakly_related.csv)
+
+| Date | Paper | Relation |
+| --- | --- | --- |
+| 2606 | [Exploiting Weight-Space Symmetries for Approximating Curvature](https://arxiv.org/abs/2606.00442) | Uses weight-space symmetry choices to approximate curvature and recover Shampoo/Muon-like estimates in a broader optimizer geometry framework. |
+| 2605 | [On the Optimizer Dependence of Neural Scaling Laws](https://arxiv.org/abs/2605.29387) | Studies how scaling-law behavior changes across optimizers and uses Matrix-Sign as a Muon-style proxy rather than proposing a Muon variant. |
+| 2605 | [Parallax](https://arxiv.org/abs/2605.29157) | Uses Muon to unlock parameterized local linear attention capacity, but the main contribution is an attention architecture rather than an optimizer. |
+| 2605 | [How the Optimizer Shapes Learned Solutions in Equivariant Neural Networks](https://arxiv.org/abs/2605.27662) | Compares Muon and Adam in equivariant neural networks and analyzes learned solution structure rather than introducing a Muon optimizer. |
