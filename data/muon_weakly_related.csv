@@ -9,3 +9,11 @@ date,year,paper,paper_url,relation,summary
 2605,2026,Navigating LLM Valley,https://arxiv.org/abs/2605.09176,weak,Surveys LLM optimizers including Muon and matrix-based methods rather than proposing a new optimizer.
 2605,2026,Optimizer-Model Consistency,https://arxiv.org/abs/2605.06654,weak,Analyzes matching pretraining and finetuning optimizers and compares Muon/AdamW forgetting behavior rather than introducing a method.
 2604,2026,Benchmarking Optimizers for MLPs in Tabular Deep Learning,https://arxiv.org/abs/2604.15297,weak,"Benchmarks Muon against other optimizers for tabular MLPs, with empirical comparison rather than optimizer design as the main contribution."
+2604,2026,Normalization-Optimizer Coupling,https://arxiv.org/abs/2604.01563,weak,Studies how normalization choices interact with Muon in LLM training rather than introducing a new optimizer.
+2603,2026,Spectral Edge Dynamics,https://arxiv.org/abs/2603.28964,weak,Uses spectra of update windows to analyze neural training phase transitions rather than proposing an optimizer.
+2602,2026,veScale-FSDP,https://arxiv.org/abs/2602.22437,weak,Supports block-structured and matrix-optimizer training systems including Muon but focuses on FSDP infrastructure.
+2602,2026,Robust Scaling Laws for Optimizers,https://arxiv.org/abs/2602.07712,weak,Compares scaling laws across optimizers including Muon and Shampoo without introducing a new optimizer.
+2602,2026,Data Distribution as an Optimizer Lever,https://arxiv.org/abs/2602.00576,weak,Studies whether data distribution can steer optimizer generalization behavior rather than proposing a Muon method.
+2601,2026,Muon-Optimized Distillation and Quantization,https://arxiv.org/abs/2601.09865,weak,Uses Muon inside a model-refinement pipeline for LLM deployment rather than contributing an optimizer.
+2601,2026,Learnable Multipliers,https://arxiv.org/abs/2601.04890,weak,Validates learnable matrix-layer scale multipliers with Adam and Muon but focuses on parameter scaling.
+2512,2025,Optimizing Rank for INRs,https://arxiv.org/abs/2512.14366,weak,Uses Muon-like high-rank updates to improve implicit neural representations rather than designing an optimizer.
