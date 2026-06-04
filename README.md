@@ -1,7 +1,7 @@
 # Awesome Optimizers List
 
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
-![GitHub stars](https://img.shields.io/github/stars/JiwenJ/Awesome-Optimizers?style=flat-square&logo=github)
+[![GitHub](https://img.shields.io/badge/GitHub-JiwenJ%2FAwesome--Optimizers-181717.svg?style=flat-square&logo=github)](https://github.com/JiwenJ/Awesome-Optimizers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](./LICENSE)
 [![Papers](https://img.shields.io/badge/Papers-113-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](./data/optimizers.csv)
 [![Code Links](https://img.shields.io/badge/Code%20Links-47-2ea44f.svg?style=flat-square&logo=github)](./data/optimizers.csv)
