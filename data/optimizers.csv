@@ -14,6 +14,7 @@ date,year,optimizer,paper_url,code_url,summary
 2605,2026,Muon in Vision Transformers,https://arxiv.org/abs/2605.24770,,Evaluates Muon for Vision Transformer training and analyzes how spectral orthogonalized updates interact with ViT optimization recipes.
 2605,2026,Regularized Muon Flow,https://arxiv.org/abs/2605.23871,,Interprets regularized Muon as a mirror/prox update and derives Hamiltonian probability-gradient-flow dynamics for Muon-type training.
 2605,2026,AMUSE,https://arxiv.org/abs/2605.22432,,Combines schedule-free style iterate averaging with Muon to improve stable gradient evaluation and anytime training behavior.
+2605,2026,Layerwise Learning Rates (LLR),https://arxiv.org/abs/2605.22297,,Assigns transformer-layer learning rates from heavy-tailed spectral estimates and reports speedups across AdamW and Muon pretraining runs.
 2605,2026,LionMuon,https://arxiv.org/abs/2605.19811,,Alternates cheaper sign-based Lion steps with stronger Muon spectral steps to reduce average iteration cost.
 2605,2026,Schatten-p Adaptive Optimization,https://arxiv.org/abs/2605.19781,,Dynamically selects Schatten-p norm LMO geometries to adapt between SGD-like and Muon-like update rules.
 2605,2026,MiMuon,https://arxiv.org/abs/2605.19619,,Mixes Muon orthogonalized gradients with momentum SGD to improve generalization while retaining Muon-style convergence.
@@ -23,14 +24,19 @@ date,year,optimizer,paper_url,code_url,summary
 2605,2026,Symmetry-Compatible Optimizers,https://arxiv.org/abs/2605.18106,,"Assigns spectral row-norm and hybrid updates to parameter blocks according to their symmetry groups, extending Muon-style equivariance."
 2605,2026,AMO,https://arxiv.org/abs/2605.17806,,Adapts Muon orthogonalization schedules per matrix based on geometry-dependent Newton-Schulz difficulty.
 2605,2026,DynMuon,https://arxiv.org/abs/2605.17109,,Generalizes Muon with dynamic spectral shaping U Sigma^p V^T and tunes the spectrum exponent during training.
+2605,2026,Orth-Dion,https://arxiv.org/abs/2605.16341,,Removes Dion's low-rank Muon geometric mismatch by orthogonalizing the compressed factor in distributed spectral optimization.
 2605,2026,Muon Spectral Flattening,https://arxiv.org/abs/2605.13079,,Analyzes Muon's spectral flattening mechanism and links it to larger stable learning rates and faster convergence.
 2605,2026,DP-Muon,https://arxiv.org/abs/2605.12994,,"Combines per-example clipping, Gaussian noise, momentum, and Newton-Schulz orthogonalization for differentially private Muon training."
 2605,2026,Spectral Preconditioning,https://arxiv.org/abs/2605.11850,,Develops constrained stochastic spectral preconditioning as a proximal extension of Muon and Scion under heavy-tailed noise.
+2605,2026,Error Whitening,https://arxiv.org/abs/2605.11316,,"Explains Gauss-Newton's advantage as function-space error whitening and compares the induced dynamics against Newton, Adam, and Muon."
 2605,2026,Freon/Kaon,https://arxiv.org/abs/2605.11181,,Tests Muon-like Schatten and randomized spectra to argue that alignment and descent potential matter more than exact geometry.
 2605,2026,Muon Fine-tuning Transfer,https://arxiv.org/abs/2605.10468,,Studies optimizer mismatch when switching Adam-pretrained models to Muon and proposes procedures for Muon fine-tuning.
+2605,2026,Optimizer-Induced Mode Connectivity,https://arxiv.org/abs/2605.09991,,"Analyzes connected solution regions constrained by AdamW, Muon, and Lion-K optimizers to expose optimizer-dependent implicit regularization."
 2605,2026,Muon Phase Analysis,https://arxiv.org/abs/2605.09552,,Analyzes phases where stochastic spectral optimizers such as Muon outperform SignSGD on high-dimensional matrix problems.
 2605,2026,Dimension-Free Muon Escape,https://arxiv.org/abs/2605.09331,,Analyzes Muon saddle-point escape and argues that spectral shaping can avoid dimension-dependent trapping effects.
 2605,2026,Intrinsic Muon,https://arxiv.org/abs/2605.09238,,Extends Muon-style spectral LMO updates to Riemannian matrix manifolds and constrained parameter geometries.
+2605,2026,ZO Partial Orthogonalization,https://arxiv.org/abs/2605.09034,,Adds Muon-like partial orthogonalization from power iteration to accelerate zeroth-order spectral optimization for LLM fine-tuning.
+2605,2026,Muon Non-Convergence,https://arxiv.org/abs/2605.08980,,"Shows Muon can fail to converge on convex Lipschitz functions, clarifying limits of smoothness-based Muon theory."
 2605,2026,Muon-OGD,https://arxiv.org/abs/2605.08949,,Uses Muon-style spectral geometry for orthogonal-gradient projection in continual learning for LLMs.
 2605,2026,Group Muon,https://arxiv.org/abs/2605.08933,,Applies Muon group-wise across attention heads and studies the trade-off between whitening gains and grouping-induced norm cost.
 2605,2026,PolarAdamW,https://arxiv.org/abs/2605.07067,,Applies Muon's polar spectral control to AdamW-preconditioned directions to separate spectral control from Schur gauge equivariance.
@@ -47,9 +53,16 @@ date,year,optimizer,paper_url,code_url,summary
 2605,2026,OrScale-LM,https://arxiv.org/abs/2605.07815,,Adds layer-wise trust-ratio scaling to Muon for language-model training using the norm of the actual parameter-space update direction.
 2605,2026,Aurora,https://blog.tilderesearch.com/blog/aurora,https://github.com/tilde-research/aurora-release,Adds diagonal equilibration to Muon-style polar updates to enforce more uniform row leverage for rectangular matrices while reducing to standard Muon on square matrices.
 2605,2026,Nora,https://arxiv.org/abs/2605.03769,,Projects row-wise momentum onto the orthogonal complement of weights to stabilize norms and angular velocities with O(mn) matrix-optimizer complexity.
-2604,2026,Newton-Muon,https://arxiv.org/abs/2604.01472,,Adds input-side Newton preconditioning to Muon and reduces training steps and wall-clock time in reported GPT-2 pretraining runs.
+2604,2026,SUDA-Muon,https://arxiv.org/abs/2604.23980,,Separates gossip-compatible communication from Muon's nonlinear matrix-sign step for fully decentralized Muon optimization.
 2604,2026,CLion,https://arxiv.org/abs/2604.14587,,Applies cautious updates to Lion to improve generalization while preserving lightweight optimizer state and efficiency.
+2604,2026,Federated Gluon,https://arxiv.org/abs/2604.10689,,Extends Muon-style LMO optimization to federated learning with communication-efficient Gluon updates.
+2604,2026,Muon^2,https://arxiv.org/abs/2604.09967,,Adds Adam-style second-moment preconditioning before Muon orthogonalization to reduce Newton-Schulz iteration cost.
+2604,2026,APT for MTL,https://arxiv.org/abs/2604.08939,,Balances advanced optimizer momentum with multi-task gradients and preserves Muon orthogonalization directions for MTL.
 2604,2026,Adam-HNAG,https://arxiv.org/abs/2604.08742,,Reformulates Adam with a curvature-aware correction and provides accelerated convergence guarantees in the reported setting.
+2604,2026,Muon Spectral Wasserstein Flow,https://arxiv.org/abs/2604.04891,,Models vanishing-momentum Muon as a spectral Wasserstein flow to study normalized matrix-update dynamics.
+2604,2026,Muon-Accelerated Tensor GLM,https://arxiv.org/abs/2604.04726,,Applies Muon-style acceleration to low-separation-rank tensor generalized linear models.
+2604,2026,SIFT/Subspace Control,https://arxiv.org/abs/2604.04231,,Turns constrained model steering into spectral interference-free training via subspace orthogonalization connected to Muon.
+2604,2026,Newton-Muon,https://arxiv.org/abs/2604.01472,,Adds input-side Newton preconditioning to Muon and reduces training steps and wall-clock time in reported GPT-2 pretraining runs.
 2603,2026,NuMuon,https://arxiv.org/abs/2603.03597,,Adds a nuclear-norm constraint to Muon updates to improve weight compressibility while retaining favorable convergence behavior.
 2603,2026,RMNP,https://arxiv.org/abs/2603.20527,https://anonymous.4open.science/r/RMNP-E8E1/,Replaces Muon Newton-Schulz iteration with row-wise momentum normalization for O(mn) matrix preconditioning and lower preconditioning wall-clock overhead.
 2603,2026,MOGA,https://arxiv.org/abs/2603.09952,,Uses mean-normalized matrix operator norms to derive width-aware row/column-normalized updates and improve cross-width hyperparameter transfer.

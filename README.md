@@ -3,7 +3,7 @@
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
 [![GitHub](https://img.shields.io/badge/GitHub-JiwenJ%2FAwesome--Optimizers-181717.svg?style=flat-square&logo=github)](https://github.com/JiwenJ/Awesome-Optimizers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](./LICENSE)
-[![Papers](https://img.shields.io/badge/Papers-113-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](./data/optimizers.csv)
+[![Papers](https://img.shields.io/badge/Papers-126-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](./data/optimizers.csv)
 [![Code Links](https://img.shields.io/badge/Code%20Links-47-2ea44f.svg?style=flat-square&logo=github)](./data/optimizers.csv)
 [![Coverage](https://img.shields.io/badge/Years-2022--2026-6f42c1.svg?style=flat-square&logo=bookstack&logoColor=white)](./data/optimizers.csv)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/JiwenJ/Awesome-Optimizers/pulls)
@@ -30,6 +30,7 @@ Curated optimizer-design papers from `2022+`, ordered by date in reverse chronol
 | 2605 | [Muon in Vision Transformers](https://arxiv.org/abs/2605.24770) | Evaluates Muon for Vision Transformer training and analyzes how spectral orthogonalized updates interact with ViT optimization recipes. |
 | 2605 | [Regularized Muon Flow](https://arxiv.org/abs/2605.23871) | Interprets regularized Muon as a mirror/prox update and derives Hamiltonian probability-gradient-flow dynamics for Muon-type training. |
 | 2605 | [AMUSE](https://arxiv.org/abs/2605.22432) | Combines schedule-free style iterate averaging with Muon to improve stable gradient evaluation and anytime training behavior. |
+| 2605 | [Layerwise Learning Rates (LLR)](https://arxiv.org/abs/2605.22297) | Assigns transformer-layer learning rates from heavy-tailed spectral estimates and reports speedups across AdamW and Muon pretraining runs. |
 | 2605 | [LionMuon](https://arxiv.org/abs/2605.19811) | Alternates cheaper sign-based Lion steps with stronger Muon spectral steps to reduce average iteration cost. |
 | 2605 | [Schatten-p Adaptive Optimization](https://arxiv.org/abs/2605.19781) | Dynamically selects Schatten-p norm LMO geometries to adapt between SGD-like and Muon-like update rules. |
 | 2605 | [MiMuon](https://arxiv.org/abs/2605.19619) | Mixes Muon orthogonalized gradients with momentum SGD to improve generalization while retaining Muon-style convergence. |
@@ -39,14 +40,19 @@ Curated optimizer-design papers from `2022+`, ordered by date in reverse chronol
 | 2605 | [Symmetry-Compatible Optimizers](https://arxiv.org/abs/2605.18106) | Assigns spectral row-norm and hybrid updates to parameter blocks according to their symmetry groups, extending Muon-style equivariance. |
 | 2605 | [AMO](https://arxiv.org/abs/2605.17806) | Adapts Muon orthogonalization schedules per matrix based on geometry-dependent Newton-Schulz difficulty. |
 | 2605 | [DynMuon](https://arxiv.org/abs/2605.17109) | Generalizes Muon with dynamic spectral shaping U Sigma^p V^T and tunes the spectrum exponent during training. |
+| 2605 | [Orth-Dion](https://arxiv.org/abs/2605.16341) | Removes Dion's low-rank Muon geometric mismatch by orthogonalizing the compressed factor in distributed spectral optimization. |
 | 2605 | [Muon Spectral Flattening](https://arxiv.org/abs/2605.13079) | Analyzes Muon's spectral flattening mechanism and links it to larger stable learning rates and faster convergence. |
 | 2605 | [DP-Muon](https://arxiv.org/abs/2605.12994) | Combines per-example clipping, Gaussian noise, momentum, and Newton-Schulz orthogonalization for differentially private Muon training. |
 | 2605 | [Spectral Preconditioning](https://arxiv.org/abs/2605.11850) | Develops constrained stochastic spectral preconditioning as a proximal extension of Muon and Scion under heavy-tailed noise. |
+| 2605 | [Error Whitening](https://arxiv.org/abs/2605.11316) | Explains Gauss-Newton's advantage as function-space error whitening and compares the induced dynamics against Newton, Adam, and Muon. |
 | 2605 | [Freon/Kaon](https://arxiv.org/abs/2605.11181) | Tests Muon-like Schatten and randomized spectra to argue that alignment and descent potential matter more than exact geometry. |
 | 2605 | [Muon Fine-tuning Transfer](https://arxiv.org/abs/2605.10468) | Studies optimizer mismatch when switching Adam-pretrained models to Muon and proposes procedures for Muon fine-tuning. |
+| 2605 | [Optimizer-Induced Mode Connectivity](https://arxiv.org/abs/2605.09991) | Analyzes connected solution regions constrained by AdamW, Muon, and Lion-K optimizers to expose optimizer-dependent implicit regularization. |
 | 2605 | [Muon Phase Analysis](https://arxiv.org/abs/2605.09552) | Analyzes phases where stochastic spectral optimizers such as Muon outperform SignSGD on high-dimensional matrix problems. |
 | 2605 | [Dimension-Free Muon Escape](https://arxiv.org/abs/2605.09331) | Analyzes Muon saddle-point escape and argues that spectral shaping can avoid dimension-dependent trapping effects. |
 | 2605 | [Intrinsic Muon](https://arxiv.org/abs/2605.09238) | Extends Muon-style spectral LMO updates to Riemannian matrix manifolds and constrained parameter geometries. |
+| 2605 | [ZO Partial Orthogonalization](https://arxiv.org/abs/2605.09034) | Adds Muon-like partial orthogonalization from power iteration to accelerate zeroth-order spectral optimization for LLM fine-tuning. |
+| 2605 | [Muon Non-Convergence](https://arxiv.org/abs/2605.08980) | Shows Muon can fail to converge on convex Lipschitz functions, clarifying limits of smoothness-based Muon theory. |
 | 2605 | [Muon-OGD](https://arxiv.org/abs/2605.08949) | Uses Muon-style spectral geometry for orthogonal-gradient projection in continual learning for LLMs. |
 | 2605 | [Group Muon](https://arxiv.org/abs/2605.08933) | Applies Muon group-wise across attention heads and studies the trade-off between whitening gains and grouping-induced norm cost. |
 | 2605 | [PolarAdamW](https://arxiv.org/abs/2605.07067) | Applies Muon's polar spectral control to AdamW-preconditioned directions to separate spectral control from Schur gauge equivariance. |
@@ -63,9 +69,16 @@ Curated optimizer-design papers from `2022+`, ordered by date in reverse chronol
 | 2605 | [OrScale-LM](https://arxiv.org/abs/2605.07815) | Adds layer-wise trust-ratio scaling to Muon for language-model training using the norm of the actual parameter-space update direction. |
 | 2605 | [Aurora](https://blog.tilderesearch.com/blog/aurora) [Code](https://github.com/tilde-research/aurora-release) | Adds diagonal equilibration to Muon-style polar updates to enforce more uniform row leverage for rectangular matrices while reducing to standard Muon on square matrices. |
 | 2605 | [Nora](https://arxiv.org/abs/2605.03769) | Projects row-wise momentum onto the orthogonal complement of weights to stabilize norms and angular velocities with O(mn) matrix-optimizer complexity. |
-| 2604 | [Newton-Muon](https://arxiv.org/abs/2604.01472) | Adds input-side Newton preconditioning to Muon and reduces training steps and wall-clock time in reported GPT-2 pretraining runs. |
+| 2604 | [SUDA-Muon](https://arxiv.org/abs/2604.23980) | Separates gossip-compatible communication from Muon's nonlinear matrix-sign step for fully decentralized Muon optimization. |
 | 2604 | [CLion](https://arxiv.org/abs/2604.14587) | Applies cautious updates to Lion to improve generalization while preserving lightweight optimizer state and efficiency. |
+| 2604 | [Federated Gluon](https://arxiv.org/abs/2604.10689) | Extends Muon-style LMO optimization to federated learning with communication-efficient Gluon updates. |
+| 2604 | [Muon^2](https://arxiv.org/abs/2604.09967) | Adds Adam-style second-moment preconditioning before Muon orthogonalization to reduce Newton-Schulz iteration cost. |
+| 2604 | [APT for MTL](https://arxiv.org/abs/2604.08939) | Balances advanced optimizer momentum with multi-task gradients and preserves Muon orthogonalization directions for MTL. |
 | 2604 | [Adam-HNAG](https://arxiv.org/abs/2604.08742) | Reformulates Adam with a curvature-aware correction and provides accelerated convergence guarantees in the reported setting. |
+| 2604 | [Muon Spectral Wasserstein Flow](https://arxiv.org/abs/2604.04891) | Models vanishing-momentum Muon as a spectral Wasserstein flow to study normalized matrix-update dynamics. |
+| 2604 | [Muon-Accelerated Tensor GLM](https://arxiv.org/abs/2604.04726) | Applies Muon-style acceleration to low-separation-rank tensor generalized linear models. |
+| 2604 | [SIFT/Subspace Control](https://arxiv.org/abs/2604.04231) | Turns constrained model steering into spectral interference-free training via subspace orthogonalization connected to Muon. |
+| 2604 | [Newton-Muon](https://arxiv.org/abs/2604.01472) | Adds input-side Newton preconditioning to Muon and reduces training steps and wall-clock time in reported GPT-2 pretraining runs. |
 | 2603 | [NuMuon](https://arxiv.org/abs/2603.03597) | Adds a nuclear-norm constraint to Muon updates to improve weight compressibility while retaining favorable convergence behavior. |
 | 2603 | [RMNP](https://arxiv.org/abs/2603.20527) [Code](https://anonymous.4open.science/r/RMNP-E8E1/) | Replaces Muon Newton-Schulz iteration with row-wise momentum normalization for O(mn) matrix preconditioning and lower preconditioning wall-clock overhead. |
 | 2603 | [MOGA](https://arxiv.org/abs/2603.09952) | Uses mean-normalized matrix operator norms to derive width-aware row/column-normalized updates and improve cross-width hyperparameter transfer. |
@@ -141,3 +154,9 @@ These papers mention, compare, or rely on Muon-style optimization, but their mai
 | 2605 | [On the Optimizer Dependence of Neural Scaling Laws](https://arxiv.org/abs/2605.29387) | Studies how scaling-law behavior changes across optimizers and uses Matrix-Sign as a Muon-style proxy rather than proposing a Muon variant. |
 | 2605 | [Parallax](https://arxiv.org/abs/2605.29157) | Uses Muon to unlock parameterized local linear attention capacity, but the main contribution is an attention architecture rather than an optimizer. |
 | 2605 | [How the Optimizer Shapes Learned Solutions in Equivariant Neural Networks](https://arxiv.org/abs/2605.27662) | Compares Muon and Adam in equivariant neural networks and analyzes learned solution structure rather than introducing a Muon optimizer. |
+| 2605 | [The Stability of Singular Distribution](https://arxiv.org/abs/2605.26489) | Uses Muon and WSD as examples of spectral mechanisms shaping two-phase LLM pretraining dynamics rather than proposing an optimizer. |
+| 2605 | [Momentum Streams for Optimizer-Inspired Transformers](https://arxiv.org/abs/2605.24425) | Uses Muon, SOAP, and Adam analogies to design Transformer blocks, with architecture rather than optimizer as the main contribution. |
+| 2605 | [Same Architecture, Different Capacity](https://arxiv.org/abs/2605.21803) | Compares Muon and AdamW representation spectral scaling laws, focusing on capacity diagnostics rather than a new optimizer. |
+| 2605 | [Navigating LLM Valley](https://arxiv.org/abs/2605.09176) | Surveys LLM optimizers including Muon and matrix-based methods rather than proposing a new optimizer. |
+| 2605 | [Optimizer-Model Consistency](https://arxiv.org/abs/2605.06654) | Analyzes matching pretraining and finetuning optimizers and compares Muon/AdamW forgetting behavior rather than introducing a method. |
+| 2604 | [Benchmarking Optimizers for MLPs in Tabular Deep Learning](https://arxiv.org/abs/2604.15297) | Benchmarks Muon against other optimizers for tabular MLPs, with empirical comparison rather than optimizer design as the main contribution. |
