@@ -3,7 +3,7 @@
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
 ![GitHub stars](https://img.shields.io/github/stars/JiwenJ/Awesome-Optimizers?style=flat-square&logo=github)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](./LICENSE)
-[![Papers](https://img.shields.io/badge/Papers-111-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](./data/optimizers.csv)
+[![Papers](https://img.shields.io/badge/Papers-113-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](./data/optimizers.csv)
 [![Code Links](https://img.shields.io/badge/Code%20Links-47-2ea44f.svg?style=flat-square&logo=github)](./data/optimizers.csv)
 [![Coverage](https://img.shields.io/badge/Years-2022--2026-6f42c1.svg?style=flat-square&logo=bookstack&logoColor=white)](./data/optimizers.csv)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/JiwenJ/Awesome-Optimizers/pulls)
@@ -15,6 +15,8 @@ Curated optimizer-design papers from `2022+`, ordered by date in reverse chronol
 
 | Date | Optimizer Name | Advantage |
 | --- | --- | --- |
+| 2606 | [Why Muon Outperforms Adam](https://arxiv.org/abs/2606.04662) | Explains Muon's Adam advantage through lower normalized directional sharpness and smaller second-order curvature penalty at comparable update scale. |
+| 2606 | [Spectral Scaling Laws of Muon](https://arxiv.org/abs/2606.04058) | Tracks Muon momentum singular-value quantiles across model scales and gives layer-aware Newton-Schulz iteration guidance. |
 | 2606 | [Denoise First, Orthogonalize Later](https://arxiv.org/abs/2606.03899) | Explains Muon momentum as pre-orthogonalization spectral denoising and argues gradients should be filtered before Newton-Schulz or polar updates. |
 | 2606 | [A Note on Stability for Orthogonalized Matrix Momentum](https://arxiv.org/abs/2606.01720) | Studies stability of Muon-style orthogonalized matrix momentum under client sampling and finite-step Newton-Schulz updates. |
 | 2606 | [How Much Orthogonalization Does Muon Need?](https://arxiv.org/abs/2606.00371) | Shows low-precision or partial orthogonalization can preserve Muon-style training behavior while reducing Newton-Schulz matrix-multiply cost. |
