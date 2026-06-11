@@ -3,7 +3,7 @@
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
 [![GitHub](https://img.shields.io/badge/GitHub-JiwenJ%2FAwesome--Optimizers-181717.svg?style=flat-square&logo=github)](https://github.com/JiwenJ/Awesome-Optimizers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](./LICENSE)
-[![Papers](https://img.shields.io/badge/Papers-176-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](./data/optimizers.csv)
+[![Papers](https://img.shields.io/badge/Papers-180-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](./data/optimizers.csv)
 [![Code Links](https://img.shields.io/badge/Code%20Links-50-2ea44f.svg?style=flat-square&logo=github)](./data/optimizers.csv)
 [![Coverage](https://img.shields.io/badge/Years-2022--2026-6f42c1.svg?style=flat-square&logo=bookstack&logoColor=white)](./data/optimizers.csv)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/JiwenJ/Awesome-Optimizers/pulls)
@@ -15,6 +15,10 @@ Curated optimizer-design papers from `2022+`, ordered by date in reverse chronol
 
 | Date | Optimizer Name | Advantage |
 | --- | --- | --- |
+| 2606 | [FOGO](https://arxiv.org/abs/2606.10406) | Spectrally orthogonalizes momentum updates and uses compact direction memory to reduce gradient interference and forgetting. |
+| 2606 | [Muon Robust Transfer](https://arxiv.org/abs/2606.09658) | Studies why Muon learns more robust and transferable features than Adam through effective-rank and feature-quality diagnostics. |
+| 2606 | [OptMuon](https://arxiv.org/abs/2606.08783) | Adds closed-loop magnitude calibration to Muon-style orthogonalized momentum with zero-noise optimality guarantees. |
+| 2606 | [Muon Spectral Dynamics](https://arxiv.org/abs/2606.08388) | Explains Muon's polar update as a flat-spectrum bias and analyzes its noise geometry beyond simple rescaling. |
 | 2606 | [Why Muon Outperforms Adam](https://arxiv.org/abs/2606.04662) | Explains Muon's Adam advantage through lower normalized directional sharpness and smaller second-order curvature penalty at comparable update scale. |
 | 2606 | [Spectral Scaling Laws of Muon](https://arxiv.org/abs/2606.04058) | Tracks Muon momentum singular-value quantiles across model scales and gives layer-aware Newton-Schulz iteration guidance. |
 | 2606 | [Denoise First, Orthogonalize Later](https://arxiv.org/abs/2606.03899) | Explains Muon momentum as pre-orthogonalization spectral denoising and argues gradients should be filtered before Newton-Schulz or polar updates. |
@@ -200,7 +204,13 @@ These papers mention, compare, or rely on Muon-style optimization, but their mai
 
 | Date | Paper | Relation |
 | --- | --- | --- |
+| 2606 | [Overcoming Rank Collapse in Feedback Alignment](https://arxiv.org/abs/2606.11123) | Uses Muon as an orthogonalized-update mechanism to increase feedback-alignment signal rank rather than proposing a Muon variant. |
+| 2606 | [PC Layer](https://arxiv.org/abs/2606.06470) | Evaluates polynomial weight preconditioning for LLM pretraining with both AdamW and Muon while focusing on architecture-level conditioning. |
+| 2606 | [Double Preconditioning](https://arxiv.org/abs/2606.06418) | Frames Muon as one gradient-wise preconditioning option inside a broader test-time-performance optimization method. |
+| 2606 | [Ultralytics YOLO26](https://arxiv.org/abs/2606.03748) | Uses a hybrid Muon-SGD optimizer in a real-time vision training recipe, but contributes a model family rather than an optimizer. |
+| 2606 | [WALL-WM](https://arxiv.org/abs/2606.01955) | Relies on Muon-optimizer-based large-scale pretraining infrastructure for world action modeling rather than introducing Muon mechanics. |
 | 2606 | [Exploiting Weight-Space Symmetries for Approximating Curvature](https://arxiv.org/abs/2606.00442) | Uses weight-space symmetry choices to approximate curvature and recover Shampoo/Muon-like estimates in a broader optimizer geometry framework. |
+| 2605 | [Mellum2 Technical Report](https://arxiv.org/abs/2605.31268) | Reports Muon under FP8 hybrid precision in a code-model pretraining recipe rather than contributing an optimizer method. |
 | 2605 | [On the Optimizer Dependence of Neural Scaling Laws](https://arxiv.org/abs/2605.29387) | Studies how scaling-law behavior changes across optimizers and uses Matrix-Sign as a Muon-style proxy rather than proposing a Muon variant. |
 | 2605 | [Parallax](https://arxiv.org/abs/2605.29157) | Uses Muon to unlock parameterized local linear attention capacity, but the main contribution is an attention architecture rather than an optimizer. |
 | 2605 | [How the Optimizer Shapes Learned Solutions in Equivariant Neural Networks](https://arxiv.org/abs/2605.27662) | Compares Muon and Adam in equivariant neural networks and analyzes learned solution structure rather than introducing a Muon optimizer. |

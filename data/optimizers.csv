@@ -1,4 +1,8 @@
 date,year,optimizer,paper_url,code_url,summary
+2606,2026,FOGO,https://arxiv.org/abs/2606.10406,,Spectrally orthogonalizes momentum updates and uses compact direction memory to reduce gradient interference and forgetting.
+2606,2026,Muon Robust Transfer,https://arxiv.org/abs/2606.09658,,Studies why Muon learns more robust and transferable features than Adam through effective-rank and feature-quality diagnostics.
+2606,2026,OptMuon,https://arxiv.org/abs/2606.08783,,Adds closed-loop magnitude calibration to Muon-style orthogonalized momentum with zero-noise optimality guarantees.
+2606,2026,Muon Spectral Dynamics,https://arxiv.org/abs/2606.08388,,Explains Muon's polar update as a flat-spectrum bias and analyzes its noise geometry beyond simple rescaling.
 2606,2026,Why Muon Outperforms Adam: A Curvature Perspective,https://arxiv.org/abs/2606.04662,,Explains Muon's Adam advantage through lower normalized directional sharpness and smaller second-order curvature penalty at comparable update scale.
 2606,2026,Spectral Scaling Laws of Muon,https://arxiv.org/abs/2606.04058,,Tracks Muon momentum singular-value quantiles across model scales and gives layer-aware Newton-Schulz iteration guidance.
 2606,2026,"Denoise First, Orthogonalize Later",https://arxiv.org/abs/2606.03899,,Explains Muon momentum as pre-orthogonalization spectral denoising and argues gradients should be filtered before Newton-Schulz or polar updates.

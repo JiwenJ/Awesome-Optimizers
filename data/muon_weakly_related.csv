@@ -1,5 +1,11 @@
 date,year,paper,paper_url,relation,summary
+2606,2026,Overcoming Rank Collapse in Feedback Alignment,https://arxiv.org/abs/2606.11123,weak,Uses Muon as an orthogonalized-update mechanism to increase feedback-alignment signal rank rather than proposing a Muon variant.
+2606,2026,PC Layer,https://arxiv.org/abs/2606.06470,weak,Evaluates polynomial weight preconditioning for LLM pretraining with both AdamW and Muon while focusing on architecture-level conditioning.
+2606,2026,Double Preconditioning,https://arxiv.org/abs/2606.06418,weak,Frames Muon as one gradient-wise preconditioning option inside a broader test-time-performance optimization method.
+2606,2026,Ultralytics YOLO26,https://arxiv.org/abs/2606.03748,weak,Uses a hybrid Muon-SGD optimizer in a real-time vision training recipe but contributes a model family rather than an optimizer.
+2606,2026,WALL-WM,https://arxiv.org/abs/2606.01955,weak,Relies on Muon-optimizer-based large-scale pretraining infrastructure for world action modeling rather than introducing Muon mechanics.
 2606,2026,Exploiting Weight-Space Symmetries for Approximating Curvature,https://arxiv.org/abs/2606.00442,weak,Uses weight-space symmetry choices to approximate curvature and recover Shampoo/Muon-like estimates in a broader optimizer geometry framework.
+2605,2026,Mellum2 Technical Report,https://arxiv.org/abs/2605.31268,weak,Reports Muon under FP8 hybrid precision in a code-model pretraining recipe rather than contributing an optimizer method.
 2605,2026,On the Optimizer Dependence of Neural Scaling Laws,https://arxiv.org/abs/2605.29387,weak,Studies how scaling-law behavior changes across optimizers and uses Matrix-Sign as a Muon-style proxy rather than proposing a Muon variant.
 2605,2026,Parallax,https://arxiv.org/abs/2605.29157,weak,Uses Muon to unlock parameterized local linear attention capacity but the main contribution is an attention architecture rather than an optimizer.
 2605,2026,How the Optimizer Shapes Learned Solutions in Equivariant Neural Networks,https://arxiv.org/abs/2605.27662,weak,Compares Muon and Adam in equivariant neural networks and analyzes learned solution structure rather than introducing a Muon optimizer.
