@@ -209,19 +209,25 @@ These papers mention, compare, or rely on Muon-style optimization, but their mai
 
 | Date | Paper | Relation |
 | --- | --- | --- |
+| 2606 | [Schattor](https://arxiv.org/abs/2606.15702) | Proposes Schatten-family deep-learning optimizers that unify SGD and Muon geometry while remaining broader than a Muon-specific variant. |
+| 2606 | [When to use Schatten-p Norm](https://arxiv.org/abs/2606.15268) | Analyzes regimes where Schatten-p geometries such as Muon's Schatten-infinity update are beneficial rather than proposing a Muon variant. |
+| 2606 | [ZO Parameter-free LMO](https://arxiv.org/abs/2606.14970) | Develops zeroth-order parameter-free LMO fine-tuning methods adjacent to Muon-style geometry without proposing a Muon optimizer. |
+| 2606 | [Zeta](https://arxiv.org/abs/2606.14187) | Introduces dual whitening via coordinate-adaptive preconditioning and positions Muon as a matrix-aware baseline. |
+| 2606 | [Different Layers Different Manifolds](https://arxiv.org/abs/2606.13276) | Studies module-wise Stiefel and DGram geometry assignments through Manifold Muon rather than changing core Muon. |
 | 2606 | [Overcoming Rank Collapse in Feedback Alignment](https://arxiv.org/abs/2606.11123) | Uses Muon as an orthogonalized-update mechanism to increase feedback-alignment signal rank rather than proposing a Muon variant. |
 | 2606 | [PC Layer](https://arxiv.org/abs/2606.06470) | Evaluates polynomial weight preconditioning for LLM pretraining with both AdamW and Muon while focusing on architecture-level conditioning. |
 | 2606 | [Double Preconditioning](https://arxiv.org/abs/2606.06418) | Frames Muon as one gradient-wise preconditioning option inside a broader test-time-performance optimization method. |
-| 2606 | [Ultralytics YOLO26](https://arxiv.org/abs/2606.03748) | Uses a hybrid Muon-SGD optimizer in a real-time vision training recipe, but contributes a model family rather than an optimizer. |
+| 2606 | [Ultralytics YOLO26](https://arxiv.org/abs/2606.03748) | Uses a hybrid Muon-SGD optimizer in a real-time vision training recipe but contributes a model family rather than an optimizer. |
 | 2606 | [WALL-WM](https://arxiv.org/abs/2606.01955) | Relies on Muon-optimizer-based large-scale pretraining infrastructure for world action modeling rather than introducing Muon mechanics. |
 | 2606 | [Exploiting Weight-Space Symmetries for Approximating Curvature](https://arxiv.org/abs/2606.00442) | Uses weight-space symmetry choices to approximate curvature and recover Shampoo/Muon-like estimates in a broader optimizer geometry framework. |
 | 2605 | [Mellum2 Technical Report](https://arxiv.org/abs/2605.31268) | Reports Muon under FP8 hybrid precision in a code-model pretraining recipe rather than contributing an optimizer method. |
 | 2605 | [On the Optimizer Dependence of Neural Scaling Laws](https://arxiv.org/abs/2605.29387) | Studies how scaling-law behavior changes across optimizers and uses Matrix-Sign as a Muon-style proxy rather than proposing a Muon variant. |
-| 2605 | [Parallax](https://arxiv.org/abs/2605.29157) | Uses Muon to unlock parameterized local linear attention capacity, but the main contribution is an attention architecture rather than an optimizer. |
+| 2605 | [Parallax](https://arxiv.org/abs/2605.29157) | Uses Muon to unlock parameterized local linear attention capacity but the main contribution is an attention architecture rather than an optimizer. |
 | 2605 | [How the Optimizer Shapes Learned Solutions in Equivariant Neural Networks](https://arxiv.org/abs/2605.27662) | Compares Muon and Adam in equivariant neural networks and analyzes learned solution structure rather than introducing a Muon optimizer. |
 | 2605 | [The Stability of Singular Distribution](https://arxiv.org/abs/2605.26489) | Uses Muon and WSD as examples of spectral mechanisms shaping two-phase LLM pretraining dynamics rather than proposing an optimizer. |
-| 2605 | [Momentum Streams for Optimizer-Inspired Transformers](https://arxiv.org/abs/2605.24425) | Uses Muon, SOAP, and Adam analogies to design Transformer blocks, with architecture rather than optimizer as the main contribution. |
-| 2605 | [Same Architecture, Different Capacity](https://arxiv.org/abs/2605.21803) | Compares Muon and AdamW representation spectral scaling laws, focusing on capacity diagnostics rather than a new optimizer. |
+| 2605 | [Momentum Streams for Optimizer-Inspired Transformers](https://arxiv.org/abs/2605.24425) | Uses Muon, SOAP, and Adam analogies to design Transformer blocks with architecture rather than optimizer as the main contribution. |
+| 2605 | [Same Architecture, Different Capacity](https://arxiv.org/abs/2605.21803) | Compares Muon and AdamW representation spectral scaling laws while focusing on capacity diagnostics rather than a new optimizer. |
+| 2605 | [Scale-Invariant Neural Network Optimization](https://arxiv.org/abs/2605.18528) | Studies norm geometry and heavy-tailed noise for scale-invariant optimizers such as Muon and Scion rather than proposing a Muon variant. |
 | 2605 | [Navigating LLM Valley](https://arxiv.org/abs/2605.09176) | Surveys LLM optimizers including Muon and matrix-based methods rather than proposing a new optimizer. |
 | 2605 | [Optimizer-Model Consistency](https://arxiv.org/abs/2605.06654) | Analyzes matching pretraining and finetuning optimizers and compares Muon/AdamW forgetting behavior rather than introducing a method. |
 | 2604 | [Benchmarking Optimizers for MLPs in Tabular Deep Learning](https://arxiv.org/abs/2604.15297) | Benchmarks Muon against other optimizers for tabular MLPs, with empirical comparison rather than optimizer design as the main contribution. |
