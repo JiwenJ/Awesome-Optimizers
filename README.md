@@ -3,7 +3,7 @@
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
 [![GitHub](https://img.shields.io/badge/GitHub-JiwenJ%2FAwesome--Optimizers-181717.svg?style=flat-square&logo=github)](https://github.com/JiwenJ/Awesome-Optimizers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](./LICENSE)
-[![Papers](https://img.shields.io/badge/Papers-180-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](./data/optimizers.csv)
+[![Papers](https://img.shields.io/badge/Papers-185-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](./data/optimizers.csv)
 [![Code Links](https://img.shields.io/badge/Code%20Links-50-2ea44f.svg?style=flat-square&logo=github)](./data/optimizers.csv)
 [![Coverage](https://img.shields.io/badge/Years-2022--2026-6f42c1.svg?style=flat-square&logo=bookstack&logoColor=white)](./data/optimizers.csv)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/JiwenJ/Awesome-Optimizers/pulls)
@@ -15,6 +15,11 @@ Curated optimizer-design papers from `2022+`, ordered by date in reverse chronol
 
 | Date | Optimizer Name | Advantage |
 | --- | --- | --- |
+| 2606 | [Hyperball Optimization](https://arxiv.org/abs/2606.16899) | Wraps base optimizers such as Adam or Muon by fixing weight and update Frobenius norms to improve pretraining speed and hyperparameter transfer. |
+| 2606 | [CacheMuon](https://arxiv.org/abs/2606.16371) | Reuses temporally correlated polar-factor information across steps to approximate Muon's Newton-Schulz update with a controllable quality-efficiency trade-off. |
+| 2606 | [Free Heavy-Tailed Lunch for Muon](https://arxiv.org/abs/2606.14560) | Provides a theoretical justification for Muon and Scion advantages under heavy-tailed stochastic noise in non-Euclidean matrix optimization. |
+| 2606 | [Muon^p](https://arxiv.org/abs/2606.13867) | Generalizes Muon's polar factor to fractional spectral powers so singular-value information can be partially retained instead of fully flattened. |
+| 2606 | [LoRA-Muon](https://arxiv.org/abs/2606.12921) | Applies Muon-style spectral steepest descent to the low-rank LoRA manifold to reduce initialization and stepsize sensitivity in finetuning. |
 | 2606 | [FOGO](https://arxiv.org/abs/2606.10406) | Spectrally orthogonalizes momentum updates and uses compact direction memory to reduce gradient interference and forgetting. |
 | 2606 | [Muon Robust Transfer](https://arxiv.org/abs/2606.09658) | Studies why Muon learns more robust and transferable features than Adam through effective-rank and feature-quality diagnostics. |
 | 2606 | [OptMuon](https://arxiv.org/abs/2606.08783) | Adds closed-loop magnitude calibration to Muon-style orthogonalized momentum with zero-noise optimality guarantees. |
