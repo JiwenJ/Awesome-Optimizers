@@ -1,4 +1,5 @@
 date,year,optimizer,paper_url,code_url,summary
+2606,2026,MGUP,https://arxiv.org/abs/2606.17526,https://github.com/MaeChd/MGUP,"Adds a momentum-gradient alignment update policy that wraps optimizers such as AdamW, Lion, and Muon with selective larger steps for aligned parameters."
 2606,2026,Hyperball Optimization,https://arxiv.org/abs/2606.16899,,Wraps base optimizers such as Adam or Muon by fixing weight and update Frobenius norms to improve pretraining speed and hyperparameter transfer.
 2606,2026,CacheMuon,https://arxiv.org/abs/2606.16371,,Reuses temporally correlated polar-factor information across steps to approximate Muon's Newton-Schulz update with a controllable quality-efficiency trade-off.
 2606,2026,Free Heavy-Tailed Lunch for Muon,https://arxiv.org/abs/2606.14560,,Provides a theoretical justification for Muon and Scion advantages under heavy-tailed stochastic noise in non-Euclidean matrix optimization.
@@ -141,6 +142,7 @@ date,year,optimizer,paper_url,code_url,summary
 2509,2025,ZO Fine-Tuner,https://openreview.net/forum?id=2Dn4yHYLQJ,,Learns a zeroth-order optimizer for LLM fine-tuning and outperforms prior zeroth-order baselines across most tested model-task pairs.
 2509,2025,AdaGrad++,https://openreview.net/forum?id=dHxM51W120,,A simple parameter-free AdaGrad variant with convergence guarantees that removes manual learning-rate tuning.
 2509,2025,Adam++,https://openreview.net/forum?id=dHxM51W120,,A simple parameter-free Adam variant with convergence guarantees that removes manual learning-rate tuning.
+2509,2025,KL-Shampoo / KL-SOAP,https://arxiv.org/abs/2509.03378,https://github.com/yorkerlin/KL-Methods,Recasts Shampoo and SOAP second-moment estimation as KL-minimization and proposes KL-based structured preconditioners that remove Adam grafting overhead.
 2507,2025,AdaMuon,https://arxiv.org/abs/2507.11005,,Adds elementwise second-moment scaling and RMS-aligned rescaling to Muon to improve large-scale training efficiency.
 2506,2025,SCALE,https://arxiv.org/abs/2506.16659,https://github.com/OptimAI-Lab/Minimalist_LLM_Pretraining,A minimalist optimizer using column normalization and last-layer momentum that matches Adam with much lower memory in LLM pretraining.
 2506,2025,SPlus,https://arxiv.org/abs/2506.07254,https://github.com/kvfrans/splus,Uses stable whitening-style preconditioning to cut gradient steps and wall-clock time in reported neural network training runs.

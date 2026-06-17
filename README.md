@@ -3,8 +3,8 @@
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
 [![GitHub](https://img.shields.io/badge/GitHub-JiwenJ%2FAwesome--Optimizers-181717.svg?style=flat-square&logo=github)](https://github.com/JiwenJ/Awesome-Optimizers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](./LICENSE)
-[![Papers](https://img.shields.io/badge/Papers-185-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](./data/optimizers.csv)
-[![Code Links](https://img.shields.io/badge/Code%20Links-50-2ea44f.svg?style=flat-square&logo=github)](./data/optimizers.csv)
+[![Papers](https://img.shields.io/badge/Papers-187-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](./data/optimizers.csv)
+[![Code Links](https://img.shields.io/badge/Code%20Links-52-2ea44f.svg?style=flat-square&logo=github)](./data/optimizers.csv)
 [![Coverage](https://img.shields.io/badge/Years-2022--2026-6f42c1.svg?style=flat-square&logo=bookstack&logoColor=white)](./data/optimizers.csv)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/JiwenJ/Awesome-Optimizers/pulls)
 
@@ -15,6 +15,7 @@ Curated optimizer-design papers from `2022+`, ordered by date in reverse chronol
 
 | Date | Optimizer Name | Advantage |
 | --- | --- | --- |
+| 2606 | [MGUP](https://arxiv.org/abs/2606.17526) [Code](https://github.com/MaeChd/MGUP) | Adds a momentum-gradient alignment update policy that wraps optimizers such as AdamW, Lion, and Muon with selective larger steps for aligned parameters. |
 | 2606 | [Hyperball Optimization](https://arxiv.org/abs/2606.16899) | Wraps base optimizers such as Adam or Muon by fixing weight and update Frobenius norms to improve pretraining speed and hyperparameter transfer. |
 | 2606 | [CacheMuon](https://arxiv.org/abs/2606.16371) | Reuses temporally correlated polar-factor information across steps to approximate Muon's Newton-Schulz update with a controllable quality-efficiency trade-off. |
 | 2606 | [Free Heavy-Tailed Lunch for Muon](https://arxiv.org/abs/2606.14560) | Provides a theoretical justification for Muon and Scion advantages under heavy-tailed stochastic noise in non-Euclidean matrix optimization. |
@@ -157,6 +158,7 @@ Curated optimizer-design papers from `2022+`, ordered by date in reverse chronol
 | 2509 | [ZO Fine-Tuner](https://openreview.net/forum?id=2Dn4yHYLQJ) | Learns a zeroth-order optimizer for LLM fine-tuning and outperforms prior zeroth-order baselines across most tested model-task pairs. |
 | 2509 | [AdaGrad++](https://openreview.net/forum?id=dHxM51W120) | A simple parameter-free AdaGrad variant with convergence guarantees that removes manual learning-rate tuning. |
 | 2509 | [Adam++](https://openreview.net/forum?id=dHxM51W120) | A simple parameter-free Adam variant with convergence guarantees that removes manual learning-rate tuning. |
+| 2509 | [KL-Shampoo / KL-SOAP](https://arxiv.org/abs/2509.03378) [Code](https://github.com/yorkerlin/KL-Methods) | Recasts Shampoo and SOAP second-moment estimation as KL-minimization and proposes KL-based structured preconditioners that remove Adam grafting overhead. |
 | 2507 | [AdaMuon](https://arxiv.org/abs/2507.11005) | Adds elementwise second-moment scaling and RMS-aligned rescaling to Muon to improve large-scale training efficiency. |
 | 2506 | [SCALE](https://arxiv.org/abs/2506.16659) [Code](https://github.com/OptimAI-Lab/Minimalist_LLM_Pretraining) | A minimalist optimizer using column normalization and last-layer momentum that matches Adam with much lower memory in LLM pretraining. |
 | 2506 | [SPlus](https://arxiv.org/abs/2506.07254) [Code](https://github.com/kvfrans/splus) | Uses stable whitening-style preconditioning to cut gradient steps and wall-clock time in reported neural network training runs. |
