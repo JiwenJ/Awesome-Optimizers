@@ -3,8 +3,8 @@
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
 [![GitHub](https://img.shields.io/badge/GitHub-JiwenJ%2FAwesome--Optimizers-181717.svg?style=flat-square&logo=github)](https://github.com/JiwenJ/Awesome-Optimizers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](./LICENSE)
-[![Papers](https://img.shields.io/badge/Papers-187-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](./data/optimizers.csv)
-[![Code Links](https://img.shields.io/badge/Code%20Links-52-2ea44f.svg?style=flat-square&logo=github)](./data/optimizers.csv)
+[![Papers](https://img.shields.io/badge/Papers-193-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](./data/optimizers.csv)
+[![Code Links](https://img.shields.io/badge/Code%20Links-53-2ea44f.svg?style=flat-square&logo=github)](./data/optimizers.csv)
 [![Coverage](https://img.shields.io/badge/Years-2022--2026-6f42c1.svg?style=flat-square&logo=bookstack&logoColor=white)](./data/optimizers.csv)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/JiwenJ/Awesome-Optimizers/pulls)
 
@@ -17,6 +17,13 @@ Curated optimizer-design papers from `2022+`, ordered by exact publication or su
 
 | Date | Optimizer Name | Summary |
 | --- | --- | --- |
+| 2026-06-26 | [Aurora](https://arxiv.org/abs/2606.27715) [Code](https://github.com/tilde-research/aurora-release) | Enforces row-uniformity for tall-matrix Muon updates while respecting polar-factor geometry, mitigating dead-neuron feedback loops from nonuniform row leverage and improving spectral-optimizer pretraining results. |
+| 2026-06-25 | [HiMuon](https://arxiv.org/abs/2606.27216) | Tiles momentum-gradient matrices and applies finite Newton-Schulz updates independently inside each tile, reducing Muon optimizer-step work while preserving local spectral interactions and enabling GPU-friendly batching/scheduling. |
+| 2026-06-25 | [DMuon](https://arxiv.org/abs/2606.27153) | Implements distributed Muon as a drop-in training component with near-AdamW overhead, reporting large optimizer-step and end-to-end speedups across embodied foundation-model and LLM workloads. |
+| 2026-06-24 | [Tensorion](https://arxiv.org/abs/2606.25975) | Extends Muon's matrix spectral-norm constrained steepest-descent view to higher-order tensors through a tractable LMO over tensor norm balls, recovering Muon exactly on order-2 tensor/matrix parameters. |
+| 2026-06-22 | [AngularMuown](https://arxiv.org/abs/2606.23637) [Code](https://github.com/fhueb/angular-muown) | Shows Muown's directional update is a Riemannian step whose angular step size decays implicitly through parameter magnitude, then makes the angular multiplier explicit for more stable and scalable training. |
+| 2026-06-19 | [Inexact Muon LMO](https://arxiv.org/abs/2606.21581) | Extends convergence analysis of Muon-type methods with inexact linear minimization oracles to degenerate settings where the smallest positive singular value can approach zero. |
+| 2026-06-19 | [Muon River-Valley Perspective](https://arxiv.org/abs/2606.21514) | Builds a trajectory-level river-valley theory explaining when Muon accelerates information-bearing directions and when its spectral normalization can slow late-stage convergence or become schedule-sensitive. |
 | 2026-06-16 | [MGUP](https://arxiv.org/abs/2606.17526) [Code](https://github.com/MaeChd/MGUP) | Selects a fixed fraction of parameters for larger momentum-gradient-aligned steps while giving the rest smaller nonzero updates; works as a plug-in wrapper for AdamW, Lion, and Muon with convergence guarantees and LLM training experiments. |
 | 2026-06-15 | [Hyperball Optimization](https://arxiv.org/abs/2606.16899) | Constrains both weight-matrix and optimizer-update Frobenius norms to fixed constants around a base optimizer such as Adam or Muon; reports 20-30% token-equivalent speedups on Qwen3-style models up to 1.2B and better learning-rate transfer. |
 | 2026-06-15 | [CacheMuon](https://arxiv.org/abs/2606.16371) | Caches temporally correlated polar-factor information from previous steps to precondition Muon's Newton-Schulz computation, reducing repeated orthogonalization cost while exposing a quality-efficiency trade-off. |
@@ -77,7 +84,6 @@ Curated optimizer-design papers from `2022+`, ordered by exact publication or su
 | 2026-05-07 | [SignSGD/Muon Lower Bounds](https://arxiv.org/abs/2605.06615) [Code](https://github.com/Dingzhen230/SignSGD_Outperforms_SGD) | Uses l1 stationarity, l-infinity smoothness, and separable noise assumptions to derive matching lower and upper bounds explaining when sign-based methods such as SignSGD and Muon can beat SGD. |
 | 2026-05-07 | [Pro-KLShampoo](https://arxiv.org/abs/2605.06316) | Observes spike-and-flat spectra in KL-Shampoo Kronecker preconditioners and projects the structured preconditioned direction through orthogonalization, recovering whitening in a Muon-adjacent optimizer. |
 | 2026-05-07 | [Implicit Gradient Transport](https://arxiv.org/abs/2605.05577) | Introduces LMO-IGT, using implicit gradient transport to accelerate LMO-based optimizers like Lion and Muon without extra gradient evaluations, alongside a regularized support-function stationarity measure. |
-| 2026-05-05 | [Aurora](https://blog.tilderesearch.com/blog/aurora) [Code](https://github.com/tilde-research/aurora-release) | Diagnoses Muon row-leverage anisotropy on tall matrices as a cause of dead MLP neurons, then adds leverage-aware row normalization/equilibration so rectangular-matrix updates keep useful row mass while preserving polar precision. |
 | 2026-05-05 | [Nora](https://arxiv.org/abs/2605.03769) | Projects row-wise momentum onto the orthogonal complement of weights to respect scale invariance, aiming to combine Muon-like matrix preconditioning, stable norm/angular dynamics, and O(mn) update cost. |
 | 2026-05-04 | [SignMuon](https://arxiv.org/abs/2605.16311) | Combines Muon polar directions with signSGD-style 1-bit majority-vote communication: workers orthogonalize local momentum, transmit entrywise signs, and optionally apply a local polar correction for bandwidth-efficient distributed training. |
 | 2026-04-27 | [SUDA-Muon](https://arxiv.org/abs/2604.23980) | Shows decentralized Muon is hard because matrix-sign orthogonalization does not commute with gossip averaging, then separates primal-dual communication from the nonlinear Muon step using a SUDA template with convergence guarantees. |
@@ -213,6 +219,8 @@ These papers mention, compare, or rely on Muon-style optimization, but their mai
 
 | Date | Paper | Relation |
 | --- | --- | --- |
+| 2026-06-24 | [MD Decoupling](https://arxiv.org/abs/2606.25971) | Factorizes each weight into a fixed-norm direction plus learnable row/column magnitude gains with separate learning rates; it is adjacent because it targets magnitude-direction coupling in Adam/Muon-style matrix updates but is optimizer-agnostic. |
+| 2026-06-22 | [AdamW Heavy-Tailed Open Problem](https://arxiv.org/abs/2606.23676) | Frames AdamW's missing convergence theory under heavy-tailed gradient noise against known sign-based results for optimizers such as Lion and Muon; it is background/theory motivation rather than a Muon method. |
 | 2026-06-14 | [Schattor](https://arxiv.org/abs/2606.15702) | Introduces a Schatten-norm optimizer family that unifies SGD and Muon-like matrix updates with dimension-free stationarity theory; it is adjacent because the contribution is a broader optimizer framework, not a Muon variant. |
 | 2026-06-13 | [When to use Schatten-p Norm](https://arxiv.org/abs/2606.15268) | Analyzes which Schatten-p geometries are optimal under different scaling/noise regimes, explaining when Muon-like Schatten-infinity updates help and when smaller-p geometries are preferable. |
 | 2026-06-12 | [ZO Parameter-free LMO](https://arxiv.org/abs/2606.14970) | Combines zeroth-order fine-tuning with parameter-free LMO methods to reduce memory and tuning burden, borrowing Muon-style geometry but focusing on ZO/PF optimization broadly. |
