@@ -4,7 +4,7 @@
 [![GitHub](https://img.shields.io/badge/GitHub-JiwenJ%2FAwesome--Optimizers-181717.svg?style=flat-square&logo=github)](https://github.com/JiwenJ/Awesome-Optimizers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](./LICENSE)
 [![Papers](https://img.shields.io/badge/Papers-193-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](./data/optimizers.csv)
-[![Code Links](https://img.shields.io/badge/Code%20Links-53-2ea44f.svg?style=flat-square&logo=github)](./data/optimizers.csv)
+[![Code Links](https://img.shields.io/badge/Code%20Links-54-2ea44f.svg?style=flat-square&logo=github)](./data/optimizers.csv)
 [![Coverage](https://img.shields.io/badge/Years-2022--2026-6f42c1.svg?style=flat-square&logo=bookstack&logoColor=white)](./data/optimizers.csv)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/JiwenJ/Awesome-Optimizers/pulls)
 
@@ -18,7 +18,7 @@ Curated optimizer-design papers from `2022+`, ordered by exact publication or su
 | Date | Optimizer Name | Summary |
 | --- | --- | --- |
 | 2026-06-26 | [Aurora](https://arxiv.org/abs/2606.27715) [Code](https://github.com/tilde-research/aurora-release) | Enforces row-uniformity for tall-matrix Muon updates while respecting polar-factor geometry, mitigating dead-neuron feedback loops from nonuniform row leverage and improving spectral-optimizer pretraining results. |
-| 2026-06-25 | [HiMuon](https://arxiv.org/abs/2606.27216) | Tiles momentum-gradient matrices and applies finite Newton-Schulz updates independently inside each tile, reducing Muon optimizer-step work while preserving local spectral interactions and enabling GPU-friendly batching/scheduling. |
+| 2026-06-25 | [HiMuon](https://arxiv.org/abs/2606.27216) [Code](https://github.com/tang0389/himuon) | Tiles momentum-gradient matrices and applies finite Newton-Schulz updates independently inside each tile, reducing Muon optimizer-step work while preserving local spectral interactions and enabling GPU-friendly batching/scheduling. |
 | 2026-06-25 | [DMuon](https://arxiv.org/abs/2606.27153) | Implements distributed Muon as a drop-in training component with near-AdamW overhead, reporting large optimizer-step and end-to-end speedups across embodied foundation-model and LLM workloads. |
 | 2026-06-24 | [Tensorion](https://arxiv.org/abs/2606.25975) | Extends Muon's matrix spectral-norm constrained steepest-descent view to higher-order tensors through a tractable LMO over tensor norm balls, recovering Muon exactly on order-2 tensor/matrix parameters. |
 | 2026-06-22 | [AngularMuown](https://arxiv.org/abs/2606.23637) [Code](https://github.com/fhueb/angular-muown) | Shows Muown's directional update is a Riemannian step whose angular step size decays implicitly through parameter magnitude, then makes the angular multiplier explicit for more stable and scalable training. |
