@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](./LICENSE)
 [![Papers](https://img.shields.io/badge/Papers-196-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](./data/optimizers.csv)
 [![Code Links](https://img.shields.io/badge/Code%20Links-56-2ea44f.svg?style=flat-square&logo=github)](./data/optimizers.csv)
-[![Muon Resources](https://img.shields.io/badge/Muon%20Resources-9-0969da.svg?style=flat-square&logo=readme&logoColor=white)](./data/muon_resources.csv)
+[![Muon Resources](https://img.shields.io/badge/Muon%20Resources-14-0969da.svg?style=flat-square&logo=readme&logoColor=white)](./data/muon_resources.csv)
 [![Coverage](https://img.shields.io/badge/Years-2022--2026-6f42c1.svg?style=flat-square&logo=bookstack&logoColor=white)](./data/optimizers.csv)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/JiwenJ/Awesome-Optimizers/pulls)
 
@@ -223,6 +223,8 @@ These papers mention, compare, or rely on Muon-style optimization, but their mai
 
 | Date | Paper Title | Relation |
 | --- | --- | --- |
+| 2026-06-30 | [Evil Spectra: How Optimisers can Amplify or Suppress Emergent Misalignment](https://arxiv.org/abs/2606.31591) | Finds optimizer choice is a major driver of emergent-misalignment severity, with Muon preserving alignment best and implicitly encouraging flatter LoRA singular-value spectra; the contribution is alignment/optimizer analysis rather than a Muon update rule. |
+| 2026-06-29 | [Gradient Smoothing: Coupling Layer-wise Updates for Improved Optimization](https://arxiv.org/abs/2606.30813) | Introduces depth-wise smoothing of block-wise updates produced by arbitrary base optimizers including Muon, acting as an optimizer-agnostic cross-depth preconditioner rather than a Muon-family method. |
 | 2026-06-29 | [One-Step Gradient Delay is Not a Barrier for Large-Scale Asynchronous Pipeline Parallel LLM Pretraining](https://arxiv.org/abs/2606.30634) | Studies asynchronous pipeline-parallel LLM pretraining, finding Muon robust to one-step stale gradients and adding an optimizer-agnostic error-feedback correction; the focus is systems training rather than a Muon update rule. |
 | 2026-06-24 | [Improving Neural Network Training by Decoupling the Magnitude and Direction of Weight Vectors](https://arxiv.org/abs/2606.25971) | Factorizes each weight into a fixed-norm direction plus learnable row/column magnitude gains with separate learning rates; it is adjacent because it targets magnitude-direction coupling in Adam/Muon-style matrix updates but is optimizer-agnostic. |
 | 2026-06-22 | [Open Problem: Is AdamW Effective Under Heavy-Tailed Noise?](https://arxiv.org/abs/2606.23676) | Frames AdamW's missing convergence theory under heavy-tailed gradient noise against known sign-based results for optimizers such as Lion and Muon; it is background/theory motivation rather than a Muon method. |
@@ -270,11 +272,16 @@ These resources are not standalone papers. They include project pages, implement
 | Date | Type | Resource | Notes |
 | --- | --- | --- | --- |
 | 2026-06-29 | interactive lab | [MuonLab -- Interactive Optimizer Geometry & Spectral Descent Laboratory](https://muonlab.vercel.app) [Code](https://github.com/middesurya/daily-webapp-2026-06-29-muonlab) | Client-side interactive lab explaining Muon geometry, Newton-Schulz orthogonalization, spectral descent, update anatomy, and nanoGPT speedrun context. |
+| 2026-06-29 | research implementation | [Mewon](https://github.com/okezue/Mewon) | Research suite for a persistent low-rank spectral optimizer with Muon, ExactSoftMuon, soft-Muon baselines, cached whitening, spectral selectors, tiny-GPT experiments, and dashboard/report tooling. |
+| 2026-06-26 | blog and implementation | [Gram Newton-Schulz: A Fast, Hardware-Aware Newton-Schulz Algorithm for Muon](https://dao-ailab.github.io/blog/2026/gram-newton-schulz/) [Code](https://github.com/Dao-AILab/gram-newton-schulz) | Dao-AILab blog and implementation for Gram Newton-Schulz, a hardware-aware drop-in replacement for Muon's Newton-Schulz polar decomposition that targets faster optimizer steps. |
 | 2026-06-25 | implementation | [FasterMuon](https://github.com/Ethan2415/FasterMuon) | Batches Newton-Schulz iterations across same-shaped parameters to reduce Muon optimizer-step latency in DDP workloads. |
 | 2026-06-22 | systems implementation | [Megaprop](https://github.com/plugyawn/Megaprop) | Cross-repo control repository and design notes for feature-gram/right-preconditioned optimizer integration around Newton-Muon and LocoProp-style methods. |
 | 2026-06-21 | implementation | [MuonAdamW](https://github.com/Mithun-033/MuonAdamW) | Beta hybrid AdamW-Muon PyTorch package with automatic parameter routing and configurable Muon learning-rate modes. |
+| 2026-06-10 | diagnostic notebook | [Transformer Spectral Observatory: AdamW vs Muon](https://github.com/dataandai/adamw-muon-spectral-diagnostics) | Notebook lab for comparing AdamW and Muon on a tiny Transformer through spectra, stable rank, subspace drift, gradient anisotropy, and matrix trajectory diagnostics. |
 | 2026-06-03 | implementation | [HalleyMuon](https://github.com/thehimalayanleo/halleymuon) | Experimental Muon variant replacing Newton-Schulz with a degree-5 Halley-style polynomial polar approximation and enwiki8 benchmark. |
 | 2026-06-03 | implementation | [optimuon](https://github.com/emaballarin/optimuon) | Performance-oriented PyTorch Muon implementation with foreach ops, batched Newton-Schulz, auto-routing, composite optimizer support, and optional corrections. |
+| 2026-06-02 | hardware implementation | [triton-muon-npu](https://github.com/Hailey-Zh/triton-muon-npu) | Triton-based Ascend NPU implementation of Muon's Newton-Schulz kernels with fused GEMMs, NPU-specific correctness fixes, benchmarks, and pytest reference checks. |
 | 2026-05-28 | experimental workspace | [muon experiments](https://github.com/Mantissagithub/muon_exps) | CUDA/PyTorch workspace for Muon-style kernels, Newton-Schulz variants, Aurora-style update rules, and lightweight training comparisons. |
 | 2026-05-15 | project page | [Rethinking Muon Beyond Pretraining: Spectral Failures and High-Pass Remedies for VLA and RLVR](https://chongyu-fan.netlify.app/posts/pion/) [Code](https://github.com/OPTML-Group/Pion) | Project/blog page for the High-Pass Pion paper, with visual explanation and official code link. |
 | 2026-05-11 | reference collection | [Muon-References](https://github.com/irregular-rhomboid/Muon-References) | Small curated reference list for literature around the Muon optimizer. |
+| 2026-05-03 | visualization tool | [MuonVis](https://dhruvpendharkar.github.io/MuonVis/) [Code](https://github.com/dhruvpendharkar/MuonVis) | Interactive browser visualization of Muon concepts including polar decomposition, Newton-Schulz iteration, SVD geometry, optimizer trajectories, and the full Muon pipeline. |
