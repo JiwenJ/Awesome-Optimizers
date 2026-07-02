@@ -3,8 +3,8 @@
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
 [![GitHub](https://img.shields.io/badge/GitHub-JiwenJ%2FAwesome--Optimizers-181717.svg?style=flat-square&logo=github)](https://github.com/JiwenJ/Awesome-Optimizers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](./LICENSE)
-[![Papers](https://img.shields.io/badge/Papers-196-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](./data/optimizers.csv)
-[![Code Links](https://img.shields.io/badge/Code%20Links-56-2ea44f.svg?style=flat-square&logo=github)](./data/optimizers.csv)
+[![Papers](https://img.shields.io/badge/Papers-197-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](./data/optimizers.csv)
+[![Code Links](https://img.shields.io/badge/Code%20Links-57-2ea44f.svg?style=flat-square&logo=github)](./data/optimizers.csv)
 [![Muon Resources](https://img.shields.io/badge/Muon%20Resources-14-0969da.svg?style=flat-square&logo=readme&logoColor=white)](./data/muon_resources.csv)
 [![Coverage](https://img.shields.io/badge/Years-2022--2026-6f42c1.svg?style=flat-square&logo=bookstack&logoColor=white)](./data/optimizers.csv)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/JiwenJ/Awesome-Optimizers/pulls)
@@ -19,6 +19,7 @@ Curated optimizer-design papers from `2022+`, ordered by exact publication or su
 
 | Date | Paper Title | Summary |
 | --- | --- | --- |
+| 2026-07-01 | [Muon as a Residual Connection](https://arxiv.org/abs/2607.01124) [Code](https://github.com/huanghao-sss/muon_interpretation) | Interprets Muon's orthogonalized update as an implicit residual connection: sacrificing immediate gradient fidelity can preserve representations for downstream layers, motivating optimizer designs that balance local descent with downstream usability. |
 | 2026-06-29 | [Muon learns balanced solutions in matrix factorization without slow saddle-to-saddle dynamics](https://arxiv.org/abs/2606.30509) | Analyzes Muon dynamics in matrix factorization, showing it avoids slow saddle-to-saddle learning, remains stable beyond sharpness-limited learning rates, and reaches balanced solutions through distinct conserved quantities. |
 | 2026-06-28 | [Dead-Direction Conditioners: Gauge-Equivariant Preconditioning for Deep Networks](https://arxiv.org/abs/2606.29176) | Lifts base optimizers into gauge-equivariant preconditioned flows over symmetry quotients and composes with Muon through a gauge-equivariant orthogonalizer, yielding DDCMuon improvements in grokking experiments. |
 | 2026-06-26 | [Aurora: A Leverage-Aware Spectral Optimizer](https://arxiv.org/abs/2606.27715) [Code](https://github.com/tilde-research/aurora-release) | Enforces row-uniformity for tall-matrix Muon updates while respecting polar-factor geometry, mitigating dead-neuron feedback loops from nonuniform row leverage and improving spectral-optimizer pretraining results. |
