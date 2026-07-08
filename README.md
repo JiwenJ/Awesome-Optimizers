@@ -3,9 +3,9 @@
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
 [![GitHub](https://img.shields.io/badge/GitHub-JiwenJ%2FAwesome--Optimizers-181717.svg?style=flat-square&logo=github)](https://github.com/JiwenJ/Awesome-Optimizers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](./LICENSE)
-[![Papers](https://img.shields.io/badge/Papers-197-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](./data/optimizers.csv)
+[![Papers](https://img.shields.io/badge/Papers-198-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](./data/optimizers.csv)
 [![Code Links](https://img.shields.io/badge/Code%20Links-61-2ea44f.svg?style=flat-square&logo=github)](./data/optimizers.csv)
-[![Muon Resources](https://img.shields.io/badge/Muon%20Resources-49-0969da.svg?style=flat-square&logo=readme&logoColor=white)](./data/muon_resources.csv)
+[![Muon Resources](https://img.shields.io/badge/Muon%20Resources-57-0969da.svg?style=flat-square&logo=readme&logoColor=white)](./data/muon_resources.csv)
 [![Coverage](https://img.shields.io/badge/Years-2022--2026-6f42c1.svg?style=flat-square&logo=bookstack&logoColor=white)](./data/optimizers.csv)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/JiwenJ/Awesome-Optimizers/pulls)
 
@@ -19,6 +19,7 @@ Curated optimizer-design papers from `2022+`, ordered by exact publication or su
 
 | Date | Paper Title | Summary |
 | --- | --- | --- |
+| 2026-07-07 | [MatrixFSDP: communication-free matrix optimizers under ZeRO-3 parameter sharding](https://arxiv.org/abs/2607.05895) | Changes ZeRO-3 ownership so full 2D matrices land on owner ranks, letting Muon/Newton-Schulz run without optimizer-step matrix collectives while preserving full-matrix Muon updates and ZeRO-3-scale memory. |
 | 2026-07-01 | [Muon as a Residual Connection](https://arxiv.org/abs/2607.01124) [Code](https://github.com/huanghao-sss/muon_interpretation) | Interprets Muon's orthogonalized update as an implicit residual connection: sacrificing immediate gradient fidelity can preserve representations for downstream layers, motivating optimizer designs that balance local descent with downstream usability. |
 | 2026-06-29 | [Muon learns balanced solutions in matrix factorization without slow saddle-to-saddle dynamics](https://arxiv.org/abs/2606.30509) | Analyzes Muon dynamics in matrix factorization, showing it avoids slow saddle-to-saddle learning, remains stable beyond sharpness-limited learning rates, and reaches balanced solutions through distinct conserved quantities. |
 | 2026-06-28 | [Dead-Direction Conditioners: Gauge-Equivariant Preconditioning for Deep Networks](https://arxiv.org/abs/2606.29176) | Lifts base optimizers into gauge-equivariant preconditioned flows over symmetry quotients and composes with Muon through a gauge-equivariant orthogonalizer, yielding DDCMuon improvements in grokking experiments. |
@@ -275,6 +276,8 @@ These resources are not standalone papers. They include project pages, implement
 
 | Date | Type | Resource | Notes |
 | --- | --- | --- | --- |
+| 2026-07-07 | benchmark workspace | [minigpt-muon-benchmark](https://github.com/anxbt/minigpt-optimizer-benchmark) | Single-GPU MiniGPT pretraining benchmark comparing AdamW and Hybrid Muon across seed-matched public-dataset runs. |
+| 2026-07-07 | blog and implementation | [Muon vs AdamW](https://kareemfareed.com/posts/muon-vs-adamw/) [Code](https://github.com/KookiesNKareem/optim-study) | Compute-matched small-LLM pretraining study with tuned AdamW and Muon, wall-clock accounting, attention/MLP scope ablations, and full logs/code. |
 | 2026-07-07 | experiment archive | [modded-nanogpt - Get Up and Running in Minutes](https://github.com/Tnhn07/modded-nanogpt) | nanoGPT speedrun/archive repository with Muon, DistributedMuon, Muon-with-aux-Adam, TritonMuon, Muon custom sizing, and NorMuon experiment records. |
 | 2026-07-05 | benchmark repository | [OmniOpt: Taxonomy, Geometry, and Benchmarking of Modern Optimizers](https://openraiser.github.io/OmniOpt/) [Code](https://github.com/OpenRaiser/OmniOpt) | Broad modern-optimizer benchmark repository covering Muon among 24+ optimizers across LLM pretraining scales, architectures, and controlled hyperparameter sweeps. |
 | 2026-07-02 | application example | [HybridStories](https://github.com/bapt433/HybridStories) | Hybrid Mamba-Transformer TinyStories language-model project that uses the Muon optimizer in a small from-scratch training stack. |
@@ -284,13 +287,16 @@ These resources are not standalone papers. They include project pages, implement
 | 2026-06-25 | implementation | [FasterMuon](https://github.com/Ethan2415/FasterMuon) | Batches Newton-Schulz iterations across same-shaped parameters to reduce Muon optimizer-step latency in DDP workloads. |
 | 2026-06-24 | study workspace | [muon-optimizer-study](https://github.com/E0NIA/muon-optimizer-study) | Study workspace for Muon optimizer experiments and notes. |
 | 2026-06-23 | educational implementation | [frontier-llm-techniques-2026-Q1](https://github.com/LeonelSalvo/frontier-llm-techniques-2026-Q1) | From-scratch PyTorch modules for frontier LLM techniques including the Muon optimizer, multi-token prediction, and a base BPE tokenizer. |
+| 2026-06-22 | reproduction workspace | [Nanochat Repro](https://github.com/marcinbogdanski/nanochat-repro) | From-scratch nanochat pretraining reproduction with distributed AdamW/Muon, FP8, scaling-law experiments, and Muon update/gradient logging. |
 | 2026-06-22 | systems implementation | [Megaprop](https://github.com/plugyawn/Megaprop) | Cross-repo control repository and design notes for feature-gram/right-preconditioned optimizer integration around Newton-Muon and LocoProp-style methods. |
 | 2026-06-21 | implementation | [MuonAdamW](https://github.com/Mithun-033/MuonAdamW) | Beta hybrid AdamW-Muon PyTorch package with automatic parameter routing and configurable Muon learning-rate modes. |
 | 2026-06-18 | optimizer canon and library | [zij](https://junaidaliop.github.io/zij/) [Code](https://github.com/junaidaliop/zij) | Optimizer canon/library with a runnable Muon implementation and many Muon-family entries including AdaMuon, Pion, LoRA-Muon, DP-Muon, and Freon/Kaon. |
 | 2026-06-18 | application example | [edge-arabic-tts](https://github.com/mozayed007/edge-arabic-tts) | Small Saudi Arabic TTS training project that includes Muon optimizer R&D in an edge-model training stack. |
 | 2026-06-15 | official code | [optimizer-induced spectral scaling laws](https://github.com/optimizer-scaling-laws/spectral-scaling-laws) | Official code for optimizer-induced spectral scaling laws, comparing how AdamW and Muon change FFN representation spectra at fixed architecture. |
 | 2026-06-12 | optimizer implementation | [SkewAdam](https://github.com/nuemaan/skewadam) | Tiered optimizer-state allocation for memory-efficient MoE training, evaluated against AdamW, Muon, and Lion baselines. |
+| 2026-06-11 | benchmark workspace | [A Custom Muon Optimizer That Outpaces Tuned AdamW on CIFAR-10](https://github.com/mandeepnh5/muon-vs-adamw-cifar10) | From-scratch PyTorch Muon implementation and tuned AdamW comparison on CIFAR-10 with multi-seed wall-clock and step-efficiency analysis. |
 | 2026-06-11 | educational implementation | [nabla](https://github.com/dantp-ai/nabla) | Educational NumPy implementations of optimizers including Muon, with animated 2D saddle and matrix least-squares diagnostics. |
+| 2026-06-10 | benchmark workspace | [Muon vs AdamW on CIFAR-10](https://github.com/Varunhack/muon-vs-adamw) | CIFAR-10 benchmark implementing Muon from scratch and comparing it against tuned AdamW with Newton-Schulz tests and wall-clock reporting. |
 | 2026-06-10 | diagnostic notebook | [Transformer Spectral Observatory: AdamW vs Muon](https://github.com/dataandai/adamw-muon-spectral-diagnostics) | Notebook lab for comparing AdamW and Muon on a tiny Transformer through spectra, stable rank, subspace drift, gradient anisotropy, and matrix trajectory diagnostics. |
 | 2026-06-09 | educational implementation | [autodiff-engine](https://github.com/Hire-Arvin/autodiff-engine) | From-scratch reverse-mode autodiff engine with SGD, Momentum, Adam, and Muon optimizers. |
 | 2026-06-06 | course project | [Muon-Optimizer-COE202](https://github.com/RenjieZheng5/Muon-Optimizer-COE202) | Course/project repository centered on the Muon optimizer. |
@@ -306,12 +312,15 @@ These resources are not standalone papers. They include project pages, implement
 | 2026-05-24 | experiment workspace | [LLM Training Acceleration](https://github.com/Anthonio-Verdeggiante/LLM_Training_Acceleration) | LoRA training/evaluation workspace comparing AdamW, Muon, and MeZO on PIQA-oriented LLM acceleration experiments. |
 | 2026-05-23 | application example | [convnext-muon-cifar10](https://github.com/akira-n-28/convnext-muon-cifar10) | ConvNeXt plus SE CIFAR-10 experiment using the Muon optimizer. |
 | 2026-05-23 | optimizer library | [pytorch-optimizer](https://pytorch-optimizers.readthedocs.io/en/latest/) [Code](https://github.com/kozistr/pytorch_optimizer) | Production PyTorch optimizer toolkit listing Muon, COSMOS, AdaMuon, and other recent optimizer variants behind a shared API. |
+| 2026-05-17 | experiment workspace | [newton-muon-testing](https://github.com/K0tovsk1y/newton-muon-testing) | Newton-Muon implementation and ablations across GNN, CNN, mini-transformer, and GPT speedrun code with preconditioner refresh/damping variants. |
 | 2026-05-16 | evaluation workspace | [muon-root-optimizer](https://github.com/dve-r/muon-root-optimizer) | Evaluation workspace comparing Muon with ROOT optimizer behavior on vision and language tasks. |
 | 2026-05-15 | project page | [Rethinking Muon Beyond Pretraining: Spectral Failures and High-Pass Remedies for VLA and RLVR](https://chongyu-fan.netlify.app/posts/pion/) [Code](https://github.com/OPTML-Group/Pion) | Project/blog page for the High-Pass Pion paper, with visual explanation and official code link. |
 | 2026-05-14 | study project | [muon / AdaMuon study](https://github.com/ma-tt-a/muon) | Study project on Muon and AdaMuon optimizers. |
 | 2026-05-13 | application example | [mHC](https://github.com/ashishjv1/mHC) | Manifold-constrained hyper-connections experiments on nanoGPT using the Muon optimizer. |
+| 2026-05-12 | application example | [GPT-2 from scratch on a MacBook Air - 1B tokens, $0 cloud cost](https://github.com/lingengyuan/gpt2-from-scratch) | End-to-end GPT-2 Small reproduction including a FineWeb 1B-token AdamW versus Muon run on MLX/M5 and notes on hardware/config sensitivity. |
 | 2026-05-11 | experiment code | [undergraduate-thesis-code](https://github.com/liangpaan/undergraduate-thesis-code) | Reproducible GPT-2 optimizer experiments covering Muon, AdamW, and SNR-preconditioned Muon variants. |
 | 2026-05-11 | reference collection | [Muon-References](https://github.com/irregular-rhomboid/Muon-References) | Small curated reference list for literature around the Muon optimizer. |
+| 2026-05-08 | experiment workspace | [muon-vs-adamw](https://github.com/wijele/muon-vs-adamw) | Reproducible AdamW-versus-Muon experiment workspace with tuning summaries, paired final results, statistical summaries, and error-analysis outputs. |
 | 2026-05-07 | course report | [muon-optimization-course-report](https://github.com/Galaxy-Dawn/muon-optimization-course-report) | Course-report code and diagnostics for Muon-style matrix optimization. |
 | 2026-05-03 | visualization tool | [MuonVis](https://dhruvpendharkar.github.io/MuonVis/) [Code](https://github.com/dhruvpendharkar/MuonVis) | Interactive browser visualization of Muon concepts including polar decomposition, Newton-Schulz iteration, SVD geometry, optimizer trajectories, and the full Muon pipeline. |
 | 2026-05-02 | benchmark/comparison | [qwen-optimizer-comparison](https://github.com/annasundeeva9-gif/qwen-optimizer-comparison) | Qwen2.5-0.5B optimizer comparison task contrasting AdamW and Muon. |
