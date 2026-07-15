@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](./LICENSE)
 [![Papers](https://img.shields.io/badge/Papers-231-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](./data/optimizers.csv)
 [![Code Links](https://img.shields.io/badge/Code%20Links-76-2ea44f.svg?style=flat-square&logo=github)](./data/optimizers.csv)
-[![Muon Resources](https://img.shields.io/badge/Muon%20Resources-132-0969da.svg?style=flat-square&logo=readme&logoColor=white)](./data/muon_resources.csv)
+[![Muon Resources](https://img.shields.io/badge/Muon%20Resources-133-0969da.svg?style=flat-square&logo=readme&logoColor=white)](./data/muon_resources.csv)
 [![Coverage](https://img.shields.io/badge/Years-2022--2026-6f42c1.svg?style=flat-square&logo=bookstack&logoColor=white)](./data/optimizers.csv)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/JiwenJ/Awesome-Optimizers/pulls)
 
@@ -15,7 +15,7 @@ Curated optimizer-design papers from `2022+`, ordered by exact publication or su
 - Weakly related Muon papers: [data/muon_weakly_related.csv](./data/muon_weakly_related.csv)
 - Muon blogs, implementations, and other resources: [data/muon_resources.csv](./data/muon_resources.csv)
 - README coverage: every row in all three CSV files is rendered on this homepage.
-- Current Muon audit window: `2026-03-14` through `2026-07-14`; items formally accepted or materially revised in the window are retained with their original publication date.
+- Current Muon audit window: `2026-03-15` through `2026-07-15`; items formally accepted or materially revised in the window are retained with their original publication date.
 - Date source: arXiv `published` date for arXiv papers; source-page publication, submission, or release date; repository creation date unless a dated release or material update is the relevant event.
 - Note: `SRON` is a legacy unsourced row without a paper URL, so its date remains month-level until the source paper is verified.
 
@@ -330,6 +330,7 @@ These resources are not standalone papers. They include project pages, implement
 | 2026-07-12 | interactive lab | [MuonLab -- Muon and Aurora Interactive Lab](https://github.com/middesurya/daily-webapp-2026-07-12-muonlab) | Dependency-free browser lab with numerical Newton-Schulz and Jacobi-SVD demos, spectral-descent views, Aurora's neuron-death correction, and coefficient exploration. |
 | 2026-07-11 | workshop talk | [Tensorion: A Tensor-Aware Generalization of the Muon Optimizer](https://grigoris.ece.wisc.edu/workshops/colorai-icml-2026/) | CoLorAI at ICML 2026 spotlight on extending Muon's matrix spectral constraint and linear minimization oracle to higher-order tensors. |
 | 2026-07-10 | experiment archive | [muon-norm-cap-grokking](https://github.com/PeterPonyu/muon-norm-cap-grokking) | Reproducible tests of whether norm growth explains Muon-accelerated grokking, including scale-hardening arms, 112 logged runs, and no-weight-decay taxonomy experiments. |
+| 2026-07-08 | official implementation and documentation | [DMuon -- Distributed Muon at Near-AdamW Cost](https://x-square-robot.github.io/dmuon/) [Code](https://github.com/X-Square-Robot/dmuon) | Official research-preview implementation and documentation for owner-rank distributed Muon across FSDP2/HSDP, with load-balanced scheduling, overlapped communication, Gram/SYRK kernels, and a segmented CUDA clipping path. |
 | 2026-07-08 | research implementation | [CT-PSO](https://github.com/sofia-gordievskikh/ctpso) | Research code applying Muon orthogonalization to continuous-time stochastic particle-swarm optimization, with benchmark and diversity ablations. |
 | 2026-07-07 | benchmark workspace | [minigpt-muon-benchmark](https://github.com/anxbt/minigpt-optimizer-benchmark) | Single-GPU MiniGPT pretraining benchmark comparing AdamW and Hybrid Muon across seed-matched public-dataset runs. |
 | 2026-07-07 | blog and implementation | [Muon vs AdamW](https://kareemfareed.com/posts/muon-vs-adamw/) [Code](https://github.com/KookiesNKareem/optim-study) | Compute-matched small-LLM pretraining study with tuned AdamW and Muon, wall-clock accounting, attention/MLP scope ablations, and full logs/code. |
