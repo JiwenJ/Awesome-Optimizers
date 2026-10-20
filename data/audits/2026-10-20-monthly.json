@@ -1,0 +1,1544 @@
+{
+  "audit_date": "2026-10-20",
+  "window": {
+    "from": "2026-04-20",
+    "to": "2026-10-20"
+  },
+  "baseline_commit": "9b6237ed7f3b9c98cc15bb130b4a2d75e097dfa5",
+  "previous_audit": "data/audits/2026-10-15-monthly.json",
+  "scope": {
+    "direct": "New optimizers, algorithmic variants, and substantively new optimizer/scheduler/state-management wrappers; includes theoretical and specialized algorithms, with scope and costs stated in summaries.",
+    "weak": "Substantive Muon theory, mechanisms, benchmarks, and implementation research without a newly proposed optimizer.",
+    "resources": "Muon technical explanations, implementations, and experimental resources.",
+    "excluded": "Physical muons; ordinary reuse of existing non-Muon optimizers; pure non-Muon analyses without new algorithm design; unrelated combinatorial/metaheuristic applications."
+  },
+  "method": [
+    "Re-read all current CSVs and README at a pinned live main commit; preserve every existing row and prior known duplicate exception.",
+    "Audit each calendar segment, not just the latest week. Extend the prior cs.LG-focused search through math.OC, math.NA, cs.NE and stat.ML native listings, exact-month searches, primary publication histories and original technical resources.",
+    "Title screens are discovery only. Retained papers were checked in full-text algorithm, assumption, experiment and limitation sections; original arXiv submission dates were retained despite later revisions or printed manuscript dates.",
+    "Deduplicate canonical arXiv/URL identity and normalized title across direct, weak and resource tables. Distinguish new update designs and substantive wrappers from pure analysis or ordinary reuse.",
+    "Inspect substantive paper-/author-linked code before setting code URLs. README-only placeholders, inaccessible repositories and unverified implementations receive blank code fields.",
+    "Resolve all six explicitly recorded unreviewed title leads before publication: five additional designs retained, one withdrawn paper rejected. IAdam remains pending because primary full text is inaccessible.",
+    "Validate every CSV cell through independent artifact-tool import, preserve canonical CSV round trips, and verify README renders all rows. Publish with an expected-head lease and read back every committed file."
+  ],
+  "monthly": [
+    {
+      "month": "2026-04",
+      "from": "2026-04-20",
+      "to": "2026-04-30",
+      "baseline_rows_in_window": {
+        "direct": 9,
+        "weak": 1,
+        "resources": 11
+      },
+      "added": {
+        "direct": 4,
+        "weak": 0,
+        "resources": 0
+      },
+      "records": [
+        {
+          "category": "direct",
+          "date": "2026-04-20",
+          "title": "Momentum Stability and Adaptive Control in Stochastic Reconfiguration",
+          "optimizer": "PRIME-SR",
+          "url": "https://arxiv.org/abs/2604.18357",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2604.18357",
+            "https://arxiv.org/html/2604.18357v1"
+          ],
+          "evidence_notes": "Original published Apr20. Read sections4.1-4.3 Algorithm2 and Eq4.5/4.6; Remark4.1 explicitly excludes adaptive PRIME-SR from fixed-momentum proof. Section5 and appendixE compare electronic seeds0-4. No paper-linked new-method implementation verified."
+        },
+        {
+          "category": "direct",
+          "date": "2026-04-23",
+          "title": "Distributed Zeroth-Order Optimization with Rademacher Perturbations and Momentum Gradient Tracking",
+          "optimizer": "ZO-MGT",
+          "url": "https://arxiv.org/abs/2604.21368",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2604.21368",
+            "https://arxiv.org/html/2604.21368v1"
+          ],
+          "evidence_notes": "Algorithm1/sectionII-C fully read. Theorem1 Eq64 and Remark4 retain nonzero neighborhood terms; intro inconsistent O(1/sqrt(NK)) sentence not propagated. SectionIV uses20agents,a9a,d124,eta.05,mu.01,beta.9. No substantive official code linked."
+        },
+        {
+          "category": "direct",
+          "date": "2026-04-26",
+          "title": "A Retraction-Free EXTRA Method for Decentralized Optimization on the Stiefel Manifold",
+          "optimizer": "RF-EXTRA",
+          "url": "https://arxiv.org/abs/2604.23754",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2604.23754",
+            "https://arxiv.org/html/2604.23754v2"
+          ],
+          "evidence_notes": "Original Apr26, read revisedv2 Apr28. Sections2 Algorithm1,3.5 theorem/Remark1,4.1/4.2 experiments. Table1 RFEXTRA .617 vs REXTRA .609 on p.4 prevents universal faster claim."
+        },
+        {
+          "category": "direct",
+          "date": "2026-04-27",
+          "title": "FedSLoP: Memory-Efficient Federated Learning with Low-Rank Gradient Projection",
+          "optimizer": "FedSLoP",
+          "url": "https://arxiv.org/abs/2604.24012",
+          "code_url": "https://github.com/pkumelon/FedSLoP",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2604.24012",
+            "https://arxiv.org/html/2604.24012v3",
+            "https://github.com/pkumelon/FedSLoP/blob/main/code/algorithm.py"
+          ],
+          "evidence_notes": "Original Apr27; read v1 then rechecked latestv3 Algorithm1/section3.3 and5 Tables1-4. Table1 selects eta from FedSLoP autotuning. Public algorithm.py opened: classdocstring explicitly full-dimensional uploads, same communication asFedAvgM; low-dimensional clientmomentum plus servermomentum differs from per-roundresettheory. Summaryavoids rawcommunicationcompressionclaim."
+        }
+      ]
+    },
+    {
+      "month": "2026-05",
+      "from": "2026-05-01",
+      "to": "2026-05-31",
+      "baseline_rows_in_window": {
+        "direct": 111,
+        "weak": 20,
+        "resources": 41
+      },
+      "added": {
+        "direct": 9,
+        "weak": 0,
+        "resources": 0
+      },
+      "records": [
+        {
+          "category": "direct",
+          "date": "2026-05-01",
+          "title": "Randomized Subspace Nesterov Accelerated Gradient",
+          "optimizer": "RS-NAG-C / RS-NAG-SC",
+          "url": "https://arxiv.org/abs/2605.00740",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2605.00740",
+            "https://arxiv.org/html/2605.00740v1"
+          ],
+          "evidence_notes": "Read Algorithms1/2 sections3/4; section2.1 oracle boundaries; section6 quadratic d1000,10seeds and logistic six real datasets3seeds. Hascs.LG crosslist so not exclusively a category gap; missed by prior selection despite title signal."
+        },
+        {
+          "category": "direct",
+          "date": "2026-05-07",
+          "title": "Universal Adaptive Proximal Gradient Methods via Gradient Mapping Accumulation",
+          "optimizer": "Gradient-Mapping Adaptive PG / Accelerated PG",
+          "url": "https://arxiv.org/abs/2605.05944",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2605.05944",
+            "https://arxiv.org/html/2605.05944v1"
+          ],
+          "evidence_notes": "Read Algorithm1/2 gradientmappingaccumulator, Table1 assumptions, section6 MNIST/LIBSVM SVM/logistic experiments and Figure3/4 caveats. No official implementation linked in inspected text."
+        },
+        {
+          "category": "direct",
+          "date": "2026-05-12",
+          "title": "Gradient Clipping Beyond Vector Norms: A Spectral Approach for Matrix-Valued Parameters",
+          "optimizer": "Adaptive Spectral Gradient Clipping",
+          "url": "https://arxiv.org/abs/2605.11838",
+          "code_url": "https://github.com/katcinskiy/spectral-clipping",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2605.11838",
+            "https://arxiv.org/html/2605.11838v1",
+            "https://github.com/katcinskiy/spectral-clipping/blob/main/clipping.py"
+          ],
+          "evidence_notes": "Read sections5 Algorithms1/2 and6/appendixF. Paperexplicitofficiallink; clipping.py fully opened includes full/randomizedSVD,Const,EMA,Quantile classes. Not same paper as EntryWiseClipping2605.27733."
+        },
+        {
+          "category": "direct",
+          "date": "2026-05-13",
+          "title": "Rescaled Asynchronous SGD: Optimal Distributed Optimization under Data and System Heterogeneity",
+          "optimizer": "Rescaled ASGD",
+          "url": "https://arxiv.org/abs/2605.13434",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2605.13434",
+            "https://arxiv.org/html/2605.13434v1"
+          ],
+          "evidence_notes": "Read section1 FromGradienttoGradientStep, section3 rescaling, section4 theorem4.1/corollary complexities and5/appendixE. No paper-linkednewmethod code. Original May13."
+        },
+        {
+          "category": "direct",
+          "date": "2026-05-16",
+          "title": "Clipped Stochastic Gradient Tracking For Locally Smooth Functions",
+          "optimizer": "CGTVR-sync / CGTVR-stag",
+          "url": "https://arxiv.org/abs/2605.17027",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2605.17027",
+            "https://arxiv.org/html/2605.17027v1"
+          ],
+          "evidence_notes": "Read Algorithm1/2 section3 with displacement restart, sections4/5 conditional complexity, section6 experiments inclapproximate localconstant andchangedGT-VR p. No code verified."
+        },
+        {
+          "category": "direct",
+          "date": "2026-05-29",
+          "title": "The sketched landing method for large-scale optimization under orthogonality constraints",
+          "optimizer": "Sketched Landing / SVRG Sketched Landing",
+          "url": "https://arxiv.org/abs/2605.31505",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2605.31505",
+            "https://arxiv.org/html/2605.31505v2"
+          ],
+          "evidence_notes": "Original May29 notJuly24 revision. Read AlgorithmIII.1/V.1 andsectionsIV-VII. Paper explicitly preliminary moderate dimension andfuture highperformanceimplementation. No new-methodofficialcode verified."
+        },
+        {
+          "category": "direct",
+          "date": "2026-05-12",
+          "title": "Proximal Limited-Memory Quasi-Newton Methods for Nonsmooth Nonconvex Optimization",
+          "optimizer": "RPQN / limited-memory Kleinmichel",
+          "url": "https://arxiv.org/abs/2605.11627",
+          "code_url": "https://zenodo.org/records/20025657",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2605.11627",
+            "https://arxiv.org/html/2605.11627v1",
+            "https://zenodo.org/records/20025657",
+            "https://zenodo.org/api/records/20025657/files/rpqn_v1.zip/content"
+          ],
+          "evidence_notes": "Original May 12. Algorithm 1, compact Kleinmichel novelty, Sections 6–7 and Data availability inspected. Author-linked 54,712-byte archive contains nonempty RPQN_lkm.m, RPQN_lbfgs.m, proximal helpers and experiment scripts; source inspected read-only."
+        },
+        {
+          "category": "direct",
+          "date": "2026-05-28",
+          "title": "A Unified Framework for Gradient Aggregation in Multi-Objective Optimization",
+          "optimizer": "Capped MGDA / Greedy-DCP / Mixed Aggregator Scheduling",
+          "url": "https://arxiv.org/abs/2605.30452",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2605.30452",
+            "https://arxiv.org/html/2605.30452v1"
+          ],
+          "evidence_notes": "Original May 28. Sections 4.3.2, 5.2, A.2 and C.2 inspected. New capped-QP update and Greedy-DCP/MAS distinguish this from pure unifying analysis. No substantive official code link found in primary full text."
+        },
+        {
+          "category": "direct",
+          "date": "2026-05-29",
+          "title": "A General Recipe for Parameter-Free Nonconvex Optimization via Higher-Order Regularization",
+          "optimizer": "Higher-order regularized parameter-free GD / Newton / Gauss–Newton / SGD / PAGE",
+          "url": "https://arxiv.org/abs/2605.30891",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2605.30891",
+            "https://arxiv.org/html/2605.30891v1"
+          ],
+          "evidence_notes": "Original arXiv submission May 29; manuscript heading August 24 is not used to redate it. Sections 2.2–2.3, Algorithm 1, Sections 3–6 update formulas, conclusion and no-data statement inspected. No verified official code."
+        }
+      ]
+    },
+    {
+      "month": "2026-06",
+      "from": "2026-06-01",
+      "to": "2026-06-30",
+      "baseline_rows_in_window": {
+        "direct": 50,
+        "weak": 17,
+        "resources": 39
+      },
+      "added": {
+        "direct": 6,
+        "weak": 0,
+        "resources": 0
+      },
+      "records": [
+        {
+          "category": "direct",
+          "date": "2026-06-01",
+          "title": "Adaptive Accelerated Mirror Descent in Primal and Dual Spaces",
+          "optimizer": "AAMD / AAMD-0 / AAproxMD",
+          "url": "https://arxiv.org/abs/2606.02787",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2606.02787",
+            "https://arxiv.org/html/2606.02787v1"
+          ],
+          "evidence_notes": "OriginalJun1. Read Algorithm1(4)/Algorithm2homotopy/AppendixEproximalextension, theorem4.4boundednessandsection5 logisticAdult/Mushroom andquartic2048dimensionaltests. Limitations explicitly deterministicconvex/adaptedmirrormap. Noofficialnewmethodcodelinkfound."
+        },
+        {
+          "category": "direct",
+          "date": "2026-06-01",
+          "title": "Inexactly Smooth Performance Estimation and New Optimized Gradient Methods",
+          "optimizer": "Inexactly Smooth OGM / UOBL",
+          "url": "https://arxiv.org/abs/2606.01505",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2606.01505",
+            "https://arxiv.org/html/2606.01505v2"
+          ],
+          "evidence_notes": "OriginalJun1 revisedJun17. Read Algorithms1/2/3 section4.2-4.4, theorem4.2endpointminimax/theorem4.3/conjecture4.4/theorem4.5 UOBL. Figures1/2 PEPcomputations only. NoempiricalNNtraining."
+        },
+        {
+          "category": "direct",
+          "date": "2026-06-10",
+          "title": "bAdag: an adaptive block coordinate gradient method for smooth nonconvex functions",
+          "optimizer": "bAdag",
+          "url": "https://arxiv.org/abs/2606.11791",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2606.11791",
+            "https://arxiv.org/html/2606.11791v1"
+          ],
+          "evidence_notes": "OriginalJun10. Read Algorithm3.1 selectedaccumulator andstep; section4 ergodicnormratesGS/UR vscompletecycles; section5 boxextension; section6 MATLAB10runs, line-searchleast-squaresmuchcheaper withoutnoise, bAdag80%successnoise. Noofficialcodeverified."
+        },
+        {
+          "category": "direct",
+          "date": "2026-06-29",
+          "title": "Curvature-Weighted Gradient Diversity: A Noise Measure for Geometry-Adaptive SGD Schedules",
+          "optimizer": "CWGD-Cosine",
+          "url": "https://arxiv.org/abs/2606.30455",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2606.30455",
+            "https://arxiv.org/html/2606.30455v1"
+          ],
+          "evidence_notes": "OriginalJun29. Read Algorithm1/Eq11-12 sections5/6.7/6.8 and7/appendixC. Explicitone-time20probes vsperiodicrefresh40% paragraphcontrast notsilentlyconflated. Counterexamples/nonconvex2-14%degradationincluded. Paperadvertised https://github.com/Hamza-Faarooq/cwgd-optimizer APIreturned404 Oct20, codeomitted."
+        },
+        {
+          "category": "direct",
+          "date": "2026-06-05",
+          "title": "A Single-Loop Regularized Newton Method for Nonconvex-Strongly-Concave Minimax Optimization",
+          "optimizer": "ACQRN / S-ACQRN",
+          "url": "https://arxiv.org/abs/2606.07003",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2606.07003",
+            "https://arxiv.org/html/2606.07003v1"
+          ],
+          "evidence_notes": "Original submission June5 2026 07:49:32 UTC. Full text sections2-4: assumptions, reformulation, Algorithm1 ACQRN, Algorithm2 stochastic method and Tables1/2 complexities reviewed. Important line97 stationarity conversion h_beta to Phi carries kappa, so no unqualified condition-free global comparison. Section5 regression dimension1076 after projection, Lanczos solves, M1 Max CPU and practical stochastic batch schedules reviewed. HTML no author implementation link beyond arXiv boilerplate; code_url blank."
+        },
+        {
+          "category": "direct",
+          "date": "2026-06-15",
+          "title": "An Adaptive Proximal Framework for Stochastic Weakly Convex Optimization",
+          "optimizer": "Adaptive Prox-Guided Scheme (APS)",
+          "url": "https://arxiv.org/abs/2606.17285",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2606.17285",
+            "https://arxiv.org/html/2606.17285v3"
+          ],
+          "evidence_notes": "Original v1 June15 2026 20:49:56 UTC; reviewed v3 Aug10 rather than treating revision as publication. Algorithm1 section3 acceptance/residual guard and bidirectional gamma updates checked. Sections4/5 oracle-dependent iteration guarantees; section6 Remark4 explicitly O(epsilon^-6) paired samples, Remark5 O(epsilon^-4) subgradient total checked. Section7 phase retrieval d50/n400, 5% corruption, 40 stochastic runs; each candidate100 inner minibatch steps plus difference batch. No implementation link or code mention in substantive paper text; code_url blank."
+        }
+      ]
+    },
+    {
+      "month": "2026-07",
+      "from": "2026-07-01",
+      "to": "2026-07-31",
+      "baseline_rows_in_window": {
+        "direct": 43,
+        "weak": 10,
+        "resources": 55
+      },
+      "added": {
+        "direct": 6,
+        "weak": 0,
+        "resources": 1
+      },
+      "records": [
+        {
+          "category": "direct",
+          "date": "2026-07-02",
+          "title": "Fourier-Diagonalized Natural Gradients and Sobolev Mirror Descent",
+          "optimizer": "Spectral Natural Gradient (SNG)",
+          "url": "https://arxiv.org/abs/2607.01634",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2607.01634",
+            "https://arxiv.org/html/2607.01634v1"
+          ],
+          "evidence_notes": "Original submission July 2. Full text Sections 2–4 and Algorithm 1 inspected. Specialized periodic spatial-field optimizer; no generic Fisher approximation or large-model evidence. No paper-linked implementation found."
+        },
+        {
+          "category": "direct",
+          "date": "2026-07-02",
+          "title": "An Optimisation Framework for the Well-Conditioned Training of Physics-Informed Neural Networks",
+          "optimizer": "DSGNAR",
+          "url": "https://arxiv.org/abs/2607.02194",
+          "code_url": "https://github.com/wephy/physics-informed-neural-networks",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2607.02194",
+            "https://arxiv.org/html/2607.02194v1",
+            "https://github.com/wephy/physics-informed-neural-networks/blob/main/src/pinn/optimiser.py"
+          ],
+          "evidence_notes": "Original July 2. Sections 3, 5.7–5.8 inspected; paper identifies trainable neural weights and new update. Official linked repository contains substantive JAX optimizer, sketching, lifting, and ratio-control implementation."
+        },
+        {
+          "category": "direct",
+          "date": "2026-07-07",
+          "title": "On the Condition Number Upper Bound of the L-BFGS Inverse Hessian Approximation Matrix with a Two-Sided Geometric Envelope Safeguarding Mechanism",
+          "optimizer": "Two-Sided L-BFGS",
+          "url": "https://arxiv.org/abs/2607.05836",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2607.05836",
+            "https://arxiv.org/html/2607.05836v1"
+          ],
+          "evidence_notes": "Original July 7. Algorithm 3 and Sections 5.1–5.3 inspected. New memory-pair filtering variant, not analysis alone; MNIST neural training gives direct ML relevance. No verified official implementation linked."
+        },
+        {
+          "category": "direct",
+          "date": "2026-07-08",
+          "title": "Hybrid Least Squares/Gradient Descent Methods for MIONets",
+          "optimizer": "MIONet ALS+Adam / LSGD",
+          "url": "https://arxiv.org/abs/2607.06976",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2607.06976",
+            "https://arxiv.org/html/2607.06976v1"
+          ],
+          "evidence_notes": "Original July 8. Algorithm 3 and experimental protocol inspected, including warm-up, retained Adam moments, full-data ALS, batch-size and regularization differences. Extends 2025 DeepONet method with MIONet multilinear updates."
+        },
+        {
+          "category": "direct",
+          "date": "2026-07-13",
+          "title": "A Twin gradient method for unconstrained optimization",
+          "optimizer": "Twin Gradient / Twin-ABB_min",
+          "url": "https://arxiv.org/abs/2607.11575",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2607.11575",
+            "https://arxiv.org/html/2607.11575v1"
+          ],
+          "evidence_notes": "Original July 13. Algorithms 1–2, Section 3.2 and Sections 4.1–4.2 inspected. General nonconvex first-order design; two-gradient accounting and test exclusions explicit. No verified official code."
+        },
+        {
+          "category": "direct",
+          "date": "2026-07-26",
+          "title": "New Globalized Newton-Type Methods for Nonconvex Optimization Problems",
+          "optimizer": "Extragradient Newton",
+          "url": "https://arxiv.org/abs/2607.23433",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2607.23433",
+            "https://arxiv.org/html/2607.23433v1"
+          ],
+          "evidence_notes": "Original July 26. Algorithm 1, extragradient specialization and Section 6 inspected. General deterministic nonconvex optimizer, no demonstrated neural training; root may omit under a narrower ML-only interpretation."
+        },
+        {
+          "category": "resources",
+          "date": "2026-07-13",
+          "title": "Optimizers In A Sharded World: Muon's O(mn) Vs RMNP's Zero",
+          "url": "https://dominator-index.github.io/blog/2026/optimizers-in-a-sharded-world/",
+          "code_url": "https://github.com/Dominator-Index/Dominator-Index.github.io/tree/main/assets/blog/code/rmnp-vs-muon",
+          "evidence_urls": [
+            "https://dominator-index.github.io/blog/2026/optimizers-in-a-sharded-world/",
+            "https://github.com/Dominator-Index/Dominator-Index.github.io/tree/main/assets/blog/code/rmnp-vs-muon"
+          ],
+          "evidence_notes": "Explicit created Jul13. Full benchmark, environment, caveats and embedded scripts read; linked code folder to verify before code_url. Author-linked repository folder and substantive 9828-byte bench_dist_opt.py verified."
+        }
+      ]
+    },
+    {
+      "month": "2026-08",
+      "from": "2026-08-01",
+      "to": "2026-08-31",
+      "baseline_rows_in_window": {
+        "direct": 51,
+        "weak": 12,
+        "resources": 51
+      },
+      "added": {
+        "direct": 1,
+        "weak": 0,
+        "resources": 0
+      },
+      "records": [
+        {
+          "category": "direct",
+          "date": "2026-08-13",
+          "title": "Adaptive Schauder Stochastic Mirror Descent in Banach Spaces",
+          "optimizer": "Adaptive Schauder Stochastic Mirror Descent (AS-SMD)",
+          "url": "https://arxiv.org/abs/2608.13121",
+          "code_url": "https://github.com/Researcher-Bai-1/AS-SMD-algorithm",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2608.13121",
+            "https://arxiv.org/html/2608.13121v3",
+            "https://github.com/Researcher-Bai-1/AS-SMD-algorithm/blob/main/AS-SMD%20fourier_system.ipynb"
+          ],
+          "evidence_notes": "Original August 13, not September v3 date. Algorithm 1, complexity, heavy-tail theorem discussion and Section 4 inspected. Paper-linked notebook contains actual growing-basis mirror updates and experiments."
+        }
+      ]
+    },
+    {
+      "month": "2026-09",
+      "from": "2026-09-01",
+      "to": "2026-09-30",
+      "baseline_rows_in_window": {
+        "direct": 77,
+        "weak": 20,
+        "resources": 20
+      },
+      "added": {
+        "direct": 4,
+        "weak": 0,
+        "resources": 1
+      },
+      "records": [
+        {
+          "category": "direct",
+          "date": "2026-09-01",
+          "title": "DOFFO_TR: a Decentralized Objective Function-Free Optimization method with Trust-Region",
+          "optimizer": "DOFFO_TR",
+          "url": "https://arxiv.org/abs/2609.00878",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2609.00878",
+            "https://arxiv.org/html/2609.00878v1"
+          ],
+          "evidence_notes": "Original September 1. Algorithm framework, Sections 5.1–5.3 and communication metric inspected. Classification is direct ML evidence. Objective-function-free means gradient-based without loss evaluations, not zeroth-order."
+        },
+        {
+          "category": "direct",
+          "date": "2026-09-23",
+          "title": "Riemannian Structure and Optimization for a Class of Low-Parametric Orthogonal Matrices",
+          "optimizer": "GS-manifold Riemannian SGD",
+          "url": "https://arxiv.org/abs/2609.27982",
+          "code_url": "https://github.com/alialiev78/torchgs",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2609.27982",
+            "https://arxiv.org/html/2609.27982v1",
+            "https://github.com/alialiev78/torchgs/blob/main/torchgs_utils/rgd.py"
+          ],
+          "evidence_notes": "Original September 23. Sections 3.2–3.7 and 4 inspected. New structured projection/retraction implementation with real fine-tuning experiment; official rgd.py contains substantive Optimizer subclass, momentum transport, sharing normalization."
+        },
+        {
+          "category": "direct",
+          "date": "2026-09-28",
+          "title": "Tensor-Train Compressed Separable PINNs: A Curvature-Aware Optimization Framework for Parametric PDEs in High Dimensions",
+          "optimizer": "Tensor-compressed Gauss–Newton for separable PINNs",
+          "url": "https://arxiv.org/abs/2609.36165",
+          "code_url": "https://github.com/detzer0/tt-compressed-pinns",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2609.36165",
+            "https://arxiv.org/html/2609.36165v1",
+            "https://github.com/detzer0/tt-compressed-pinns"
+          ],
+          "evidence_notes": "Original September 28. Algorithm 1, cost analysis and Section 5 inspected. Code availability links repository; inspected Poisson notebook contains ~73 KB substantive JAX training code with compressed/dense solver settings and line search."
+        },
+        {
+          "category": "direct",
+          "date": "2026-09-29",
+          "title": "Hybrid Joint-Selective Optimization: Reduced-Space Levenberg-Marquardt Refinement of Low-Dimensional Parameters of Interest",
+          "optimizer": "Hybrid Joint–Selective Optimization (HJSO)",
+          "url": "https://arxiv.org/abs/2609.37308",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2609.37308",
+            "https://arxiv.org/html/2609.37308v1"
+          ],
+          "evidence_notes": "Original September 29. Algorithm 1, costs and conditional descent, experiments and limitations inspected. New structured update wrapper; joint baseline and fixed monitoring/refinement trajectories explicitly distinguished. No verified official code."
+        },
+        {
+          "category": "resources",
+          "date": "2026-09-19",
+          "title": "Muon and AdamW under a fixed compute budget",
+          "url": "https://zsqdx.github.io/writing/muon-adamw-compute-budget/",
+          "code_url": "https://github.com/zsqdx/katago-transformer-tpu-nano/blob/90c12afafd4e24ce6293a6a2009759a34ff87d65/train_jax.py",
+          "evidence_urls": [
+            "https://zsqdx.github.io/writing/muon-adamw-compute-budget/",
+            "https://github.com/zsqdx/katago-transformer-tpu-nano/blob/90c12afafd4e24ce6293a6a2009759a34ff87d65/train_jax.py"
+          ],
+          "evidence_notes": "Explicit published Sep19 (project April). Read full original note and author-linked substantive train_jax.py."
+        }
+      ]
+    },
+    {
+      "month": "2026-10",
+      "from": "2026-10-01",
+      "to": "2026-10-20",
+      "baseline_rows_in_window": {
+        "direct": 69,
+        "weak": 17,
+        "resources": 6
+      },
+      "added": {
+        "direct": 5,
+        "weak": 4,
+        "resources": 2
+      },
+      "records": [
+        {
+          "category": "direct",
+          "date": "2026-10-16",
+          "title": "BMuon: Budgeting Muon's Spectral Geometry for Structured Compressibility",
+          "optimizer": "BMuon",
+          "url": "https://arxiv.org/abs/2610.23571",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2610.23571",
+            "https://arxiv.org/html/2610.23571v1",
+            "https://github.com/RidaAssalouh/BMuon"
+          ],
+          "evidence_notes": "Original submission 2026-10-16 14:52:56 UTC. Full text sections 2.2, 3, 4 Algorithm 1, 5.2 Table 1, 5.3 and Appendix D.6 reviewed. Paper explicitly distinguishes representation cost from implicit bias. Language result baseline 10.92 vs BMuon 12.84 dense, BMuon 12.85 at 80% pruning. Repository inspected live: only README.md, implementation/reproduction scripts will be released soon; code_url deliberately blank."
+        },
+        {
+          "category": "direct",
+          "date": "2026-10-15",
+          "title": "A Second-Order Descent Algorithm for Nonlinear Equality Constrained Optimization",
+          "optimizer": "ASODA",
+          "url": "https://arxiv.org/abs/2610.21673",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2610.21673",
+            "https://arxiv.org/html/2610.21673v2"
+          ],
+          "evidence_notes": "v1 2026-10-15 10:57:53 UTC, v2 10/16; retain original date. Full text section 2 Algorithm 1 and hard case Algorithm 2, section 3 structural kappa_h hypothesis, section 4 setup/tables reviewed. Evaluations rather than cross-implementation CPU times are the comparison metric; CPU timings only ASODA."
+        },
+        {
+          "category": "direct",
+          "date": "2026-10-15",
+          "title": "When is a better LLM worth paying for? Stochastic Optimization with Switching Mixed-Fidelity Oracles",
+          "optimizer": "Cost-aware oracle-switching SGE / budgeted trusted certification",
+          "url": "https://arxiv.org/abs/2610.21139",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2610.21139",
+            "https://arxiv.org/html/2610.21139v1"
+          ],
+          "evidence_notes": "Original 2026-10-15 02:50:49 UTC. Reviewed section 3 Algorithms 1/2 and section 5 trusted-certification wrapper, section 6 experiments. Section 6.2 explicitly calls cost equivalent per-observation price and states clean Hessian whitening is experimental normalization. Practical admissibility proxy differs from sufficient guarantee. Included as a new optimizer wrapper, not a new Adam-like base optimizer."
+        },
+        {
+          "category": "direct",
+          "date": "2026-10-05",
+          "title": "An Inexact Halpern-accelerated Preconditioned Generalized Proximal Point Algorithm for the Maximal Monotone Inclusion Problem",
+          "optimizer": "iHP-GPPA / inexact accelerated pADMM and PDHG",
+          "url": "https://arxiv.org/abs/2610.05742",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2610.05742",
+            "https://arxiv.org/html/2610.05742v1"
+          ],
+          "evidence_notes": "Original 2026-10-05 03:45:24 UTC. Algorithm 1 section 3 verified. Sections 4.1/4.2 and applications 5.1/5.2, conclusion reviewed: relaxed approximate resolvent with anchor; error exponents >3/2 for rho interior and >2 at rho=2. No numerical experiment section in complete HTML."
+        },
+        {
+          "category": "direct",
+          "date": "2026-10-04",
+          "title": "Single-call Polyak-Type Extragradient Methods for Monotone Root-Finding Problems",
+          "optimizer": "SPolyakEG",
+          "url": "https://arxiv.org/abs/2610.05138",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2610.05138",
+            "https://arxiv.org/html/2610.05138v1"
+          ],
+          "evidence_notes": "Original 2026-10-04 11:38:39 UTC. Full text Algorithm 1, delayed critical condition 4.1, sufficient step condition 4.3, comparison Table 1, and section 5 numerical problems reviewed. Oracle count saving not stated as universal 2x wall-clock improvement."
+        },
+        {
+          "category": "weak",
+          "date": "2026-10-15",
+          "title": "When Does Muon Actually Win? A Paired Data-, Time-, and Tuning-Budget Benchmark",
+          "url": "https://arxiv.org/abs/2610.21555",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2610.21555",
+            "https://arxiv.org/pdf/2610.21555"
+          ],
+          "evidence_notes": "Original 2026-10-15 09:15:49 UTC. No HTML; PDF read sections 2.1, 2.2, 3, 4. Visual screenshot of PDF page 4 verified Figure 1/Table 1: throughput ratios .377/.468/.339/.414, Muon shares63.1/56.1/69.6/63.1. Search conditioning and fused-QKV reference routing included in limitations."
+        },
+        {
+          "category": "weak",
+          "date": "2026-10-15",
+          "title": "When Is Muon Optimal? Radial Fragility and Minimax Geometry",
+          "url": "https://arxiv.org/abs/2610.21549",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2610.21549",
+            "https://arxiv.org/html/2610.21549v1"
+          ],
+          "evidence_notes": "Original 2026-10-15 09:13:19 UTC despite manuscript printed August 5, 2026. Reviewed standing assumptions full column rank m>=n, Theorem1, Corollary3.2, minimax section4 and Scope/future directions. No training algorithm novelty or empirical validation; weak classification."
+        },
+        {
+          "category": "weak",
+          "date": "2026-10-15",
+          "title": "The Ephemeral Cost of Switching Optimizers Across LLM Training Stages",
+          "url": "https://arxiv.org/abs/2610.22650",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2610.22650",
+            "https://arxiv.org/html/2610.22650v1"
+          ],
+          "evidence_notes": "Original 2026-10-15 21:10:20 UTC. Full text experimental setup, 7x7 mixture grid, row-column interaction decomposition, Figures1/2 and Tables1/2 reviewed. Table2: Muon higher mean in4/5 settings, most differences small versus SD. Author-linked anonymous code exists but weak schema has no code_url, no repository resource proposed without content verification."
+        },
+        {
+          "category": "weak",
+          "date": "2026-10-15",
+          "title": "Does On-Policy Distillation Need to Complete Every Rollout?",
+          "url": "https://arxiv.org/abs/2610.21337",
+          "evidence_urls": [
+            "https://arxiv.org/abs/2610.21337",
+            "https://arxiv.org/html/2610.21337v1"
+          ],
+          "evidence_notes": "Original 2026-10-15 06:22:08 UTC. Section5.3 dedicated SGD/Muon controlled experiment reviewed; Muon accuracy 29.5 Vanilla versus29.8 STOPD. AppendixB.3 PropositionB.2 and equations63-68 reviewed; fixed history/completebatch conditioning, normalization clamp, finite-J polynomial Lipschitz divided-difference coefficient. Substantive Muon-specific theory and ablation supports weak inclusion rather than ordinary reuse."
+        },
+        {
+          "category": "resources",
+          "date": "2026-10-15",
+          "title": "MAI-Base-2: frontier Muon scaling and hyperparameter laws",
+          "url": "https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai/",
+          "evidence_urls": [
+            "https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai/"
+          ],
+          "evidence_notes": "October 15 explicit publication; read scaling hyperparameters and Scaling Muon sections. Resource, not new base optimizer. No official implementation linked."
+        },
+        {
+          "category": "resources",
+          "date": "2026-10-13",
+          "title": "Muon Optimizer: Audit Orthogonal Updates",
+          "url": "https://jpcasabianca.com/journal/muon-optimizer-orthogonal-updates/",
+          "evidence_urls": [
+            "https://jpcasabianca.com/journal/muon-optimizer-orthogonal-updates/",
+            "https://jpcasabianca.com/assets/journal/artifacts/2026-10-13/muon-update-audit-lab"
+          ],
+          "evidence_notes": "Explicit October 13 published/updated date. Full tutorial read; linked runnable lab inspected. No external source repository verified."
+        }
+      ]
+    }
+  ],
+  "search_logs": {
+    "april_to_june": {
+      "audit_date": "2026-10-20",
+      "assigned_window": {
+        "from": "2026-04-20",
+        "to": "2026-06-30"
+      },
+      "baseline_commit": "9b6237ed7f3b9c98cc15bb130b4a2d75e097dfa5",
+      "baseline_counts": {
+        "direct": 568,
+        "weak": 109,
+        "resources": 263
+      },
+      "method": "Re-read prior Oct15 monthly audit, then independently screen non-cs.LG routes and exact-month web queries. Parse all entries on official math.OC monthly pages, keyword-screen titles, compare exact arXiv IDs against all three current catalog surfaces, then inspect full-text algorithms and experiment/guarantee limitations for selected eligible candidates. This is not a claim to read every optimization paper or to finish all title leads.",
+      "monthly": [
+        {
+          "month": "2026-04",
+          "from": "2026-04-20",
+          "to": "2026-04-30",
+          "official_native_list": "https://arxiv.org/list/math.OC/2026-04?skip=0&show=2000",
+          "native_entries_parsed": 744,
+          "count_note": "Full calendar month including crosslists; pre-Apr20 papers excluded from additions by original submission date.",
+          "added_ids": [
+            "2604.18357",
+            "2604.21368",
+            "2604.23754",
+            "2604.24012"
+          ]
+        },
+        {
+          "month": "2026-05",
+          "from": "2026-05-01",
+          "to": "2026-05-31",
+          "official_native_list": "https://arxiv.org/list/math.OC/2026-05?skip=0&show=2000",
+          "native_entries_parsed": 769,
+          "added_ids": [
+            "2605.00740",
+            "2605.05944",
+            "2605.11838",
+            "2605.13434",
+            "2605.17027",
+            "2605.31505",
+            "2605.11627",
+            "2605.30452",
+            "2605.30891"
+          ]
+        },
+        {
+          "month": "2026-06",
+          "from": "2026-06-01",
+          "to": "2026-06-30",
+          "official_native_list": "https://arxiv.org/list/math.OC/2026-06?skip=0&show=2000",
+          "native_entries_parsed": 688,
+          "added_ids": [
+            "2606.02787",
+            "2606.01505",
+            "2606.11791",
+            "2606.30455",
+            "2606.07003",
+            "2606.17285"
+          ],
+          "status": "Selected four new-algorithm full-text followups completed; prior Oct15 June cs.LG/math.OC audit inspected as baseline evidence."
+        }
+      ],
+      "queries": [
+        "site:arxiv.org/abs/2604 optimizer Submitted 2026",
+        "site:arxiv.org/abs/2605 optimizer adaptive stochastic 2026",
+        "site:arxiv.org/abs/2606 optimizer new gradient 2026",
+        "site:openreview.net 2026 optimizer June May",
+        "optimizer April 2026 new adaptive momentum -muon -database -quantum",
+        "optimizer May 2026 propose -muon -database -quantum",
+        "optimizer June 2026 introduce -muon -database -quantum",
+        "Modeling and Control of Nonlinear Systems Using an Improved Adaptive Moment Optimization Approach"
+      ],
+      "representative_already_collected": [
+        {
+          "ids": [
+            "2605.19781",
+            "2605.26929",
+            "2606.13894"
+          ],
+          "names": [
+            "Schatten-p Adaptive Optimization",
+            "Muon Adversarial Training",
+            "Gefen"
+          ],
+          "reason": "Exact-month primary search rediscoveries; present in baseline, not re-added."
+        },
+        {
+          "ids": [
+            "2605.26842",
+            "2605.17806",
+            "2605.27733",
+            "2605.31371"
+          ],
+          "names": [
+            "MONA",
+            "AMO",
+            "Entry-Wise Clipping",
+            "Softsign / SoftMuon"
+          ],
+          "reason": "Current baseline rows checked; spectral clipping 2605.11838 is a different paper, not another version of entry-wise clipping."
+        },
+        {
+          "ids": [
+            "2606.27153",
+            "2606.27216",
+            "2606.27715",
+            "2606.31390"
+          ],
+          "names": [
+            "DMuon",
+            "HiMuon",
+            "Aurora",
+            "DMD"
+          ],
+          "reason": "Retained existing June rows and prior audit evidence, no duplicates."
+        }
+      ],
+      "excluded_after_inspection": [
+        {
+          "id": "2605.31386",
+          "title": "Stepsize Hedging: an Alternative Mechanism for Accelerating Gradient Descent",
+          "reason": "Full text explicitly identifies invited expository newsletter highlight summarizing the authors' 2023/2025 silver-step papers, not a newly introduced optimizer in May2026.",
+          "source": "https://arxiv.org/html/2605.31386v1"
+        },
+        {
+          "id": "2604.23922",
+          "title": "Quasi-Quadratic Gradient: A New Direction for Accelerating the BFGS Method in Quasi-Newton Optimization",
+          "reason": "Inspected section3.2 and benchmark discussion. Core QQG direction B_k^{-1}g_k is the standard quasi-Newton direction; first-order-wrapper variants and numerical reporting do not establish enough distinct, reproducibly specified optimizer novelty for this curated inclusion.",
+          "source": "https://arxiv.org/html/2604.23922v1"
+        },
+        {
+          "url": "https://www.nature.com/articles/s41598-026-44900-y",
+          "title": "Computationally efficient decoupled momentum optimization algorithm for medical imaging models",
+          "reason": "Public primary description states empirical evaluation of existing DeMo on medical segmentation, not verified new optimizer proposal."
+        },
+        {
+          "reason": "Physics muons, database/tensor-graph query optimizers, generic routing/control formulations and combinatorial metaheuristics were not treated as parameter-training optimizers."
+        }
+      ],
+      "pending": [
+        {
+          "url": "https://onlinelibrary.wiley.com/doi/10.1002/acs.70097",
+          "date": "2026-04-21",
+          "title": "Modeling and Control of Nonlinear Systems Using an Improved Adaptive Moment Optimization Approach",
+          "reason": "Primary metadata/abstract verifies proposed IAdam and date, but full-text request redirects to abstract; new update mechanism and experimental isolation not yet verified, so not added."
+        }
+      ],
+      "code_validation": [
+        {
+          "id": "2605.11838",
+          "paper_linked_repo": "https://github.com/katcinskiy/spectral-clipping",
+          "verified_implementation": "clipping.py",
+          "note": "Full file opened: full/randomized SVD plus constant, EMA, and quantile threshold classes; not a stub."
+        },
+        {
+          "id": "2604.24012",
+          "paper_linked_repo": "https://github.com/pkumelon/FedSLoP",
+          "verified_implementation": "code/algorithm.py and two experiment scripts",
+          "note": "Implementation opened; explicitly full-dimensional uploads and persistent client/server momentum. Summary flags communication and theory/implementation boundaries rather than reading compression ratio as measured bandwidth savings."
+        },
+        {
+          "id": "2606.30455",
+          "advertised_repo": "https://github.com/Hamza-Faarooq/cwgd-optimizer",
+          "result": "GitHub API404 on2026-10-20; code_url left blank."
+        }
+      ],
+      "access_limitations": [
+        "Official Atom API query spanning Apr20-Jun30 stalled; a narrower optimizer-title retry returned HTTP429. Neither was counted as successful exhaustive abstract search.",
+        "Web internal reference IDs appeared to resolve to another concurrently accessed document; all later targeted followups use complete primary URLs and verify returned title.",
+        "All six explicitly recorded pending generic-optimization title leads were subsequently resolved: five included after full-text review, one excluded as withdrawn. Title screening still cannot establish exhaustive coverage beyond the recorded routes."
+      ],
+      "counts": {
+        "direct": 19,
+        "weak": 0,
+        "resources": 0,
+        "official_code_links": 3
+      },
+      "followup_resolution": {
+        "may": {
+          "audit_date": "2026-10-20",
+          "scope": "Close only three known unreviewed May title leads from the parent audit; no new discovery expansion.",
+          "baseline_counts": {
+            "direct": 568,
+            "weak": 109,
+            "resources": 263
+          },
+          "deduplication": "Each exact arXiv ID was checked against every field of all three baseline tables; all three were absent.",
+          "dispositions": [
+            {
+              "id": "2605.11627",
+              "date": "2026-05-12",
+              "decision": "include_direct",
+              "reason": "New proximal limited-memory optimizer and compact Kleinmichel implementation; sparse logistic and Student-t learning experiments establish ML relevance, not pure PDE application.",
+              "fulltext_sections": [
+                "Algorithm 1",
+                "Sections 5–6",
+                "Sections 7.1–7.2",
+                "Data availability"
+              ],
+              "official_code": "https://zenodo.org/records/20025657",
+              "code_check": "Paper-linked Zenodo API metadata matches title; downloaded rpqn_v1.zip is 54,712 bytes, 36 entries, 147,236 uncompressed bytes. Inspected substantive src/RPQN_lkm.m; archive also has RPQN_lbfgs.m, RPQN_lsr1.m, proximal routines and test scripts."
+            },
+            {
+              "id": "2605.30452",
+              "date": "2026-05-28",
+              "decision": "include_direct",
+              "reason": "Despite unifying-framework title, explicitly adds capped-QP gradient aggregation, Greedy-DCP and mixed-aggregator scheduling; includes CIFAR-10 adversarial FL training.",
+              "fulltext_sections": [
+                "Section 4.3.2",
+                "Section 5.2",
+                "Appendix A.2",
+                "Appendix C.2"
+              ],
+              "official_code": "",
+              "code_check": "No implementation repository or archive linked in the inspected primary text; do not use generic arXiv issue-tracker links as code."
+            },
+            {
+              "id": "2605.30891",
+              "date": "2026-05-29",
+              "decision": "include_direct_theoretical_variant_family",
+              "reason": "New general higher-order regularization recipe and parameter schedules instantiate deterministic and stochastic optimizers. Some updates match known normalized GD, explicitly stated. No empirical or large-model claim.",
+              "fulltext_sections": [
+                "Sections 2.2–2.3",
+                "Algorithm 1",
+                "Sections 3.1, 4.1, 5.1, 6.1",
+                "Conclusion",
+                "Data availability"
+              ],
+              "date_note": "arXiv original submission history is May 29, despite August 24 date printed within HTML manuscript.",
+              "official_code": "",
+              "code_check": "No official implementation verified; primary declares no datasets generated or analyzed."
+            }
+          ],
+          "primary_sources": [
+            "https://arxiv.org/abs/2605.11627",
+            "https://arxiv.org/html/2605.11627v1",
+            "https://zenodo.org/api/records/20025657",
+            "https://arxiv.org/abs/2605.30452",
+            "https://arxiv.org/html/2605.30452v1",
+            "https://arxiv.org/abs/2605.30891",
+            "https://arxiv.org/html/2605.30891v1"
+          ],
+          "access_notes": [
+            "Zenodo DOI open through web fetch returned internal error; public Zenodo API and source archive succeeded via read-only curl.",
+            "All web find/open operations used full primary URLs to avoid cross-agent internal-reference collisions."
+          ],
+          "counts": {
+            "direct": 3,
+            "weak": 0,
+            "resources": 0,
+            "official_code_links": 1
+          },
+          "pending": []
+        },
+        "june": {
+          "audit_date": "2026-10-20",
+          "scope": "Resolve three specific previously known June title leads; no new open-ended search.",
+          "decisions": [
+            {
+              "id": "2606.07003",
+              "title": "A Single-Loop Regularized Newton Method for Nonconvex-Strongly-Concave Minimax Optimization",
+              "decision": "include_direct",
+              "date": "2026-06-05",
+              "reason": "Substantively new adaptive cubic-quadratic regularized Newton algorithm and recursive variance-reduced stochastic variant, with explicit algorithms and robust-regression experiments.",
+              "primary_sources": [
+                "https://arxiv.org/abs/2606.07003",
+                "https://arxiv.org/html/2606.07003v1"
+              ],
+              "boundaries": "Global stationarity is measured on regularized objective; conversion to value-function stationarity incurs conditioning. Local superlinear result requires regularity. Dense second-order and cubic solver costs remain. No official implementation verified."
+            },
+            {
+              "id": "2606.17285",
+              "title": "An Adaptive Proximal Framework for Stochastic Weakly Convex Optimization",
+              "decision": "include_direct",
+              "date": "2026-06-15",
+              "reviewed_version": "v3 dated2026-08-10; date column retains v1 June15",
+              "reason": "New adaptive proximal optimizer wrapper with bidirectional parameter updates and single-trial acceptance, plus explicit model-based variants and phase-retrieval experiments.",
+              "primary_sources": [
+                "https://arxiv.org/abs/2606.17285",
+                "https://arxiv.org/html/2606.17285v3"
+              ],
+              "boundaries": "O(epsilon^-2) is an iteration bound with candidate/difference oracles, not sample complexity; paper's raw minibatch realization can take O(epsilon^-6) paired samples. No official implementation verified."
+            },
+            {
+              "id": "2606.25355",
+              "title": "Primal-Dual Halpern-PAGE Algorithm for Constrained Stochastic Weakly Convex Optimization",
+              "decision": "exclude_withdrawn",
+              "date": "2026-06-24",
+              "primary_sources": [
+                "https://arxiv.org/abs/2606.25355"
+              ],
+              "reason": "Live primary arXiv record explicitly withdrawn by Liwei Zhang in v2 on2026-08-10. Authors report critical problems requiring reconsideration, and current version has no PDF. Do not promote original algorithm/optimality claims into the active catalog; record this explicit rejection rather than leave it unresolved."
+            }
+          ],
+          "verification": "Both retained IDs were checked against all three baseline tables and were absent. Primary abstract metadata and full relevant algorithm/theory/experiment sections reviewed. No remote writes."
+        },
+        "remaining_fulltext_access": {
+          "audit_date": "2026-10-20",
+          "title": "Modeling and Control of Nonlinear Systems Using an Improved Adaptive Moment Optimization Approach",
+          "optimizer_claimed": "IAdam",
+          "doi": "10.1002/acs.70097",
+          "first_published": "2026-04-21",
+          "status": "pending_full_text_access",
+          "added": false,
+          "queries": [
+            "\"10.1002/acs.70097\" pdf",
+            "\"Modeling and Control of Nonlinear Systems\" \"Saini\" \"Improved\" pdf",
+            "\"Modeling and Control of Nonlinear Systems Using an Improved Adaptive Moment Optimization Approach\" -researchgate -eurekamag -ebsco",
+            "\"acs.70097\" repository OR manuscript OR accepted"
+          ],
+          "primary_sources_checked": [
+            {
+              "url": "https://onlinelibrary.wiley.com/doi/10.1002/acs.70097",
+              "result": "Publisher metadata and abstract confirm title, author list, original publication date and proposed IAdam claim. Algorithm equations, protocol and results are not exposed in available abstract."
+            },
+            {
+              "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/acs.70097",
+              "result": "Full-text URL redirects to abstract page in available web access."
+            },
+            {
+              "url": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/acs.70097",
+              "result": "Direct official PDF request returned HTTP403."
+            },
+            {
+              "url": "https://sites.google.com/nitkkr.ac.in/dr-rajesh-kumar23/publications-journals",
+              "result": "Author's institutional-domain Google Site publication list includes this title as item41, but supplies no manuscript/PDF or repository link for it."
+            }
+          ],
+          "outcome": "No accessible author-hosted or institutional-repository full text found in this bounded exact-title/DOI pass. Retain candidate as pending, not excluded for lack of optimizer novelty and not added from abstract alone. No payment, login bypass, author contact or user action attempted."
+        }
+      }
+    },
+    "july_to_september": {
+      "window": {
+        "from": "2026-07-01",
+        "to": "2026-09-30"
+      },
+      "baseline_counts": {
+        "direct": 568,
+        "weak": 109,
+        "resources": 263
+      },
+      "method": "Rechecked prior monthly audit and all three current tables, then independently screened complete native math.NA and cs.NE month lists including cross-lists. Keyword titles supplied discovery, followed by primary abstract histories and relevant full-text algorithm/experiment/limitation sections. Exact IDs and normalized titles were checked against all baseline categories. This targets gaps outside the prior cs.LG-oriented route; it is not a claim to read every listed paper.",
+      "months": [
+        {
+          "month": "2026-07",
+          "sources": [
+            "https://arxiv.org/list/math.NA/2026-07?skip=0&show=2000",
+            "https://arxiv.org/list/cs.NE/2026-07?skip=0&show=2000"
+          ],
+          "entries_screened": {
+            "math_NA": 610,
+            "cs_NE": 128
+          },
+          "keyword_titles": {
+            "math_NA": 92,
+            "cs_NE": 17
+          },
+          "baseline_title_matches": [
+            "2607.15505"
+          ],
+          "new_verified_direct": 6
+        },
+        {
+          "month": "2026-08",
+          "sources": [
+            "https://arxiv.org/list/math.NA/2026-08?skip=0&show=2000",
+            "https://arxiv.org/list/cs.NE/2026-08?skip=0&show=2000"
+          ],
+          "entries_screened": {
+            "math_NA": 579,
+            "cs_NE": 130
+          },
+          "keyword_titles": {
+            "math_NA": 75,
+            "cs_NE": 22
+          },
+          "baseline_title_matches": [
+            "2608.06218"
+          ],
+          "new_verified_direct": 1
+        },
+        {
+          "month": "2026-09",
+          "sources": [
+            "https://arxiv.org/list/math.NA/2026-09?skip=0&show=2000",
+            "https://arxiv.org/list/cs.NE/2026-09?skip=0&show=2000"
+          ],
+          "entries_screened": {
+            "math_NA": 726,
+            "cs_NE": 193
+          },
+          "keyword_titles": {
+            "math_NA": 100,
+            "cs_NE": 33
+          },
+          "baseline_title_matches": [
+            "2609.30546",
+            "2609.13040",
+            "2609.21039",
+            "2609.21102",
+            "2609.38741",
+            "2609.35614"
+          ],
+          "new_verified_direct": 4
+        }
+      ],
+      "queries": [
+        "site:arxiv.org/abs/2607 optimizer -Muon",
+        "site:arxiv.org/abs/2608 optimizer -Muon",
+        "site:arxiv.org/abs/2609 optimizer -Muon",
+        "new optimizer 2026 July OR August OR September",
+        "(ti:optimization OR ti:optimizer OR ti:gradient OR ti:descent) AND submittedDate:[202607010000 TO 202609302359]"
+      ],
+      "query_failures": [
+        {
+          "route": "export.arxiv.org Atom broad title query",
+          "status": "HTTP 429; zero returned records",
+          "handling": "Not treated as complete coverage; native monthly list routes replaced this attempted query."
+        },
+        {
+          "route": "General web exact-identifier/month optimizer searches",
+          "status": "Returned mostly unrelated software optimizer pages and old papers",
+          "handling": "No inclusion based on these unrelated search results."
+        }
+      ],
+      "exclusions": [
+        {
+          "id": "2607.22121",
+          "title": "Non-Negative Conjugate Gradients",
+          "reason": "New specialized SPD bound/equality quadratic solver, but no neural/general stochastic training relevance demonstrated; excluded to avoid catalog expansion into pure numerical linear algebra."
+        },
+        {
+          "id": "2608.22834",
+          "title": "Mirror descent algorithms with logarithmic barriers",
+          "reason": "Primary abstract identifies convergence guarantees and proof technique for existing mirror/proximal mirror descent, not a new optimizer update; pure non-Muon analysis excluded."
+        },
+        {
+          "id": "2608.15894",
+          "title": "Adaptive Sampling Trust Region Optimization for Derivative-free Stochastic Functions and Deterministic Equality Constraints",
+          "reason": "New constrained ASTRO-DF variant but reported application is an activity-network simulation; held outside ML training-focused scope rather than adding all simulation-optimization solvers."
+        },
+        {
+          "id": "2609.36216",
+          "title": "Preconditioned Physics-Informed Neural Operator Training",
+          "reason": "Proposes residual-loss preconditioning; new training objective construction rather than independently new parameter optimizer update."
+        },
+        {
+          "id": "2608.22145",
+          "title": "Loss Landscape Features That Make Adam Stall",
+          "reason": "Non-Muon optimizer analysis, not retained as a new optimizer."
+        },
+        {
+          "category": "title-level screening exclusions",
+          "reason": "PDE time integrators, finite-element error estimates, linear-system preconditioners, physics, ordinary optimizer application, Bayesian/combinatorial optimization, and population metaheuristics without neural-training optimizer contribution filtered by scope. Remaining broad numerical-method titles were not all full-text reviewed."
+        }
+      ],
+      "code_validation": {
+        "verified_new_official_links": 4,
+        "checks": [
+          "DSGNAR src/pinn/optimiser.py contains substantive JAX sketches, lifting and trust-region step code.",
+          "AS-SMD paper-linked Fourier notebook contains growing-basis mirror updates and experiments.",
+          "GS-manifold torchgs_utils/rgd.py contains substantive RiemannianSGD Optimizer, tangent handling and transported momentum.",
+          "Tensor-compressed GN Poisson notebook contains substantial JAX compressed/dense solver training code."
+        ],
+        "withheld": [
+          {
+            "id": "2609.01811",
+            "advertised": "https://github.com/bessagroup/rl2co",
+            "reason": "Both repo metadata and main tree fetch returned 404; implementation not verified."
+          }
+        ]
+      },
+      "scope_flags_for_root": [
+        "Spectral Natural Gradient is a specialized exact spectral implementation, with a quadratic spatial-field experiment only.",
+        "Twin Gradient and Extragradient Newton are general deterministic nonconvex optimization designs; no neural-pretraining evidence. They are eligible only under the repository's existing broad theoretical-algorithm scope.",
+        "RL2CO is an optimizer-selection wrapper with a mixed gradient/evolutionary portfolio, chiefly continuous analytic benchmark evidence, not a new base update."
+      ],
+      "pending": [],
+      "limitations": "No newly missed Muon-specific record survived these extra category title routes; existing Stiefel/deflation and related records were not duplicated. Broad abstract-level Muon API re-audit was not completed by this agent because the attempted API query failed. Titles without keyword signals and publications outside these categories may remain undiscovered. Full-text checks validate retained candidates, not every numerical optimization publication.",
+      "root_disposition": {
+        "candidate_count": 12,
+        "accepted_direct": 11,
+        "excluded": [
+          {
+            "id": "2609.01811",
+            "title": "Reinforcement learning to choose optimizers",
+            "reason": "Maintains the prior explicit exclusion of a primarily black-box/evolutionary optimizer portfolio selector; not silently reclassified as a neural-training optimizer wrapper."
+          }
+        ],
+        "specialized_theory_retained": [
+          "2607.01634",
+          "2607.11575",
+          "2607.23433"
+        ],
+        "basis": "Existing catalog includes general first-/second-order optimizer design and specialized learning geometry, with scope stated in summaries; these are not represented as established LLM optimizers."
+      }
+    },
+    "october": {
+      "audit_date": "2026-10-20",
+      "segment": {
+        "from": "2026-10-01",
+        "to": "2026-10-20"
+      },
+      "baseline_counts_in_segment": {
+        "direct": 69,
+        "weak": 17,
+        "resources": 6
+      },
+      "new_candidates": {
+        "direct": 5,
+        "weak": 4
+      },
+      "search_logs": [
+        {
+          "route": "Complete native cs.LG monthly title list",
+          "urls": [
+            "https://arxiv.org/list/cs.LG/2026-10?skip=0&show=2000",
+            "https://arxiv.org/list/cs.LG/2026-10?skip=2000&show=2000",
+            "https://arxiv.org/list/cs.LG/2026-10?skip=4000&show=2000"
+          ],
+          "screened": 4296,
+          "method": "All three pages parsed; broad title pattern optim/descent/gradient/muon/momentum/precondition/shampoo/newton/adaptive-step/learning-rate/sharpness/learning-to-learn; unknowns checked against canonical arXiv IDs in all three baseline tables. No last-week recency filter."
+        },
+        {
+          "route": "Complete native math.OC monthly title list",
+          "url": "https://arxiv.org/list/math.OC/2026-10?skip=0&show=2000",
+          "screened": 639,
+          "method": "Independent optimization-theory category screen, then semantic novelty and prior-exclusion review."
+        },
+        {
+          "route": "Complete native stat.ML monthly title list",
+          "url": "https://arxiv.org/list/stat.ML/2026-10?skip=0&show=2000",
+          "screened": 631,
+          "method": "Independent statistics category screen, including cross-list identification. Category totals overlap; never presented as unique paper count."
+        },
+        {
+          "route": "Primary-source exact-month web searches",
+          "queries": [
+            "site:arxiv.org/abs/2610 Muon optimizer",
+            "site:arxiv.org/abs/2610 optimizer October",
+            "site:arxiv.org/abs/2610 optimization Adam",
+            "Muon October 2026 optimizer after:2026-10-14",
+            "site:arxiv.org/abs/2610 Muon -AF-Muon",
+            "site:arxiv.org/abs/2610 new optimizer",
+            "site:arxiv.org Muon Oct 16 2026",
+            "site:arxiv.org Muon Oct 19 2026",
+            "Does On-Policy Distillation Need to Complete Every Rollout"
+          ],
+          "method": "Search results used for discovery only; retained claims checked on arXiv abstracts and full algorithm/protocol/result sections."
+        },
+        {
+          "route": "Abstract-level Muon Atom API",
+          "query": "all:Muon AND submittedDate:[202610010000 TO 202610202359]",
+          "status": "Both export.arxiv.org and arxiv.org/api retries returned HTTP429. Not counted as a complete successful abstract census."
+        },
+        {
+          "route": "Date-filtered arXiv advanced Muon search",
+          "status": "Both curl and web retrieval timed out; not counted as successful coverage."
+        }
+      ],
+      "already_included_examples": [
+        {
+          "id": "2610.01395",
+          "title": "AF-Muon: An AdamW-Free Muon Optimizer for Tied-Embedding Models"
+        },
+        {
+          "id": "2610.02705",
+          "title": "MuonIO: Principled Norm-Aware Descent for Embedding Tables and Language Model Heads"
+        },
+        {
+          "id": "2610.06578",
+          "title": "DGA-Muon: Decoupled Geometry-Aligned Adaptive Scaling for Muon"
+        },
+        {
+          "id": "2610.06116",
+          "title": "ORCA: The Annealed Spectral Conditioning Optimizer for Faster, Better LLM Training"
+        },
+        {
+          "id": "2610.10965",
+          "title": "Spectrally Targeted Muon"
+        },
+        {
+          "id": "2610.17429",
+          "title": "Monarch-Muon: Structure-Aware Muon for Fast and Memory-Efficient Pretraining"
+        },
+        {
+          "id": "2610.19844",
+          "title": "Memory-Efficient Subspace Optimization with Residual Correction: From Momentum SGD to Muon"
+        }
+      ],
+      "exclusions": [
+        {
+          "id": "2610.21312",
+          "title": "Spectrum Is Not Enough: A Random-Matrix Account of Data-Free Preconditioning for Differentially Private Learning",
+          "reason": "Analysis and diagnostics of existing DP-KFC, not a new optimization rule or substantive Muon study."
+        },
+        {
+          "id": "2610.22996",
+          "title": "TALLOP: Joint Optimization of Local Training and Communication Compression for Time-Constrained Federated Learning",
+          "reason": "Allocation of workload and compression by predictive loss models, rather than a new parameter update or optimizer-state management rule."
+        },
+        {
+          "id": "2610.21692",
+          "title": "On the Complexity of Finding Stationary Points in Stochastic (L0,L1)-Smooth Nonconvex Optimization",
+          "reason": "New complexity lower bounds and matching analysis of existing mini-batch normalized SGD; no independently new optimizer established."
+        },
+        {
+          "id": "2610.03633",
+          "title": "Closing the Accuracy Gap in Stochastic First-Order Bilevel Optimization",
+          "reason": "Rechecked prior exclusion: primarily lower bounds plus frozen-linear-tilt estimator, not standalone new optimizer."
+        },
+        {
+          "id": "2610.17074",
+          "title": "Matching Randomized First-Order Bounds for Higher-Order Smooth Nonconvex Optimization",
+          "reason": "Rechecked prior audit: lower bounds with known upper-bound algorithms."
+        },
+        {
+          "id": "2610.16335",
+          "title": "Multiplicative Gradient Method for Log-Homogeneous Optimization: A Unified Mirror-Descent Framework",
+          "reason": "Prior audit excluded unification of existing algorithms rather than new general ML optimizer; not silently re-added."
+        },
+        {
+          "id": "2610.10527",
+          "title": "Decentralized SGD under Heavy-Tailed Noise: Optimal Convergence Rates and the Role of Gradient Clipping",
+          "reason": "Prior exclusion retained: existing clipped decentralized-SGD analysis."
+        },
+        {
+          "family": "RL policy objectives, prompt/harness optimization, Bayesian active-design applications, PDE/control problem-specific applications",
+          "reason": "Title keyword matches are not automatically optimization-rule novelty. Ordinary policy-objective/application papers not admitted solely for using the word optimization."
+        }
+      ],
+      "code_checks": [
+        {
+          "paper": "2610.23571",
+          "url": "https://github.com/RidaAssalouh/BMuon",
+          "status": "Author-linked official repository; currently only README with release-soon statement. Excluded from code_url until substantive implementation appears."
+        },
+        {
+          "paper": "2610.22650",
+          "status": "Author-linked anonymous code mentioned; no code URL field in weak schema. No separate implementation resource added without inspecting substantive content."
+        }
+      ],
+      "limitations": [
+        "Complete category title screening is broader than recent-week search but does not establish a complete abstract-level census across every arXiv category or non-arXiv venue.",
+        "Atom/advanced-search rate limits prevented a successful independent complete Muon abstract census in this segment; primary keyword searches and full-text cross-checks supplemented the title lists.",
+        "The newest primary record among retained October candidates is October16; the audit date is October20, not a claim that unpublished or unindexed October17-20 records were observed.",
+        "Original arXiv publication dates retained, including Oct15 v1 for ASODA despite Oct16 v2 and Oct15 for the radial-fragility paper despite a printed August manuscript date."
+      ]
+    },
+    "resources_and_cross_month": {
+      "scope": "Muon resources and independent cross-month Muon discovery; baseline row/format and publication validation.",
+      "queries": [
+        "Muon optimizer October 2026 blog implementation after:2026-10-14 before:2026-10-21",
+        "Muon optimizer September August July 2026 blog official implementation",
+        "Muon optimizer April May June 2026 blog implementation",
+        "\"Muon\" \"October 2026\" \"optimizer\" \"October 19\"",
+        "\"Muon\" \"2026-10-16\" optimizer implementation",
+        "\"Muon\" \"2026\" \"June\" \"blog\" -site:github.com/JiwenJ -site:arxiv.org",
+        "\"Muon\" \"2026\" \"May\" \"benchmark\" blog -site:github.com/JiwenJ",
+        "Muon optimizer \"2026-05\" blog original",
+        "Muon optimizer \"2026-06\" blog original",
+        "Muon optimizer \"2026-08\" original implementation blog",
+        "site:arxiv.org \"Muon\" \"Apr\" \"2026\" optimizer",
+        "site:arxiv.org \"Muon\" \"May\" \"2026\" optimizer",
+        "site:arxiv.org \"Muon\" \"Jun\" \"2026\" optimizer",
+        "site:arxiv.org \"Muon\" \"Jul\" \"2026\" optimizer",
+        "site:arxiv.org/abs/2606 \"Muon\" optimizer",
+        "site:arxiv.org/abs/2607 \"Muon\" optimizer",
+        "site:arxiv.org/abs/2608 \"Muon\" optimizer",
+        "site:arxiv.org/abs/2609 \"Muon\" optimizer"
+      ],
+      "failed_routes": [
+        {
+          "url": "https://export.arxiv.org/api/query",
+          "query": "all:Muon AND submittedDate:[202604200000 TO 202610202359]",
+          "outcome": "HTTP 429; no complete abstract corpus obtained in this run. Do not count as a completed sweep."
+        }
+      ],
+      "already_listed_examples": [
+        "https://developer.nvidia.com/blog/advancing-emerging-optimizers-for-accelerated-llm-training-with-nvidia-megatron/",
+        "https://pytorch.org/blog/using-muon-optimizer-with-deepspeed/",
+        "https://lukeez.com/blog/understanding-muon/",
+        "https://arxiv.org/abs/2604.01472",
+        "https://arxiv.org/abs/2605.26842",
+        "https://arxiv.org/abs/2605.19619",
+        "https://arxiv.org/abs/2605.24770",
+        "https://arxiv.org/abs/2608.22994"
+      ],
+      "excluded_or_deferred": [
+        {
+          "url": "https://jaisidhsingh.github.io/blog/",
+          "title": "From Muon to Spectra",
+          "reason": "Original April 6 date lies outside April 20 rolling cutoff."
+        },
+        {
+          "url": "https://zhehangdu.github.io/introducing-newton-muon/",
+          "title": "The Newton-Muon Optimizer",
+          "reason": "Original April 18 blog outside rolling cutoff; original paper already listed."
+        },
+        {
+          "url": "https://huggingface.co/Motif-Technologies/optimizer/blob/main/docs/implementation.md",
+          "reason": "Substantive distributed implementation discovered; exact material-release date not established in this pass, so not assigned an invented date or added."
+        },
+        {
+          "url": "https://hiroki11x.github.io/posts/research_topics/surveys/2026-10/optimization/",
+          "reason": "Secondary survey useful for discovery but adds no independently verified new algorithm here; exact publication day not established, not added."
+        }
+      ],
+      "added_resources": [
+        {
+          "date": "2026-10-15",
+          "title": "MAI-Base-2: frontier Muon scaling and hyperparameter laws",
+          "url": "https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai/",
+          "evidence_urls": [
+            "https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai/"
+          ],
+          "evidence_notes": "October 15 explicit publication; read scaling hyperparameters and Scaling Muon sections. Resource, not new base optimizer. No official implementation linked."
+        },
+        {
+          "date": "2026-10-13",
+          "title": "Muon Optimizer: Audit Orthogonal Updates",
+          "url": "https://jpcasabianca.com/journal/muon-optimizer-orthogonal-updates/",
+          "evidence_urls": [
+            "https://jpcasabianca.com/journal/muon-optimizer-orthogonal-updates/",
+            "https://jpcasabianca.com/assets/journal/artifacts/2026-10-13/muon-update-audit-lab"
+          ],
+          "evidence_notes": "Explicit October 13 published/updated date. Full tutorial read; linked runnable lab inspected. No external source repository verified."
+        },
+        {
+          "date": "2026-09-19",
+          "title": "Muon and AdamW under a fixed compute budget",
+          "url": "https://zsqdx.github.io/writing/muon-adamw-compute-budget/",
+          "evidence_urls": [
+            "https://zsqdx.github.io/writing/muon-adamw-compute-budget/",
+            "https://github.com/zsqdx/katago-transformer-tpu-nano/blob/90c12afafd4e24ce6293a6a2009759a34ff87d65/train_jax.py"
+          ],
+          "evidence_notes": "Explicit published Sep19 (project April). Read full original note and author-linked substantive train_jax.py."
+        },
+        {
+          "date": "2026-07-13",
+          "title": "Optimizers In A Sharded World: Muon's O(mn) Vs RMNP's Zero",
+          "url": "https://dominator-index.github.io/blog/2026/optimizers-in-a-sharded-world/",
+          "evidence_urls": [
+            "https://dominator-index.github.io/blog/2026/optimizers-in-a-sharded-world/",
+            "https://github.com/Dominator-Index/Dominator-Index.github.io/tree/main/assets/blog/code/rmnp-vs-muon"
+          ],
+          "evidence_notes": "Explicit created Jul13. Full benchmark, environment, caveats and embedded scripts read; linked code folder to verify before code_url. Author-linked repository folder and substantive 9828-byte bench_dist_opt.py verified."
+        }
+      ],
+      "validation_preflight": {
+        "baseline_counts": {
+          "direct": 568,
+          "weak": 109,
+          "resources": 263
+        },
+        "canonical_csv_serialization_matches": true,
+        "artifact_readonly_import_all_cells_match": true,
+        "readme_all_baseline_rows_rendered": true,
+        "known_duplicate_exceptions_preserved": [
+          "Two optimizer rows share OpenReview dHxM51W120.",
+          "Three resource talks share one program-book PDF URL."
+        ]
+      }
+    }
+  },
+  "unverified_candidates": [
+    {
+      "audit_date": "2026-10-20",
+      "title": "Modeling and Control of Nonlinear Systems Using an Improved Adaptive Moment Optimization Approach",
+      "optimizer_claimed": "IAdam",
+      "doi": "10.1002/acs.70097",
+      "first_published": "2026-04-21",
+      "status": "pending_full_text_access",
+      "added": false,
+      "queries": [
+        "\"10.1002/acs.70097\" pdf",
+        "\"Modeling and Control of Nonlinear Systems\" \"Saini\" \"Improved\" pdf",
+        "\"Modeling and Control of Nonlinear Systems Using an Improved Adaptive Moment Optimization Approach\" -researchgate -eurekamag -ebsco",
+        "\"acs.70097\" repository OR manuscript OR accepted"
+      ],
+      "primary_sources_checked": [
+        {
+          "url": "https://onlinelibrary.wiley.com/doi/10.1002/acs.70097",
+          "result": "Publisher metadata and abstract confirm title, author list, original publication date and proposed IAdam claim. Algorithm equations, protocol and results are not exposed in available abstract."
+        },
+        {
+          "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/acs.70097",
+          "result": "Full-text URL redirects to abstract page in available web access."
+        },
+        {
+          "url": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/acs.70097",
+          "result": "Direct official PDF request returned HTTP403."
+        },
+        {
+          "url": "https://sites.google.com/nitkkr.ac.in/dr-rajesh-kumar23/publications-journals",
+          "result": "Author's institutional-domain Google Site publication list includes this title as item41, but supplies no manuscript/PDF or repository link for it."
+        }
+      ],
+      "outcome": "No accessible author-hosted or institutional-repository full text found in this bounded exact-title/DOI pass. Retain candidate as pending, not excluded for lack of optimizer novelty and not added from abstract alone. No payment, login bypass, author contact or user action attempted."
+    }
+  ],
+  "verification": {
+    "baseline_counts": {
+      "direct": 568,
+      "weak": 109,
+      "resources": 263
+    },
+    "added_counts": {
+      "direct": 35,
+      "weak": 4,
+      "resources": 4
+    },
+    "final_counts": {
+      "direct": 603,
+      "weak": 113,
+      "resources": 267
+    },
+    "new_official_code_links": 7,
+    "official_code_links": 171,
+    "preserved_all_baseline_rows": true,
+    "new_identity_and_title_duplicates": 0,
+    "canonical_CSV_roundtrip": true,
+    "artifact_CSV_import_all_cells_match": true,
+    "README_tables_render_every_CSV_row": true,
+    "root_static_code_rechecks": [
+      {
+        "repo": "wephy/physics-informed-neural-networks",
+        "path": "src/pinn/optimiser.py",
+        "chars": 23378,
+        "isError": false,
+        "substantive": true
+      },
+      {
+        "repo": "Researcher-Bai-1/AS-SMD-algorithm",
+        "path": "AS-SMD fourier_system.ipynb",
+        "chars": 35853,
+        "isError": false,
+        "substantive": true
+      },
+      {
+        "repo": "alialiev78/torchgs",
+        "path": "torchgs_utils/rgd.py",
+        "chars": 7152,
+        "isError": false,
+        "substantive": true
+      },
+      {
+        "repo": "pkumelon/FedSLoP",
+        "path": "code/algorithm.py",
+        "chars": 26093,
+        "isError": false,
+        "substantive": true
+      },
+      {
+        "repo": "katcinskiy/spectral-clipping",
+        "path": "clipping.py",
+        "chars": 5349,
+        "isError": false,
+        "substantive": true
+      }
+    ],
+    "code_validation_boundary": "Static source inspection and artifact availability, not executed reproduction or GPU validation."
+  },
+  "limitations": [
+    "This is a systematic follow-up within documented routes, not proof that all optimizer papers worldwide have been found. Specialized and theoretical algorithms are clearly labeled rather than presented as LLM-pretraining recommendations.",
+    "Full native category title lists include overlapping crosslists and are not counts of unique eligible papers; titles without search signals and non-arXiv venues can be missed.",
+    "Atom and advanced-search rate limits/timeouts prevented a successful complete abstract-level Muon census in this run. Failed requests are recorded, not treated as completed coverage; prior October15 audit and independent primary keyword searches provide complementary evidence.",
+    "Newest retained October paper is first posted October16. October20 is the audit cutoff, not a claim to have observed unpublished or unindexed October17-20 records.",
+    "IAdam has a verified April21 primary publication record, but the algorithm and experiments could not be checked in accessible full text; it is not added from its abstract alone.",
+    "Reported gains retain their task, scale, tuning, precision, oracle-accounting and hardware boundaries. No global speedup or universal superiority is inferred."
+  ]
+}
