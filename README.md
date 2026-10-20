@@ -1,12 +1,18 @@
 <div align="center">
 
-# Awesome Optimizers List
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+  <img alt="Awesome Optimizers: a loss-surface contour plot with SGD, Momentum and Adam trajectories converging to the minimum" src="assets/banner-light.svg" width="100%">
+</picture>
 
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
 [![GitHub](https://img.shields.io/badge/GitHub-JiwenJ%2FAwesome--Optimizers-181717.svg?style=flat-square&logo=github)](https://github.com/JiwenJ/Awesome-Optimizers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/JiwenJ/Awesome-Optimizers/pulls)
 
+Papers that propose or analyze optimization algorithms, collected from 2022 onward and listed newest first. The list ranges from training optimizers such as Adam and Muon variants to second-order, zeroth-order, distributed and theoretical methods.
+
+Each entry links to the paper and its code when available, with a short summary of the method, the evidence behind it and its limits. The same entries are available as CSV files in [`data/`](./data).
 
 </div>
 
