@@ -10,7 +10,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/JiwenJ/Awesome-Optimizers/pulls)
 
-Papers that propose or analyze optimization algorithms, listed newest first. The list ranges from training optimizers such as Adam and Muon variants to second-order, zeroth-order, distributed and theoretical methods.
+A curated list of papers that propose new optimizers or improve existing ones, newest first. It covers deep-learning optimizers such as Adam and Muon variants, along with second-order, zeroth-order, memory-efficient and federated methods. Muon gets extra coverage, with companion lists of related studies and of blogs, implementations and other resources.
 
 </div>
 
