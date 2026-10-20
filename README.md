@@ -18,8 +18,8 @@ Papers that propose or analyze optimization algorithms, listed newest first. The
 
 | Section | Jump to |
 | :---: | :---: |
-| [2026](#2026) (536) | [Oct](#october-2026) (74) · [Sep](#september-2026) (81) · [Aug](#august-2026) (52) · [Jul](#july-2026) (49) · [Jun](#june-2026) (56) · [May](#may-2026) (120) · [Apr](#april-2026) (32) · [Mar](#march-2026) (20) · [Feb](#february-2026) (29) · [Jan](#january-2026) (23) |
-| [2022–2025](lists/2022-2025.md) (67) | [2025](lists/2022-2025.md#2025) (32) · [2024](lists/2022-2025.md#2024) (14) · [2023](lists/2022-2025.md#2023) (16) · [2022](lists/2022-2025.md#2022) (5) |
+| [2026](#2026)&nbsp;(536) | [Oct](#october-2026) · [Sep](#september-2026) · [Aug](#august-2026) · [Jul](#july-2026) · [Jun](#june-2026) · [May](#may-2026) · [Apr](#april-2026) · [Mar](#march-2026) · [Feb](#february-2026) · [Jan](#january-2026) |
+| [2022–2025](lists/2022-2025.md)&nbsp;(67) | [2025](lists/2022-2025.md#2025) · [2024](lists/2022-2025.md#2024) · [2023](lists/2022-2025.md#2023) · [2022](lists/2022-2025.md#2022) |
 | Muon | [Weakly related papers](lists/muon-weakly-related.md) (113) · [Blogs, implementations and resources](lists/muon-resources.md) (267) |
 
 ## Optimizer Papers

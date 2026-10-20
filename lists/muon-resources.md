@@ -10,8 +10,8 @@
 
 | Year | Months |
 | :---: | :---: |
-| [2026](#2026) (262) | [Oct](#october-2026) (8) · [Sep](#september-2026) (21) · [Aug](#august-2026) (51) · [Jul](#july-2026) (56) · [Jun](#june-2026) (39) · [May](#may-2026) (41) · [Apr](#april-2026) (26) · [Mar](#march-2026) (19) · [Feb](#february-2026) (1) |
-| [2025](#2025) (5) | – |
+| [2026](#2026)&nbsp;(262) | [Oct](#october-2026) · [Sep](#september-2026) · [Aug](#august-2026) · [Jul](#july-2026) · [Jun](#june-2026) · [May](#may-2026) · [Apr](#april-2026) · [Mar](#march-2026) · [Feb](#february-2026) |
+| [2025](#2025)&nbsp;(5) | – |
 
 ## 2026
 
