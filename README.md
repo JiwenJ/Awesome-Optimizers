@@ -1,9 +1,6 @@
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JiwenJ/Awesome-Optimizers/main/assets/banner-dark.svg?v=2">
-  <img alt="Awesome Optimizers: a loss-surface contour plot with SGD, Momentum and Adam trajectories converging to the minimum" src="https://raw.githubusercontent.com/JiwenJ/Awesome-Optimizers/main/assets/banner-light.svg?v=2" width="100%">
-</picture>
+<img alt="Awesome Optimizers: a loss-surface contour plot with SGD, Momentum and Adam trajectories converging to the minimum" src="assets/banner.svg" width="100%">
 
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
 [![GitHub](https://img.shields.io/badge/GitHub-JiwenJ%2FAwesome--Optimizers-181717.svg?style=flat-square&logo=github)](https://github.com/JiwenJ/Awesome-Optimizers)
