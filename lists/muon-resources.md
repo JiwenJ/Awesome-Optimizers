@@ -8,29 +8,17 @@
 
 ## Contents
 
-- [2026](#2026) (262)
-  - [October](#october-2026) (8)
-  - [September](#september-2026) (21)
-  - [August](#august-2026) (51)
-  - [July](#july-2026) (56)
-  - [June](#june-2026) (39)
-  - [May](#may-2026) (41)
-  - [April](#april-2026) (26)
-  - [March](#march-2026) (19)
-  - [February](#february-2026) (1)
-- [2025](#2025) (5)
-
-These resources are not standalone papers. They include project pages, implementation repositories, educational labs, and reference collections that are useful for tracking Muon optimizer practice.
-
-- CSV: [data/muon_resources.csv](../data/muon_resources.csv)
-- Inclusion rule: Muon-focused material must provide substantive original documentation, code, experiments, benchmarks, or maintained reference value; empty repositories, straight copies, and incidental mentions are excluded.
+| Year | Months |
+| :---: | :---: |
+| [2026](#2026) (262) | [Oct](#october-2026) (8) · [Sep](#september-2026) (21) · [Aug](#august-2026) (51) · [Jul](#july-2026) (56) · [Jun](#june-2026) (39) · [May](#may-2026) (41) · [Apr](#april-2026) (26) · [Mar](#march-2026) (19) · [Feb](#february-2026) (1) |
+| [2025](#2025) (5) | – |
 
 ## 2026
 
 ### October 2026
 
 | Date | Type | Resource | Notes |
-| :---: | :---: | :---: | :---: |
+| :---: | :---: | :---: | :--- |
 | 2026-10-15 | official frontier-training report and distributed Muon engineering | [MAI-Base-2: frontier Muon scaling and hyperparameter laws](https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai/) | Microsoft's original MAI-Base-2 report describes full-matrix Muon on 16K GB200 GPUs using local FP32 momentum, BF16 all-to-all resharding, shape-batched ownership, symmetry-aware Newton-Schulz kernels, cached metadata, and communication overlap. The measured optimizer segment is 165 ms, or 2.1% of average iteration time, versus an estimated 55 ms hardware lower bound. Joint learning-rate/decay sweeps motivate empirical step- and tokens-per-parameter scaling laws, while activation-gradient clipping improves stability. The 2.8T-total/80B-active model trains on 50T tokens. These are proprietary-stack engineering and recipe observations; the report's whole-recipe FLOPs gains do not isolate Muon's causal benefit or establish portable hyperparameter laws. |
 | 2026-10-13 | original educational implementation-audit lab | [Muon Optimizer: Audit Orthogonal Updates](https://jpcasabianca.com/journal/muon-optimizer-orthogonal-updates/) | Original tutorial and bounded browser lab expose a complete Muon update ledger: semantic parameter routing, momentum and Nesterov state, rectangular orientation, five polynomial iterations, shape scaling, decoupled decay, and final weights. A separate Jacobi-eigensolver polar reference checks the approximation, while five mutation fixtures target misrouted embeddings, missing transposes, wrong multiplication sides, omitted scaling, and coupled decay. Deterministic JSON/CSV receipts retain intermediate hashes and configuration. Examples deliberately use matrices with dimensions two through four and distinguish finite quintic approximations from exact polar factors. This is arithmetic and implementation-integrity education, not a training benchmark, convergence proof, production kernel, or validated hyperparameter recommendation. |
 | 2026-10-13 | official distributed optimizer optimization | [TorchTitan DistMuon BF16 input and direction exchange](https://github.com/pytorch/torchtitan/commit/210fc60cb2b88bf21f41ebc65a75a05f254ba99f) [Code](https://github.com/pytorch/torchtitan) | TorchTitan sends redistributed Muon inputs and update directions in BF16, matching the dtype already used by Newton-Schulz while halving exchange buffers. For heterogeneous BlockShard matrices, shape-dependent learning-rate scaling moves to the storage side after transport to avoid an extra BF16 rounding. Reported 40-step checks preserve every Muon parameter and momentum digest, loss, and gradient norm. An eight-A100 Kimi debug run reduces slowest-rank step time from 251.8 to 245.9 ms; an exchange-bound eight-3090 run falls from 2689 to 1195 ms. These short, hardware-specific system measurements establish transport parity and cost savings, not long-horizon optimization or model-quality improvements. |
@@ -40,10 +28,12 @@ These resources are not standalone papers. They include project pages, implement
 | 2026-10-06 | original educational optimizer implementation and benchmark | [Optimizers from scratch: NumPy Muon and tuned optimizer race](https://github.com/vukrosic/optimizers-from-scratch) | Original MIT-licensed NumPy explanations implement gradient descent, SGD, momentum, RMSProp, Adam, AdamW, and Muon alongside a hand-written network and backward pass, deterministic tests, and saved demonstration output. A 425-run race tunes five optimizers over 17 learning rates and five initializations; Muon reaches median test-digit accuracy of 96.0% versus Adam's 94.6%. The experiment uses only a 6,634-parameter dense network and 8-by-8 handwritten digits, fixed learning rates, and Adam fallback for biases. It is useful for understanding update rules and controlled comparisons, not evidence for language-model scaling or a new optimizer paper. |
 | 2026-10-04 | official operator-aware implementation and validation | [Megatron-LM per-head Muon and packed-MLA dev integration](https://github.com/NVIDIA/Megatron-LM/pull/7085) [Code](https://github.com/NVIDIA/Megatron-LM/commit/f80139c3efc3c0a03c9669df5db5e310f68ad4c7) | Merged Megatron-LM dev integration adds opt-in per-head Q/gate/K/V orthogonalization and module-owned logical layouts for MLA up-projections. Equal-size heads use batched Newton-Schulz; tensor-parallel fragments are reconstructed before logical splitting, fixing incorrect boundaries when TP exceeds query-group count. MLA splitting requires a separate opt-in, while per-head or fragmented layouts fall back from distributed NS. Numerical and multi-GPU regression tests accompany 100-step mock-data runs: per-head overhead varies from roughly zero to 1.4%, and combined FP8 parameter gathering lowers peak memory about 7%. The memory gain belongs to FP8 gathering; short nondeterministic mock-data runs do not establish better convergence or downstream quality. |
 
+<p align="right"><a href="#contents">Back to contents ↑</a></p>
+
 ### September 2026
 
 | Date | Type | Resource | Notes |
-| :---: | :---: | :---: | :---: |
+| :---: | :---: | :---: | :--- |
 | 2026-09-30 | official optimizer implementation and reproduction suite | [AF-Muon optimizer and tied-embedding training code](https://github.com/arashlagzian/afmoun) | Paper-linked repository implementing hidden-matrix Muon, one-dimensional normalized momentum, and a chunked support-aware finite-cap oracle for tied embeddings/heads. It includes nine benchmark configurations, launchers, parameter-role mapping, and ablation scripts. The repository does not bundle training datasets, caches, or pretrained weights; published memory savings concern optimizer state rather than total device memory. |
 | 2026-09-28 | official distributed optimizer follow-up study | [LionMuon distributed exact-gradient study](https://arxiv.org/abs/2609.35297) [Code](https://github.com/brain-lab-research/lion-muon) | New submission studying the already-listed LionMuon algorithm under four-GPU exact-gradient DDP, not a distinct optimizer. Period-5 LionMuon reaches the 124M Muon target loss with 0.86× steps, 0.79× update FLOPs, 0.69× communicated bytes, and 0.70× PCIe or 0.77× NVLink time. Evidence is three seeds at 124M and one at 355M; alternation-period hyperparameters need retuning and sharded baselines are evaluated in a DDP/emulated setting. |
 | 2026-09-28 | official Muon dynamics experiment code | [Muon split edge-of-stability diagnostics](https://github.com/cyzebra/Muon-Sublates-the-Edge-of-Stability-in-LLM-Pretraining) | Paper-linked training and conditional-loss/alignment diagnostics for 22M, 130M, and 1B language models plus small-network controls, with momentum-free NS-5 Muon and separate AdamW parameter routing. Reference-loss probes and exact-SVD nuclear-norm diagnostics add substantial evaluation cost; the scripts train on one device and no result plots or reports are bundled. |
@@ -66,10 +56,12 @@ These resources are not standalone papers. They include project pages, implement
 | 2026-09-03 | official model release and training recipe | [LLaDA-Image open Muon training release](https://github.com/inclusionAI/LLaDA-Image) | The official LLaDA-Image release provides weights, code, and reproducible recipes for a 6B diffusion Transformer trained with Muon throughout image-only pretraining, mid-training, alignment, refinement, editing, and distillation. The recipe records stage-specific learning rates, zero weight decay, gradient clipping, batch sizes, and 220M cumulative generation samples. It is a substantive public application of Muon, but the release does not isolate optimizer effects from parameter-free RMSNorm, data construction, model architecture, or TwinFlow distillation. |
 | 2026-09-01 | official CUDA performance path | [Paddle symmetric-GEMM Newton-Schulz for Muon](https://github.com/PaddlePaddle/Paddle/commit/409402139f37d5c3f155416f819a9c19737c2d23) [Code](https://github.com/PaddlePaddle/Paddle) | Paddle adds an opt-in SYRK-style path for the two symmetric products in each Newton-Schulz step, computing one triangle and mirror-writing the other; its source-level accounting reduces one step's FLOPs by roughly one quarter for thin fragments to one third for square fragments. Routing is restricted to FP16 or BF16 on supported NVIDIA architectures, eight-element-aligned shapes, and configurable size and FLOP thresholds, with cuBLAS retained for other fragments and tests covering routing, numerical behavior, and import failures. The path is disabled by default, requires quack-kernels, and reports neither measured wall-clock improvement nor end-to-end training quality. |
 
+<p align="right"><a href="#contents">Back to contents ↑</a></p>
+
 ### August 2026
 
 | Date | Type | Resource | Notes |
-| :---: | :---: | :---: | :---: |
+| :---: | :---: | :---: | :--- |
 | 2026-08-31 | CUDA optimizer implementation | [Gram Newton-Schulz for Ampere](https://github.com/afrenkai/Gram-Newton-Schulz-Ampere/commit/abc331e1fd91c01481a93ae9fe1de950efe4faf4) [Code](https://github.com/afrenkai/Gram-Newton-Schulz-Ampere) | This standalone PyTorch package implements Gram Newton-Schulz with compiled Torch/cuBLAS plus CUDA graphs, optional CUTLASS SM80/SM86 and Triton backends, and Muon and Dion3 optimizers for local CUDA, replicated NCCL, and one active DTensor shard. Tests cover Muon, distributed parity, Dion3 row selection, state, schedulers, and parameter-group handling, while unsupported layouts fall back or are rejected explicitly. The project publishes no numerical throughput or training-quality benchmark, Dion3 fractional selection remains shard-local and layout-dependent, and the repository describes itself as a solo implementation where bugs may remain. |
 | 2026-08-31 | official schedule correctness fix | [MaxText Muon Newton-Schulz coefficient schedule validation](https://github.com/AI-Hypercomputer/maxtext/commit/cbb2a57dd76b9f92d71db5d4682eea7313f9de32) [Code](https://github.com/AI-Hypercomputer/maxtext) | MaxText fixes a reversed Newton-Schulz schedule-length check: schedules shorter than ns_steps now raise an error, while longer schedules are accepted and sliced to the requested trailing steps. It also renames and generalizes the dimension-number specification for sharded Muon, preserves the old alias, relocates tests into the public unit-test layout, and adds isolated sharding and coefficient-schedule coverage. This is a configuration-correctness fix relevant to mixed or layer-specific coefficient schedules, not a new optimizer or a measured training result. |
 | 2026-08-31 | official Ascend implementation update | [MindFormers BF16 and owner-balanced Muon](https://github.com/mindspore-ai/mindformers/commit/ea83bcb08e42153537a2dc34684513a4b50fdaa3) [Code](https://github.com/mindspore-ai/mindformers) | MindFormers refactors its distributed Ascend Muon path to normalize with FP32 norms before BF16 Newton-Schulz with an FP32 matrix-add epilogue, balance same-shape weights across evenly spaced owners, bound rank-three and elementwise temporary batches, and avoid constructing filtered debug payloads. Expanded tests cover dtype flow, deterministic order-independent owner assignment, owner domains, and memory-budget chunking. The commit supplies implementation and unit-test evidence but no public memory, step-time, convergence, or training-quality benchmark for the combined changes. |
@@ -122,10 +114,12 @@ These resources are not standalone papers. They include project pages, implement
 | 2026-08-02 | official research implementation | [verl-Muon agentic RL reference implementation](https://github.com/x66ccff/verl-muon/commit/ba91f7431fa4a60d9b2bd7cdc42a1eeccf50e9bd) [Code](https://github.com/x66ccff/verl-muon) | The official artifact for the agentic-RL study packages its hybrid MuonWithAdamW optimizer, named-parameter routing, FSDP1 integration, paper-aligned ALFWorld and WebShop launchers, aggregation scripts, and reproduction notes. It warns that the reference NO_SHARD path replicates actor parameters and that the 3e-5 Muon recipe applies 3.53x AdamW's hidden-matrix update RMS, so neither the sharding choice nor learning rate is a universal default; the repository reproduces the paper rather than adding independent benchmark evidence. |
 | 2026-08-01 | official research implementation and benchmark | [Sign compression for Muon: SignMuon, MuonSign, and the Limits of Error Feedback](https://github.com/intsystems/SignMuon/commit/74b56e8072f7b99f28c25d293569aaeb932f7f7d) [Code](https://github.com/intsystems/SignMuon) | This official reproducibility artifact covers centralized, federated, synthetic-counterexample, and NanoGPT experiments for six sign-around-Muon and error-feedback variants. On a single unseeded 2,330-step 8×H100 run, Muon reaches 3.2785 validation loss, EF21-SignMuon 3.2860, and SignMuon 3.2881; all methods measure 61.41–62.06 ms per step. The artifact includes raw logs and exact reproduction commands, but uses one run per method, two optimizer-code builds, and a slower pure-PyTorch port. |
 
+<p align="right"><a href="#contents">Back to contents ↑</a></p>
+
 ### July 2026
 
 | Date | Type | Resource | Notes |
-| :---: | :---: | :---: | :---: |
+| :---: | :---: | :---: | :--- |
 | 2026-07-31 | thesis benchmark | [Evaluating the Muon Optimizer: From Symbolic Recovery in Signomial Models to High-Dimensional LLM Adaptation](https://github.com/smasoudrezvani/muon-ecsel-benchmark/commit/2737c525713c06518c68c89ad4a60204392f5902) [Code](https://github.com/smasoudrezvani/muon-ecsel-benchmark) | This thesis artifact checks in code, results, trajectories, and figures for 1,160 symbolic-regression runs, 200 classification runs, and a Llama-3-8B LoRA spectral check. Muon records 38 recovery-rate wins versus 9 for AdamW, but is a median 0.70 seconds slower and has 0.59 worse log10 MSE; the staged ECSEL baseline remains faster and more accurate. Classification uses one untuned shared protocol, excludes LOAN, and the LoRA arm is only a confirmatory two-run comparison. |
 | 2026-07-31 | training framework implementation | [KohakUwULLM MuonW](https://github.com/KohakuBlueleaf/KohakUwULLM/commit/315371d37b5be70c9f337f3428ca60b7d0998077) [Code](https://github.com/KohakuBlueleaf/KohakUwULLM) | KohakUwULLM adds a native hybrid MuonW path with explicit matrix-versus-AdamW parameter routing, shape-batched Newton-Schulz, cubic and quintic schedules, 3D expert batching, spectral or RMS update scaling, and optional stochastic writeback for low-precision weights. The implementation is substantial, but the commit supplies no controlled training or throughput benchmark. |
 | 2026-07-31 | official research implementation and staged training schedule | [Temperon staged SGD-to-SAM-Muon implementation](https://arxiv.org/abs/2609.17575) [Code](https://github.com/MStamatis/temperon) | Temperon's released implementation runs plain SGD for the first 43% of the budget and switches once to SAM-wrapped Muon for the final cosine anneal. The paper reports full-time-SAM quality with 29% less GPT-2 wall time and 32-35% faster hardest-target attainment on three of four vision datasets; it is a fixed schedule over existing optimizers, and Tiny ImageNet shows no Muon gain. |
@@ -183,10 +177,12 @@ These resources are not standalone papers. They include project pages, implement
 | 2026-07-02 | application example | [HybridStories](https://github.com/bapt433/HybridStories) | Hybrid Mamba-Transformer TinyStories language-model project that uses the Muon optimizer in a small from-scratch training stack. |
 | 2026-07-02 | official research implementation and benchmark | [Orthogonalized recurrent-memory read scaffold](https://github.com/no-way-labs/recurrent-memory-scaffold/commit/008f4fa4cf9c4ced9a74d92c3be34dcb8a0d10a5) [Code](https://github.com/no-way-labs/recurrent-memory-scaffold) | The official artifact releases the mLSTM variants, five-step Newton-Schulz read, training and intervention code, 40 per-seed result files, and 32 checkpoints behind the recurrent-memory scaffold study. Reproduction scripts regenerate every reported table and figure, including the roughly sixfold escape-hazard effect, failed inference-time swaps, and successful annealing back to a stock mLSTM. It is unusually complete mechanism evidence, but studies orthogonalization at state readout rather than a Muon parameter optimizer and remains limited to a 78K single-block synthetic-recall model. |
 
+<p align="right"><a href="#contents">Back to contents ↑</a></p>
+
 ### June 2026
 
 | Date | Type | Resource | Notes |
-| :---: | :---: | :---: | :---: |
+| :---: | :---: | :---: | :--- |
 | 2026-06-29 | research implementation | [Mewon](https://github.com/okezue/Mewon) | Research suite for a persistent low-rank spectral optimizer with Muon, ExactSoftMuon, soft-Muon baselines, cached whitening, spectral selectors, tiny-GPT experiments, and dashboard/report tooling. |
 | 2026-06-29 | interactive lab | [MuonLab -- Interactive Optimizer Geometry & Spectral Descent Laboratory](https://muonlab.vercel.app) [Code](https://github.com/middesurya/daily-webapp-2026-06-29-muonlab) | Client-side interactive lab explaining Muon geometry, Newton-Schulz orthogonalization, spectral descent, update anatomy, and nanoGPT speedrun context. |
 | 2026-06-25 | implementation | [FasterMuon](https://github.com/Ethan2415/FasterMuon) | Batches Newton-Schulz iterations across same-shaped parameters to reduce Muon optimizer-step latency in DDP workloads. |
@@ -227,10 +223,12 @@ These resources are not standalone papers. They include project pages, implement
 | 2026-06-02 | hardware implementation | [triton-muon-npu](https://github.com/Hailey-Zh/triton-muon-npu) | Triton-based Ascend NPU implementation of Muon's Newton-Schulz kernels with fused GEMMs, NPU-specific correctness fixes, benchmarks, and pytest reference checks. |
 | 2026-06-01 | blog and official implementation | [Towards Compositional Steepest Descent](https://blog.tilderesearch.com/blog/compositional-muon) [Code](https://github.com/tilde-research/comp-muon-release) | Introduces Compositional Muon for QK and OV operator products using partner-whitened updates, with 340M/1B pretraining and nanoGPT speedrun evidence. |
 
+<p align="right"><a href="#contents">Back to contents ↑</a></p>
+
 ### May 2026
 
 | Date | Type | Resource | Notes |
-| :---: | :---: | :---: | :---: |
+| :---: | :---: | :---: | :--- |
 | 2026-05-31 | systems implementation | [Toph Kernel](https://github.com/DavidWise01/toph-kernel) | C/AVX-oriented MUON optimizer kernel experiments and related tooling. |
 | 2026-05-30 | application example | [PocketGPT](https://github.com/Mithun-033/PocketGPT) | GPT-style PyTorch Lightning model using a custom Muon-AdamW optimizer in a from-scratch training stack. |
 | 2026-05-30 | research blog | [RL Diversity with Soft-Muon](https://nilin.github.io/rl-diversity-soft-muon/) | Compares Soft-Muon, AdamW, and VPO in Maze and GRPO settings to study low-SNR reinforcement learning and policy diversity. |
@@ -273,10 +271,12 @@ These resources are not standalone papers. They include project pages, implement
 | 2026-05-02 | benchmark/comparison | [qwen-optimizer-comparison](https://github.com/annasundeeva9-gif/qwen-optimizer-comparison) | Qwen2.5-0.5B optimizer comparison task contrasting AdamW and Muon. |
 | 2026-05-01 | diagnostic benchmark | [muon_ablation](https://github.com/MichaelNotDeveloper/muon_ablation) | Muon-versus-AdamW ablations across LSTM, Transformer, and nanoGPT workloads with optimizer diagnostics. |
 
+<p align="right"><a href="#contents">Back to contents ↑</a></p>
+
 ### April 2026
 
 | Date | Type | Resource | Notes |
-| :---: | :---: | :---: | :---: |
+| :---: | :---: | :---: | :--- |
 | 2026-04-30 | seminar | [Muon Does Not Converge on Convex Lipschitz Functions](https://isl.stanford.edu/talks/talk-schedule/spring-2026-tetiana-parshakova/) | Gives a convex Lipschitz counterexample for Muon and explains why error feedback restores theory while degrading practical performance. |
 | 2026-04-30 | official guide | [Muon Optimizer](https://docs.nvidia.com/nemo/rl/latest/guides/muon-optimizer.html) [Code](https://github.com/NVIDIA-NeMo/RL) | NVIDIA guide for configuring distributed Muon in NeMo-RL Megatron SFT and RL recipes, with large-model comparisons and operational constraints. |
 | 2026-04-29 | application study | [muonHC](https://github.com/thainamhoang/muonHC) | Muon and manifold-hyperconnection experiments for climate downscaling and related neural forecasting tasks. |
@@ -304,10 +304,12 @@ These resources are not standalone papers. They include project pages, implement
 | 2026-04-01 | package | [optimuon](https://pypi.org/project/optimuon/) [Code](https://github.com/emaballarin/optimuon) | Performance-oriented PyTorch package with foreach operations, batched Newton-Schulz, automatic routing, composite optimizer support, and optional corrections. |
 | 2026-04-01 | kernel benchmark | [parameter-golf-kernels](https://github.com/adityakm24/parameter-golf-kernels) | Standalone custom-kernel and Muon orthogonalization microbenchmarks derived from parameter-golf workloads. |
 
+<p align="right"><a href="#contents">Back to contents ↑</a></p>
+
 ### March 2026
 
 | Date | Type | Resource | Notes |
-| :---: | :---: | :---: | :---: |
+| :---: | :---: | :---: | :--- |
 | 2026-03-30 | blog and implementation | [Gram Newton-Schulz: A Fast, Hardware-Aware Newton-Schulz Algorithm for Muon](https://dao-lab.ai/blog/2026/gram-newton-schulz/) [Code](https://github.com/Dao-AILab/gram-newton-schulz) | Official Dao Lab article and implementation replacing Muon's Newton-Schulz polar step with a hardware-aware Gram-matrix formulation. |
 | 2026-03-30 | educational blog | [Optimizers: From Adam to Muon](https://smasoudrezvani.github.io/blog/2026/muon-optimizer/) | Walkthrough of vector- versus matrix-based optimization, AdamW state, Muon orthogonalization, and practical learning-rate scaling. |
 | 2026-03-28 | research implementation | [adaptive-rank-muon](https://github.com/ramishj/adaptive-rank-muon) | Adaptive-rank Muon implementation exploring compressed BF16 momentum and rank-controlled orthogonalization. |
@@ -328,18 +330,24 @@ These resources are not standalone papers. They include project pages, implement
 | 2026-03-14 | application framework | [RLM](https://github.com/priyank766/RLM) | Recursive language-model comparison framework with SFT training notes that include QLoRA and Muon optimization. |
 | 2026-03-11 | research blog | [When does Muon work? Model depth is a key factor](https://kindxiaoming.github.io/blog/2026/optimization-5/) | Controlled linear and nonlinear MLP experiments probing how network depth changes Muon's advantage relative to Adam. |
 
+<p align="right"><a href="#contents">Back to contents ↑</a></p>
+
 ### February 2026
 
 | Date | Type | Resource | Notes |
-| :---: | :---: | :---: | :---: |
+| :---: | :---: | :---: | :--- |
 | 2026-02-13 | systems implementation | [FSDP-Canzona](https://github.com/liangyuwang/FSDP-Canzona) | PyTorch FSDP support for Muon-style matrix optimizers, related to the Canzona distributed matrix optimizer work. |
+
+<p align="right"><a href="#contents">Back to contents ↑</a></p>
 
 ## 2025
 
 | Date | Type | Resource | Notes |
-| :---: | :---: | :---: | :---: |
+| :---: | :---: | :---: | :--- |
 | 2025-11-27 | computer-vision experiment | [cnn_Optimizer--computer-vision](https://github.com/Rokibul1022/cnn_Optimizer--computer-vision) | Computer-vision experiment repository for a multi-task Muon optimizer variant across classification, segmentation, and detection settings. |
 | 2025-10-16 | official implementation | [MUON-MVR](https://github.com/MaeChd/MUON-MVR) | Official implementation of MuonMVR, a variance-reduced Muon optimizer with convergence analysis. |
 | 2025-08-25 | official documentation | [Using the Muon Optimizer in Optax](https://optax.readthedocs.io/en/stable/_collections/examples/contrib/muon.html) [Code](https://github.com/google-deepmind/optax) | Official JAX tutorial for default and masked Muon, AdamW fallback routing, and explicit matrix views for higher-rank tensors. |
 | 2025-07-21 | implementation | [muon_optimizer](https://github.com/phi9t/muon_optimizer) | Direct Muon optimizer implementation repository. |
 | 2025-07-14 | official implementation guide | [Distributed Shampoo: Muon Example](https://github.com/facebookresearch/optimizers/blob/main/distributed_shampoo/README.md#example-6-muon) [Code](https://github.com/facebookresearch/optimizers/tree/main/distributed_shampoo) | Meta's maintained Distributed Shampoo configuration for reproducing Muon through spectral-descent preconditioning and Newton-Schulz semi-orthogonalization, including Adam routing for non-matrix parameters. |
+
+<p align="right"><a href="#contents">Back to contents ↑</a></p>
