@@ -13,7 +13,6 @@ Curated optimizer-design papers from `2022+`, ordered by exact publication or su
 
 ## Contents
 
-- [About This List](#about-this-list)
 - [Optimizer Papers](#optimizer-papers) (603)
   - [2026](#2026) (536)
     - [October](#october-2026) (74)
@@ -32,17 +31,6 @@ Curated optimizer-design papers from `2022+`, ordered by exact publication or su
   - [2022](#2022) (5)
 - [Weakly Related / Adjacent Muon Papers](#weakly-related--adjacent-muon-papers) (113)
 - [Muon Blogs, Implementations, and Resources](#muon-blogs-implementations-and-resources) (267)
-
-## About This List
-
-- CSV: [data/optimizers.csv](./data/optimizers.csv)
-- Weakly related Muon papers: [data/muon_weakly_related.csv](./data/muon_weakly_related.csv)
-- Muon blogs, implementations, and other resources: [data/muon_resources.csv](./data/muon_resources.csv)
-- README coverage: every row in all three CSV files is rendered on this homepage.
-- Current optimizer-design and Muon literature audit window: `2026-04-20` through `2026-10-20`; re-audited on `2026-10-20`. Items formally accepted or materially revised in the window are retained with their original publication date.
-- Monthly systematic search log: [2026-10-15 audit](./data/audits/2026-10-15-monthly.json) — seven calendar segments; 156 optimizer-design/variant papers, 9 Muon-related studies, and 4 resources added after baseline deduplication. Includes specialized/theoretical algorithms and new optimizer wrappers, not only base optimizers.
-- Follow-up monthly gap audit: [2026-10-20 audit](./data/audits/2026-10-20-monthly.json) — 35 optimizer-design/variant papers, 4 Muon-related studies, 4 resources, and 7 official implementation links added after deduplication against the October 15 catalog. Rechecks every calendar segment and additional math.OC/math.NA/cs.NE routes; includes older-month omissions, scope decisions, API failures, and unresolved full-text access. This is not an exhaustive claim across all venues.
-- Date source: arXiv `published` date for arXiv papers; source-page publication, submission, or release date; repository creation date unless a dated release or material update is the relevant event.
 
 ## Optimizer Papers
 
