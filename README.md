@@ -12,7 +12,6 @@
 
 Papers that propose or analyze optimization algorithms, listed newest first. The list ranges from training optimizers such as Adam and Muon variants to second-order, zeroth-order, distributed and theoretical methods.
 
-Each entry links to the paper and its code when available, with a short summary of the method, the evidence behind it and its limits. The same entries are available as CSV files in [`data/`](./data).
 
 </div>
 
