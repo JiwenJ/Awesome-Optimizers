@@ -5,10 +5,6 @@
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
 [![GitHub](https://img.shields.io/badge/GitHub-JiwenJ%2FAwesome--Optimizers-181717.svg?style=flat-square&logo=github)](https://github.com/JiwenJ/Awesome-Optimizers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](./LICENSE)
-[![Papers](https://img.shields.io/badge/Papers-603-b31b1b.svg?style=flat-square&logo=arxiv&logoColor=white)](./data/optimizers.csv)
-[![Code Links](https://img.shields.io/badge/Code%20Links-171-2ea44f.svg?style=flat-square&logo=github)](./data/optimizers.csv)
-[![Muon Resources](https://img.shields.io/badge/Muon%20Resources-267-0969da.svg?style=flat-square&logo=readme&logoColor=white)](./data/muon_resources.csv)
-[![Coverage](https://img.shields.io/badge/Years-2022--2026-6f42c1.svg?style=flat-square&logo=bookstack&logoColor=white)](./data/optimizers.csv)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/JiwenJ/Awesome-Optimizers/pulls)
 
 Curated optimizer-design papers from `2022+`, ordered by exact publication or submission date in reverse chronological order.
