@@ -10,7 +10,7 @@
 
 | Year | Months |
 | :---: | :---: |
-| [2026](#2026)&nbsp;(268) | [Oct](#october-2026) · [Sep](#september-2026) · [Aug](#august-2026) · [Jul](#july-2026) · [Jun](#june-2026) · [May](#may-2026) · [Apr](#april-2026) · [Mar](#march-2026) · [Feb](#february-2026) |
+| [2026](#2026)&nbsp;(269) | [Oct](#october-2026) · [Sep](#september-2026) · [Aug](#august-2026) · [Jul](#july-2026) · [Jun](#june-2026) · [May](#may-2026) · [Apr](#april-2026) · [Mar](#march-2026) · [Feb](#february-2026) |
 | [2025](#2025)&nbsp;(5) | – |
 
 ## 2026
@@ -212,6 +212,7 @@
 | 2026-06-11 | educational implementation | [nabla](https://github.com/dantp-ai/nabla) | Educational NumPy implementations of optimizers including Muon, with animated 2D saddle and matrix least-squares diagnostics. |
 | 2026-06-10 | benchmark workspace | [Muon vs AdamW on CIFAR-10](https://github.com/Varunhack/muon-vs-adamw) | CIFAR-10 benchmark implementing Muon from scratch and comparing it against tuned AdamW with Newton-Schulz tests and wall-clock reporting. |
 | 2026-06-10 | diagnostic notebook | [Transformer Spectral Observatory: AdamW vs Muon](https://github.com/dataandai/adamw-muon-spectral-diagnostics) | Notebook lab for comparing AdamW and Muon on a tiny Transformer through spectra, stable rank, subspace drift, gradient anisotropy, and matrix trajectory diagnostics. |
+| 2026-06-10 | original scaling analysis and small-model experiment | [How Muon Lost Its Geometry](https://research.ligo.bio/posts/how-muon-lost-its-geometry/) | Arda Goreci analyzes Muon's shape-dependent update scaling through the RMS-to-RMS operator norm, contrasting sqrt(fan-out/fan-in), clipped-ratio, and RMS-matching conventions. An original CIFAR-10 experiment uses six-layer bottleneck MLPs to compare learning-rate transfer across widths against standard and maximal-update Adam. The reported curves favor the operator-norm scaling in this small setup, while AlphaFold-style matrix examples illustrate nonuniform effective-rate differences. Connections to Moonlight attention instability and the necessity of MuonClip are the author's hypotheses, not causally isolated large-model results. The ideal-polar calculation should be distinguished from finite Newton-Schulz behavior; no standalone experiment implementation was verified. |
 | 2026-06-09 | educational implementation | [autodiff-engine](https://github.com/Hire-Arvin/autodiff-engine) | From-scratch reverse-mode autodiff engine with SGD, Momentum, Adam, and Muon optimizers. |
 | 2026-06-09 | tutorial | [From SGD to Muon: An Incremental Tutorial (Fable-5 vs Opus 4.8)](https://sankalp.bearblog.dev/from-sgd-to-muon-an-incremental-tutorial-fable-5/) | Builds Muon incrementally from gradient descent, momentum, preconditioning, full-matrix AdaGrad, Shampoo, and Newton-Schulz, including practical code and parameter-routing details. |
 | 2026-06-08 | low-precision training workspace | [nvfp4-pretrain](https://github.com/Infatoshi/nvfp4-pretrain) | Single-GPU NVFP4/FP8 LLM-pretraining research log with Blackwell kernels and Muon training support. |

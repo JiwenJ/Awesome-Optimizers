@@ -10,10 +10,20 @@
 
 | Year | Months |
 | :---: | :---: |
-| [2026](#2026)&nbsp;(118) | [Oct](#october-2026) · [Sep](#september-2026) · [Aug](#august-2026) · [Jul](#july-2026) · [Jun](#june-2026) · [May](#may-2026) · [Apr](#april-2026) · [Mar](#march-2026) · [Feb](#february-2026) · [Jan](#january-2026) |
+| [2026](#2026)&nbsp;(121) | [Nov](#november-2026) · [Oct](#october-2026) · [Sep](#september-2026) · [Aug](#august-2026) · [Jul](#july-2026) · [Jun](#june-2026) · [May](#may-2026) · [Apr](#april-2026) · [Mar](#march-2026) · [Feb](#february-2026) · [Jan](#january-2026) |
 | [2025](#2025)&nbsp;(3) | – |
 
 ## 2026
+
+### November 2026
+
+| Date | Paper Title | Relation |
+| :---: | :---: | :--- |
+| 2026-11-03 | [Theoretical Analysis of Muon on Transformers for Next-Token Prediction](https://arxiv.org/abs/2611.04465) | Analyzes Muon in a one-layer softmax Transformer with orthonormal token embeddings and a prescribed two-phase procedure: first learn the output-value prediction map, then freeze it while learning attention. The preprocessing trajectory attains optimal normalized spectral margin; the main phase receives nonasymptotic loss and margin-gap bounds, with square-root step decay giving O(log(t)/sqrt(t)) among the considered power laws. Synthetic experiments use 64 tokens, 1,024 contexts, and matched starts, illustrating spectral-margin versus Adam's Frobenius-margin bias. These results concern the simplified empirical objective and exact spectral update model, not a convergence guarantee or preferred schedule for deep stochastic language-model pretraining. |
+| 2026-11-03 | [Finite Spectral Depth Controls Gaussian Entrance Rank and Avoidance of the First Gradient-Flow Saddle](https://arxiv.org/abs/2611.05022) | Studies continuous-time quadratic two-layer learning with finitely many classical cubic Newton-Schulz steps applied to normalized matrix gradients. Small Gaussian initialization selects an entrance rank that depends on iteration depth; a residual-inertia condition yields an explicit sufficient depth for bypassing the first nonzero stationary point approached by gradient flow. A constructed three-dimensional, 24-sample example selects ranks one, two, and three at depths one, two-to-three, and four-or-more, respectively; numerical trajectories reuse 32 Gaussian draws. The theory is task- and initialization-dependent, not evidence that universally increasing practical quintic NS or Polar Express steps improves deep-network training. |
+| 2026-11-02 | [Tune the Baseline First: Most of Muon's Scaled Weight Decay Gain Is a Tuning Gap, but Its Small Real Advantage Grows With Model Size](https://arxiv.org/abs/2611.02529) | Compares scaled versus constant decoupled weight decay in hybrid Muon training using a source-scaled MoE ladder with 1.9M-15M active parameters. Joint learning-rate/product tuning at the smallest rung reduces the apparent gap from 0.035 to 0.0026 bits per byte; four paired seeds support a small residual rather than the untuned 1.52x compute-equivalent gain. Larger-rung trends use one seed and product-only sweeps, with fitted optima at or beyond boundaries. WSD produces an unresolved optimum-ratio anomaly. The single-T4 study releases optimizer code and run summaries, but does not establish production-scale gains or a universal decay law. |
+
+<p align="right"><a href="#contents">Back to contents ↑</a></p>
 
 ### October 2026
 
